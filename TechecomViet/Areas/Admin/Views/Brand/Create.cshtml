@@ -1,0 +1,60 @@
+﻿@model BrandModel
+@{
+    ViewData["Title"] = "Tạo hãng";
+}
+<div class="p-5" style="width:1720px">
+    <a asp-action="Index">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Trở về</span>
+    </a>
+    <h4>Tạo hãng</h4>
+    <div class="col-md-9">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label>Tên hãng</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger" />
+            </div>
+            <div class="form-group">
+                <label>Giới thiệu chi tiết</label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger" />
+            </div>
+            <div class="form-group">
+                <label>Trạng thái</label>
+                <select asp-for="Status" class="form-control">
+                    <option value="1">Hiện thị</option>
+                    <option value="0">Ẩn</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Hình ảnh</label>
+                <input asp-for="ImageUpload" class="form-control" type="file" accept="image/*" onchange="previewImage(event)" />
+                <span asp-validation-for="ImageUpload" class="text-danger"></span>
+                <img id="imgpreview" class="pt-2" src="" alt="Image preview" style="display: none; width: 200px; height: 200px;" />
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Tạo hãng</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            const imgPreview = document.getElementById("imgpreview");
+            const file = event.target.files[0];
+            if (file) {
+                imgPreview.style.display = "block";
+                imgPreview.src = URL.createObjectURL(file);
+            } else {
+                imgPreview.style.display = "none";
+                imgPreview.src = "";
+            }
+        }
+    </script>
+}

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CategoryModel>
+
+@{
+    ViewData["title"] = "Danh sách danh mục";
+}
+
+<div class="p-5" style="width:1720px">
+    <div class="d-flex">
+        <h3>Danh sách danh mục</h3>
+        <a class="btn btn-primary" asp-action="Create" asp-controller="Category">Tạo mới</a>
+    </div>
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tên danh mục</th>
+                <th>Chi tiết</th>
+                <th>Hình ảnh</th>
+                <th>Trạng thái</th>
+                <th>Xử lí</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                @if (item != null)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@Html.Raw(item.Description ?? "")</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.Image))
+                            {
+                                <img src="~/images/@item.Image" width="120px" height="150px" />
+                            }
+                            else
+                            {
+                                <span>Không có ảnh</span>
+                            }
+                        </td>
+                        <td>
+                            @if (item.Status == 1)
+                            {
+                                <span class="text text-success">Hiển thị</span>
+                            }
+                            else
+                            {
+                                <span class="text text-danger">Ẩn</span>
+                            }
+                        </td>
+                        <td>
+                            <a class="" asp-action="Edit" asp-controller="Category" asp-route-Id="@item.Id">
+                                <i class="fa-solid fa-pen" style="color:yellow"></i>
+                            </a>
+                            <a class="" asp-action="Delete" asp-controller="Category" asp-route-Id="@item.Id">
+                                <i class="fa-solid fa-trash" style="color:red"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

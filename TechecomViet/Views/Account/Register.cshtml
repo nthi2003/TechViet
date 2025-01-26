@@ -1,0 +1,48 @@
+﻿@model TechecomViet.Models.ViewModel.RegisterViewModel
+@{
+    ViewData["title"] = "Đăng Nhập";
+}
+<div class="form-input">
+    <h2>Chào mừng bạn đến với VietTech | Laptop, PC, Màn hình, điện thoại, linh kiện Chính Hãng!</h2>
+    @Html.Partial("_ValidationScriptsPartial")
+    <form asp-action="Register" method="post">
+        <div style="margin-top: 20px;">
+            <label style="margin-right: 30px;">Tên đầy đủ</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="FullName" type="FullName" />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <div style="margin-top: 20px;">
+            <label>Tên đăng nhập</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="UserName" type="UserName" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div style="margin-top: 20px;">
+            <label style="margin-right:66px;">Email</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+       
+        <div style="margin-top: 20px;">
+            <label style="margin-right: 36px;">Mật khẩu</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="Password" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div style="margin-top: 20px;">
+            <label style="margin-right: 8px;">Số điện thoại</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="PhoneNumber" type="PhoneNumber" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+        <button type="submit" style="background-color: cornflowerblue; border: none; margin-top: 20px; color: white; padding: 10px; width: 100%;">
+            <span>Đăng kí</span>
+        </button>
+
+    </form>
+
+    <hr />
+    <div class="d-flex">
+        <span style="">Đã có tài khoản</span>
+        <a style="margin-left:5px;" asp-action="Login" asp-controller="Account">Đăng nhập</a>
+    </div>
+    
+</div>
+

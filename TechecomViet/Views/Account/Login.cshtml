@@ -1,0 +1,35 @@
+﻿@model TechecomViet.Models.ViewModel.LoginViewModel
+@{
+    ViewData["title"] = "Đăng Kí";
+ }
+<div class="form-input">
+    <h2>Chào mừng bạn đến với VietTech | Laptop, PC, Màn hình, điện thoại, linh kiện Chính Hãng!</h2>
+    @Html.Partial("_ValidationScriptsPartial")
+    <form asp-action="Login" method="post">
+        <div style="margin-top: 20px;">
+            <label style="margin-right:26px;">Email</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div style="margin-top: 20px;">
+            <label>Mật khẩu</label>
+            <input style="width: 83%; border-radius: 5px; padding: 5px;" asp-for="Password" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button type="submit" style="background-color: cornflowerblue; border: none; margin-top: 20px; color: white; padding: 10px; width: 100%;">
+            <span>Đăng nhập</span>
+        </button>
+        <a href="#" style="text-decoration: none;">Quên mật khẩu?</a>
+    </form>
+    <hr />
+    <button style="background-color: red; border: none; margin-top: 20px; color: white; padding: 10px; width: 100%;">
+        <span>Tiếp tục với Google</span>
+    </button>
+    <div class="d-flex">
+        <span style="">Chưa có tài khoản</span>
+        <a style="" asp-action="Register" asp-controller="Account">
+            <div>Đăng kí</div>
+        </a>
+    </div>
+</div>
+
