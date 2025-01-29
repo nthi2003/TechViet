@@ -6,7 +6,7 @@ namespace TechecomViet.Models
     public class CategoryModel
     {
         [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public int Id { get; set; }
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập tên danh mục")]
         public string Name { get; set; }
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Mô tả danh mục")]

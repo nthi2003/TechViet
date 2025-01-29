@@ -1,5 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TechecomViet.Models.ViewModel.UserWithRoleViewModel>
+
 @{
+    ViewData["Title"] = "Danh sách người dùng";
 }
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="p-5" style="width:1720px">
+<table>
+        <thead>
+            <tr>
+                <th>Tên người dùng</th>
+                <th>Email</th>
+                <th>Tên đầy đủ</th>
+                <th>Số điện thoại</th>
+                <th>Quyền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.FullName</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.RoleName</td>
+                </tr>
+            }
+        </tbody>
+</table>
+</div>

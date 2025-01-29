@@ -20,4 +20,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\category\" />
+    <Folder Include="wwwroot\images\brand\" />
+    <Folder Include="wwwroot\images\product\" />
+  </ItemGroup>
+
 </Project>

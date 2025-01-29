@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechecomViet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48673ab32f47d3d6e3197830624411f8448c8dc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechecomViet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechecomViet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

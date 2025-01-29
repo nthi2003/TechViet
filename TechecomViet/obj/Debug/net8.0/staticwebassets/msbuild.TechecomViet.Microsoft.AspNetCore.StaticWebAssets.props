@@ -36,96 +36,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\09b21bb6-40cf-4151-9f63-b6cd38e0c116_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/09b21bb6-40cf-4151-9f63-b6cd38e0c116_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>93yfcpnklu</Fingerprint>
-      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\09b21bb6-40cf-4151-9f63-b6cd38e0c116_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\435e5262-d6ed-4504-9651-c5830712bf39_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/435e5262-d6ed-4504-9651-c5830712bf39_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>93yfcpnklu</Fingerprint>
-      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\435e5262-d6ed-4504-9651-c5830712bf39_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\61bc35be-eabd-4d14-a782-f2e65a169621_Screenshot 2025-01-08 211521.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/61bc35be-eabd-4d14-a782-f2e65a169621_Screenshot 2025-01-08 211521.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>86dwlo80va</Fingerprint>
-      <Integrity>UOB/KG775tjmAoDMpaDkDVIk59ihw2tE4fp8vrlqdaw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\61bc35be-eabd-4d14-a782-f2e65a169621_Screenshot 2025-01-08 211521.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\883d3ff4-f70c-4072-bf24-24e659a3834a_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/883d3ff4-f70c-4072-bf24-24e659a3834a_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>93yfcpnklu</Fingerprint>
-      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\883d3ff4-f70c-4072-bf24-24e659a3834a_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a11e07b8-ecbd-4ccf-914a-d47115e5474d_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/a11e07b8-ecbd-4ccf-914a-d47115e5474d_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>93yfcpnklu</Fingerprint>
-      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a11e07b8-ecbd-4ccf-914a-d47115e5474d_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\admin-img.png'))">
       <SourceType>Package</SourceType>
       <SourceId>TechecomViet</SourceId>
@@ -143,24 +53,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\admin-img.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\af0f53cd-3842-4486-9b28-8175bcbd9f2e_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>TechecomViet</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/TechecomViet</BasePath>
-      <RelativePath>images/af0f53cd-3842-4486-9b28-8175bcbd9f2e_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>93yfcpnklu</Fingerprint>
-      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\af0f53cd-3842-4486-9b28-8175bcbd9f2e_f44596aca3e61da7ff3d0fc99b2b4870 (1).jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

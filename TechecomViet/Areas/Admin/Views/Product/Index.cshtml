@@ -1,9 +1,8 @@
-﻿@model ProductModel 
+﻿@model IEnumerable<ProductModel>
 @{
     ViewData["Title"] = "Danh sách sản phẩm";
 }
-<div>
-
+<div class="p-5" style="width:1720px">
     <h3>Danh sách sản phẩm</h3>
     <a asp-action="Create" asp-controller="Product">Thêm sản phẩm</a>
     <table class="table" id="mytable">
@@ -16,7 +15,6 @@
                 <th scope="col">Chi tiết</th>
                 <th scope="col">Giá</th>
                 <th scope="col">Ảnh sản phẩm</th>
-                <th scope="col">Product Slug</th>
                 <th scope="col">Danh mục sản phẩm</th>
                 <th scope="col">Hãng</th>
                 <th scope="col">Hành động</th>

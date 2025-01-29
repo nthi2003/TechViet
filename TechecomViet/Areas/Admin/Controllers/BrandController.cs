@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TechecomViet.Models;
 using TechecomViet.Reponsitory;
@@ -7,6 +8,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
+    [Authorize(Roles = "Admin")]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
@@ -34,23 +36,16 @@ namespace TechecomViet.Areas.Admin.Controllers
                     ModelState.AddModelError("", "Hãng đã tồn tại");
                     return View(brand);
                 }
-                if (brand.ImageUpload != null && brand.ImageUpload.Length > 0)
+                if (brand.ImageUpload != null )
                 {
                     var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-                    if (!Directory.Exists(folderPath))
-                    {
-                        Directory.CreateDirectory(folderPath);
-                    }
-
                     var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(brand.ImageUpload.FileName)}";
                     var filePath = Path.Combine(folderPath, fileName);
 
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await brand.ImageUpload.CopyToAsync(stream);
-                    }
-
-                    brand.Image = $"{fileName}";
+                    FileStream fs = new FileStream(filePath, FileMode.Create);
+                    await brand.ImageUpload.CopyToAsync(fs);
+                    fs.Close();
+                    brand.Image = fileName;
                 }
 
                 _dataContext.Add(brand);
@@ -60,16 +55,12 @@ namespace TechecomViet.Areas.Admin.Controllers
             }
             else
             {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine($"Validation error: {error.ErrorMessage}");
-                }
                 return View(brand);
             }
 
         }
         [Route("DeleteImage")]
-        public async Task<IActionResult> DeleteImage(Guid brandId)
+        public async Task<IActionResult> DeleteImage(int brandId)
         {
             var brand = await _dataContext.Brands.FindAsync(brandId);
             if (brand == null)
@@ -102,7 +93,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 
         [Route("Edit")]
         [HttpGet]
-        public async Task<IActionResult>Edit(Guid id)
+        public async Task<IActionResult>Edit(int id)
         {
             BrandModel brand = await _dataContext.Brands.FindAsync(id);
             return View(brand);

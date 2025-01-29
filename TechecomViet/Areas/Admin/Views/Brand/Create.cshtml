@@ -45,7 +45,7 @@
 </div>
 @section Scripts {
     <script>
-        function previewImage(event) {
+        const previewImage = (event) => {
             const imgPreview = document.getElementById("imgpreview");
             const file = event.target.files[0];
             if (file) {

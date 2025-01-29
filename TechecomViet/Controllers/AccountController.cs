@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -81,6 +81,8 @@ namespace TechecomViet.Controllers
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password );
                 if(result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "User");
+
                     await _signInManager.SignInAsync(user, isPersistent: false); // khi người dùng đóng trình duyệt thì sẽ xóa cookie
                     return RedirectToAction("Index", "Home");
                 }

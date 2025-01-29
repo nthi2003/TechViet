@@ -176,3 +176,4 @@ C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\bin\Debug\net8.0\TechecomV
 C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\obj\Debug\net8.0\staticwebassets\msbuild.TechecomViet.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\obj\Debug\net8.0\TechecomViet.sourcelink.json

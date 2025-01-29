@@ -11,30 +11,28 @@ public class ProductModel
     public string Name { get; set; }
 
     [Required(ErrorMessage = "Yêu cầu nhập Mô tả Sản Phẩm")]
-    public string Decription { get; set; }
+    public string Description { get; set; }
 
     [Required(ErrorMessage = "Yêu cầu nhập Giá Sản Phẩm")]
     [Range(0.01, double.MaxValue)]
     [Column(TypeName = "NUMERIC(15, 2)")]
     public decimal Price { get; set; }
 
-    [Required, Range(1, int.MaxValue, ErrorMessage = "Chọn một thương hiệu")]
+    [Required, Range(1, int.MaxValue, ErrorMessage = "Chọn hãng")]
     public int BrandId { get; set; }
 
-    [Required, Range(1, int.MaxValue, ErrorMessage = "Chọn một danh mục")]
+    [Required, Range(1, int.MaxValue, ErrorMessage = "Chọn danh mục")]
     public int CategoryId { get; set; }
+    public int Quantity { get; set; }
+    public int SoldOut { get; set; }
 
-    public int Sold { get; set; }
-
-    public CategoryModel? Category { get; set; }
-    public BrandModel? Brand { get; set; }
+    public CategoryModel Category { get; set; }
+    public BrandModel Brand { get; set; }
     [Range(0, 100, ErrorMessage = "Phần trăm giảm giá phải từ 0 đến 100")]
-    public decimal DiscountPercentage { get; set; }
+    public decimal? DiscountPercentage { get; set; }
     [NotMapped]
-    public decimal DiscountedPrice => Price - (Price * DiscountPercentage / 100);
+    public decimal? DiscountedPrice => Price - (Price * DiscountPercentage / 100);
     public List<string> Images { get; set; } = new List<string>();
-
     [NotMapped]
-
     public List<IFormFile>? ImageUploads { get; set; }
 }
