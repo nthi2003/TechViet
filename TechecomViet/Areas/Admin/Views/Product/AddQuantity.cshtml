@@ -1,0 +1,51 @@
+﻿@model ProductQuantityModel
+@{
+    ViewData["Title"] = "Create Quantity";
+    var total_quantities = 0;
+    var key = 1;
+
+}
+
+<div class="p-5" style="width:1720px">
+    <a asp-action="Index">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Trở về</span>
+    </a>
+    <h4>Tạo số lượng</h4>
+    <form asp-action="AddQuantity" asp-controller="Product" enctype="multipart/form-data">
+        <input type="hidden" name="ProductId" value="@ViewBag.Id" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label>Số lượng</label>
+            <input min="1" value="1" max="2000" asp-for="Quantity" class="form-control" />
+            <span asp-validation-for="Quantity" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Tạo</button>
+        </div>
+    </form>
+    <div>
+        <h3>Danh sách số lượng</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Số lượng</th>
+                    <th>Ngày tạo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var productQuantity in ViewBag.ProductByQuantity)
+                {
+                    total_quantities += productQuantity.Quantity;
+                    <tr>
+                        <td>@key</td>
+                        <td>@productQuantity.Quantity</td>
+                        <td>@productQuantity.DateCreated</td>
+                    </tr>
+                }
+            <td>Tổng số lượng: : @total_quantities </td>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,7 +1,7 @@
-﻿
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Security.Claims;
 using TechecomViet.Models;
 using TechecomViet.Models.ViewModel;
 
@@ -26,7 +26,6 @@ namespace TechecomViet.Controllers
 
 
         [HttpPost]
-
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)
@@ -37,7 +36,32 @@ namespace TechecomViet.Controllers
                     var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Index", "Home"); 
+                        // Lấy danh sách roles của user
+                        var roles = await _userManager.GetRolesAsync(user);
+
+                        // Tạo danh sách claims
+                        var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id),
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(ClaimTypes.Email, user.Email)
+                };
+
+                        // Thêm roles vào claims
+                        foreach (var role in roles)
+                        {
+                            claims.Add(new Claim(ClaimTypes.Role, role));
+                        }
+
+                        // Tạo identity với claims mới
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                        // Đăng nhập với claims mới
+                        await _signInManager.SignOutAsync(); // Đăng xuất trước để tránh trùng session
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+
+                        return RedirectToAction("Index", "Home");
                     }
                     else
                     {
@@ -50,8 +74,8 @@ namespace TechecomViet.Controllers
                 }
             }
             return View(loginViewModel);
-  
         }
+
 
         [HttpGet]
         public IActionResult Register()
@@ -59,13 +83,13 @@ namespace TechecomViet.Controllers
             return View("Register");
         }
         [HttpPost]
-        public async Task<IActionResult> Register( RegisterViewModel registerViewModel)
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
-
-            var CheckMail = await _userManager.FindByEmailAsync(registerViewModel.Email);
-            if(CheckMail != null)
+            var checkMail = await _userManager.FindByEmailAsync(registerViewModel.Email);
+            if (checkMail != null)
             {
-                ModelState.AddModelError("", "Email đã tồn tại");
+                ModelState.AddModelError("", "Email đã tồn tại");
             }
             else
             {
@@ -75,32 +99,49 @@ namespace TechecomViet.Controllers
                     FullName = registerViewModel.FullName,
                     Email = registerViewModel.Email,
                     PhoneNumber = registerViewModel.PhoneNumber,
-                
-                    
                 };
-                var result = await _userManager.CreateAsync(user, registerViewModel.Password );
-                if(result.Succeeded)
+
+                var result = await _userManager.CreateAsync(user, registerViewModel.Password);
+                if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "User");
 
-                    await _signInManager.SignInAsync(user, isPersistent: false); // khi người dùng đóng trình duyệt thì sẽ xóa cookie
+                    // Lấy danh sách roles của user
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    // Tạo danh sách claims
+                    var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id),
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Email, user.Email)
+            };
+
+                    // Thêm roles vào claims
+                    foreach (var role in roles)
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role, role));
+                    }
+
+                    // Tạo identity mới với claims
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                    // Đăng nhập với claims mới
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+
                     return RedirectToAction("Index", "Home");
                 }
-
-
             }
-
 
             return View(registerViewModel);
         }
-        
+
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
-      
-
-
     }
 }

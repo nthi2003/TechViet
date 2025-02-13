@@ -3,11 +3,10 @@
 @{
     ViewData["Title"] = "Danh sách người dùng";
 }
-
-<h2>@ViewData["Title"]</h2>
-
 <div class="p-5" style="width:1720px">
-<table>
+    <h3>Danh sách người dùng</h3>
+    <a asp-action="Create" asp-controller="User">Thêm người dùng</a>
+    <table class="table" id="myTable">
         <thead>
             <tr>
                 <th>Tên người dùng</th>
@@ -15,19 +14,44 @@
                 <th>Tên đầy đủ</th>
                 <th>Số điện thoại</th>
                 <th>Quyền</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var user in Model)
             {
                 <tr>
+                    <form method="post" asp-action="SaveUser" asp-controller="User">
                     <td>@user.UserName</td>
                     <td>@user.Email</td>
                     <td>@user.FullName</td>
                     <td>@user.PhoneNumber</td>
-                    <td>@user.RoleName</td>
+                    <td>
+                        <select name="RoleId">
+                                @foreach (var role in ViewBag.Roles as SelectList)
+                                {
+                                <option value="@role.Value" selected="@(user.RoleId == role.Value ? "selected" : null)">@role.Text</option>
+                                }
+                        </select>
+                    </td>
+
+                       <td>
+                        <select name="Status">
+                            <option value="1" selected="@(user.Status == 1 ? "selected" : null)">Hoạt động</option>
+                            <option value="0" selected="@(user.Status == 0 ? "selected" : null)">Khóa</option>
+                        </select>
+                       </td>
+                    <td>
+                        <input type="hidden" name="Id" value="@user.Id" />
+                        <button type="submit" style="border: none; background: none;">
+                            <i class="fa-solid fa-check" style="color:green;"></i>
+                        </button>
+                    </td>
+                    </form>
                 </tr>
             }
         </tbody>
-</table>
+
+    </table>
 </div>

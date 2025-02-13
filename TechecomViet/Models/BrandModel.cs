@@ -14,7 +14,7 @@ namespace TechecomViet.Models
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Mô tả hãng")]
         public string Description { get; set; }
 
-        public int Status { get; set; }
+        public int? Status { get; set; }
 
         [Column("Image")]
         public string Image { get; set; } = string.Empty;

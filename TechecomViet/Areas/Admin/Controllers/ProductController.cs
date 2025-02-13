@@ -2,19 +2,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using TechecomViet.Models;
 using TechecomViet.Reponsitory;
 
 namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     public class ProductController : Controller
     {
         private readonly DataContext _dataContext;
-        public ProductController(DataContext context)
+        private readonly IWebHostEnvironment _webHostEnviroment;
+        public ProductController(DataContext context , IWebHostEnvironment webHostEnvironment)
         {
             _dataContext = context;
+            _webHostEnviroment = webHostEnvironment;
         }
         public async Task<IActionResult> Index()
         {
@@ -34,48 +37,198 @@ namespace TechecomViet.Areas.Admin.Controllers
         {
             ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
             ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
+            var checkProduct = await _dataContext.Products.FirstOrDefaultAsync(p => p.Name == product.Name);
+            if (checkProduct != null) {
+                TempData["error"] = "Sản phẩm đã tồn tại";
+                return View(checkProduct);
 
-            if (ModelState.IsValid)
+            }
+            if (product.ImageUploads != null && product.ImageUploads.Count > 0)
             {
-                var checkProduct = await _dataContext.Products.FirstOrDefaultAsync(p => p.Name == product.Name);
-                if (checkProduct != null)
+                string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
+
+                if (!Directory.Exists(folderPath))
                 {
-                    TempData["error"] = "Sản phẩm đã tồn tại.";
-                    return View(product);
+                    Directory.CreateDirectory(folderPath);
                 }
+
                 List<string> imageNames = new List<string>();
+
+                foreach (var image in product.ImageUploads)
+                {
+                    string imageName = $"{Guid.NewGuid()}_{image.FileName}";
+                    string filePath = Path.Combine(folderPath, imageName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(stream);
+                    }
+
+                    imageNames.Add(imageName);
+                }
+                product.Images = imageNames;
+            }
+
+            _dataContext.Products.Add(product);
+            await _dataContext.SaveChangesAsync();
+            TempData["success"] = "Thêm sản phẩm thành công";
+            return RedirectToAction("Index");
+        }
+        [Route("DeleteImage")]
+        public async Task<IActionResult> DeleteImage(int productId, string imageName)
+        {
+            var product = await _dataContext.Products.FindAsync(productId);
+            if (product == null)
+            {
+                TempData["error"] = "Sản phẩm không tồn tại.";
+                return RedirectToAction("Edit", new { id = productId });
+            }
+            if (product.Images != null && product.Images.Count > 0)
+            {
+                if (string.IsNullOrEmpty(imageName))
+                {
+                    TempData["error"] = "Vui lòng chọn tên ảnh cần xóa.";
+                    return RedirectToAction("Edit", new { id = productId });
+                }
+                if (!product.Images.Contains(imageName))
+                {
+                    TempData["error"] = "Ảnh không tồn tại trong danh sách của sản phẩm.";
+                    return RedirectToAction("Edit", new { id = productId });
+                }
+
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
+                var filePath = Path.Combine(folderPath, imageName);
+
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+
+                product.Images.Remove(imageName);
+                _dataContext.Products.Update(product);
+                await _dataContext.SaveChangesAsync();
+
+                TempData["success"] = "Xóa ảnh thành công.";
+            }
+            else
+            {
+                TempData["error"] = "Không có ảnh để xóa.";
+            }
+
+            return RedirectToAction("Edit", new { id = productId });
+        }
+        [Route("Edit")]
+        [HttpGet]
+        public async Task<IActionResult> Edit(int Id)
+        {
+            var product = await _dataContext.Products.FindAsync(Id);
+            ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
+            ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
+
+            return View(product);
+        }
+       
+        [Route("Edit")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(ProductModel product)
+         {
+            var existed_product = _dataContext.Products.Find(product.Id);
+            ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
+            ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
+      
+
                 if (product.ImageUploads != null && product.ImageUploads.Count > 0)
                 {
-                    string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "images/product");
+                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
                     if (!Directory.Exists(folderPath))
                     {
                         Directory.CreateDirectory(folderPath);
                     }
 
+                    if (existed_product.Images == null)
+                    {
+                        existed_product.Images = new List<string>();
+                    }
+
                     foreach (var image in product.ImageUploads)
                     {
-                        var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(image.FileName)}";
-                        var filePath = Path.Combine(folderPath, fileName);
-                        using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                        string imageName = $"{Guid.NewGuid()}_{image.FileName}";
+                        string filePath = Path.Combine(folderPath, imageName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
                         {
-                            await image.CopyToAsync(fs);
+                            await image.CopyToAsync(stream);
                         }
-                        imageNames.Add(fileName);
+                        existed_product.Images.Add(imageName);
                     }
                 }
 
-                product.Images = imageNames;
+                existed_product.Name = product.Name;
+                existed_product.Description = product.Description;
+                existed_product.Price = product.Price;
+                existed_product.CategoryId = product.CategoryId;
+                existed_product.BrandId = product.BrandId;
 
-                _dataContext.Products.Add(product);
+
+                _dataContext.Update(existed_product);
                 await _dataContext.SaveChangesAsync();
-                TempData["success"] = "Sản phẩm đã được tạo thành công!";
+                TempData["success"] = "Cập nhật sản phẩm thành công";
                 return RedirectToAction("Index");
             }
 
-            return View(product);
+
+        [Route("Delete")]
+        public async Task <IActionResult> Delete(int id)
+        {
+            var product = await _dataContext.Products.FindAsync(id);
+            if(product == null)
+            {
+                TempData["error"] = "Không tìm thấy sản phẩm.";
+                return RedirectToAction("Index");
+            }
+            if (product.Images != null && product.Images.Count > 0) {
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
+                foreach (var image in product.Images) {
+                    var filePath = Path.Combine(folderPath, image);
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+            }
+            _dataContext.Products.Remove(product);
+            await _dataContext.SaveChangesAsync();
+            TempData["success"] = "Xóa sản phẩm thành công";
+            return RedirectToAction("Index");
+
+
         }
-
-
-
+        [Route("AddQuantity")]
+        [HttpGet]
+        public async Task<IActionResult> AddQuantity(int Id)
+        {
+            var productQuantity = await _dataContext.ProductQuantities.Where(pq => pq.ProductId == Id).ToListAsync();
+            ViewBag.ProductByQuantity = productQuantity; 
+            ViewBag.Id = Id;
+            return View();
+        }
+        [Route("AddQuantity")]
+        [HttpPost]
+        public async Task<IActionResult> AddQuantity(ProductQuantityModel productQuantity)
+        {
+            var product = _dataContext.Products.Find(productQuantity.ProductId);
+            if(product == null)
+            {
+                TempData["error"] = "Sản phẩm không tồn tại";
+            }
+            product.Quantity += productQuantity.Quantity;
+            productQuantity.Quantity = productQuantity.Quantity;
+            productQuantity.ProductId = productQuantity.ProductId;
+            productQuantity.DateCreated = DateTime.Now;
+            _dataContext.Add(productQuantity);
+            _dataContext.SaveChanges();
+            TempData["sussess"] = "Thêm số lượng sản phẩm thành công";
+            return RedirectToAction("AddQuantity", "Product", new { Id = productQuantity.Id });
+        }
     }
 }

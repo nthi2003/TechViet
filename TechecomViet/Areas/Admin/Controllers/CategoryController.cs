@@ -8,7 +8,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     public class CategoryController : Controller
     {
         private readonly DataContext _dataContext;
@@ -29,8 +29,7 @@ namespace TechecomViet.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CategoryModel category)
         {
-            if (ModelState.IsValid)
-            {
+
                 var existingCategory = await _dataContext.Categories.FirstOrDefaultAsync(c => c.Name == category.Name);
                 if (existingCategory != null)
                 {
@@ -39,7 +38,7 @@ namespace TechecomViet.Areas.Admin.Controllers
                 }
                 if (category.ImageUpload != null && category.ImageUpload.Length > 0)
                 {
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/categories");
                     if (!Directory.Exists(folderPath))
                     {
                         Directory.CreateDirectory(folderPath);
@@ -61,18 +60,8 @@ namespace TechecomViet.Areas.Admin.Controllers
                 TempData["success"] = "Thêm danh mục thành công";
                 return RedirectToAction("Index");
             }
-            else
-            {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine($"Validation error: {error.ErrorMessage}");
-                }
-                return View(category);
-            }
-
-        }
         [Route("DeleteImage")]
-        public async Task<IActionResult> DeleteImage(Guid categoryId)
+        public async Task<IActionResult> DeleteImage(int categoryId)
         {
             var category = await _dataContext.Categories.FindAsync(categoryId);
             if (category == null)
@@ -83,7 +72,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 
             if (!string.IsNullOrEmpty(category.Image))
             {
-                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/categories");
                 var filePath = Path.Combine(folderPath, category.Image);
                 if (System.IO.File.Exists(filePath))
                 {
@@ -105,17 +94,16 @@ namespace TechecomViet.Areas.Admin.Controllers
 
         [Route("Edit")]
         [HttpGet]
-        public async Task<IActionResult> Edit(Guid id)
+        public async Task<IActionResult> Edit(int id)
         {
-            CategoryModel category = await _dataContext.Categories.FindAsync(id);
+            var category = await _dataContext.Categories.FindAsync(id);
             return View(category);
         }
         [Route("Edit")]
         [HttpPost]
         public async Task<IActionResult> Edit(CategoryModel category)
         {
-            if (ModelState.IsValid)
-            {
+
                 var existingCategory = await _dataContext.Categories.FindAsync(category.Id);
                 if (existingCategory == null)
                 {
@@ -124,7 +112,7 @@ namespace TechecomViet.Areas.Admin.Controllers
                 }
                 if (category.ImageUpload != null && category.ImageUpload.Length > 0)
                 {
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/categories");
                     var oldFilePath = Path.Combine(folderPath, existingCategory.Image);
                     if (System.IO.File.Exists(oldFilePath))
                     {
@@ -148,15 +136,20 @@ namespace TechecomViet.Areas.Admin.Controllers
                 TempData["success"] = "Cập nhật thư mục thành công.";
                 return RedirectToAction("Index");
             }
-            else
-            {
-                return View(category);
-            }
-        }
+        
         [Route("Delete")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(int id)
         {
-            CategoryModel category = await _dataContext.Categories.FindAsync(id);
+            var category = await _dataContext.Categories.FindAsync(id);
+            if(!string.IsNullOrEmpty(category.Image))
+            {
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/categories");
+                var filePath = Path.Combine(folderPath, category.Image);
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }    
             _dataContext.Categories.Remove(category);
             await _dataContext.SaveChangesAsync();
             TempData["success"] = "Xóa thư mục thành công";

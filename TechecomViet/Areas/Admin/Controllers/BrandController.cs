@@ -8,7 +8,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     public class BrandController : Controller
     {
         private readonly DataContext _dataContext;
@@ -33,12 +33,12 @@ namespace TechecomViet.Areas.Admin.Controllers
                 var existingBrand = await _dataContext.Brands.FirstOrDefaultAsync(b => b.Name == brand.Name);
                 if (existingBrand != null)
                 {
-                    ModelState.AddModelError("", "Hãng đã tồn tại");
+                    TempData["error"] = "Hãng đã tồn tại.";
                     return View(brand);
                 }
                 if (brand.ImageUpload != null )
                 {
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/brands");
                     var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(brand.ImageUpload.FileName)}";
                     var filePath = Path.Combine(folderPath, fileName);
 
@@ -71,7 +71,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 
             if (!string.IsNullOrEmpty(brand.Image))
             {
-                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/brands");
                 var filePath = Path.Combine(folderPath, brand.Image);
                 if (System.IO.File.Exists(filePath))
                 {
@@ -95,7 +95,7 @@ namespace TechecomViet.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult>Edit(int id)
         {
-            BrandModel brand = await _dataContext.Brands.FindAsync(id);
+            var brand = await _dataContext.Brands.FindAsync(id);
             return View(brand);
         }
         [Route("Edit")]
@@ -112,7 +112,7 @@ namespace TechecomViet.Areas.Admin.Controllers
                 }
                 if (brand.ImageUpload != null && brand.ImageUpload.Length > 0)
                 {
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/brands");
                     var oldFilePath = Path.Combine(folderPath, existingBrand.Image);
                     if (System.IO.File.Exists(oldFilePath))
                     {
@@ -142,9 +142,20 @@ namespace TechecomViet.Areas.Admin.Controllers
             }
         }
         [Route("Delete")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(int id)
         {
-            BrandModel brand = await _dataContext.Brands.FindAsync(id);
+            var brand = await _dataContext.Brands.FindAsync(id);
+            if (brand == null) {
+                TempData["error"] = "Không tìm thấy thương hiệu.";
+            }
+            if (!string.IsNullOrEmpty(brand.Image))
+            {
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/brands");
+                var filePath = Path.Combine(folderPath, brand.Image);
+                if (System.IO.File.Exists(filePath)) {
+                    System.IO.File.Delete(filePath);
+                }
+            }    
             _dataContext.Brands.Remove(brand);
             await _dataContext.SaveChangesAsync();
             TempData["success"] = "Xóa hãng thành công";

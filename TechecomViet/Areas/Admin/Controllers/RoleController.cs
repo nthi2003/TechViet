@@ -8,7 +8,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     public class RoleController : Controller
     {
         private readonly DataContext _dataContext;
@@ -18,7 +18,6 @@ namespace TechecomViet.Areas.Admin.Controllers
             _dataContext = context;
             _roleManager = roleManager;
         }
-        [Route("Index")]
         public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Roles.OrderByDescending(p => p.Id).ToListAsync());

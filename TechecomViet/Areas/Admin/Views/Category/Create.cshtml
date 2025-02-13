@@ -14,13 +14,15 @@
             <div class="form-group">
                 <label>Tên danh mục</label>
                 <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label>Giới thiệu chi tiết</label>
                 <textarea asp-for="Description" class="form-control"></textarea>
-                <span asp-validation-for="Description" class="text-danger" />
+                <span asp-validation-for="Description" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label>Trạng thái</label>
                 <select asp-for="Status" class="form-control">
@@ -29,6 +31,7 @@
                 </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label>Hình ảnh</label>
                 <input asp-for="ImageUpload" class="form-control" type="file" accept="image/*" onchange="previewImage(event)" />
@@ -56,5 +59,10 @@
                 imgPreview.src = "";
             }
         }
+    </script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace("Description");
     </script>
 }

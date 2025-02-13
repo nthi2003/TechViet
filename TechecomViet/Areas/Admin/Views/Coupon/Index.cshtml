@@ -1,1 +1,77 @@
-﻿
+﻿@model CouponModel
+@{
+    ViewData["Title"] = "Danh sách mã giảm giá";
+}
+<div class="p-5" style="width:1720px">
+    <h3>Danh sách mã giảm giá</h3>
+    <a asp-action="Create" asp-controller="Coupon">Thêm mã giảm giá</a>
+    <table class="table table-striped" id="myTable">
+        <thead>
+            <tr>
+                <th>Tên mã giảm giá</th>
+                <th>Chi tiết</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày hết hạn</th>
+                <th>Số lượng</th>
+                <th>Trang thái</th>
+                <th>Hạn sử dụng</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var coupon in ViewBag.Coupons)
+            {
+                <tr>
+                    <td>@coupon.Name</td>
+                    <td>@coupon.Description</td>
+                    <td>@coupon.DateStart.ToString("dd-MM-yyyy")</td>
+                    <td>@coupon.DateExpired.ToString("dd-MM-yyyy")</td>
+                    <td>@coupon.Quantity</td>
+                    <td>
+                        @if (@coupon.Status == 1)
+                        {
+                            <select name="Status">
+                                <option selected value="1">Kích hoạt</option>
+                                <option value="0">Ẩn</option>
+                            </select>
+                        }
+                        else
+                        {
+                            <select name="Status">
+                                <option value="1">Kích hoạt</option>
+                                <option selected value="0">Ẩn</option>
+                            </select>
+                        }
+
+                    </td>
+
+                    <td>
+                        @if (coupon.DateExpired < DateTime.Now)
+                        {
+                            <span class="text text-danger">Hết hạn</span>
+                        }
+                        else
+                        {
+                            TimeSpan remainingTime = coupon.DateExpired - DateTime.Now;
+                            int daysRemaining = remainingTime.Days;
+                            @if (daysRemaining == 0)
+                            {
+                                <span class="text text-danger">Hôm nay</span>
+                            }
+                            else
+                            {
+                                <span class="text text-success"> còn @daysRemaining ngày</span>
+                            }
+                        }
+                    </td>
+                    <td>
+                        <a class="" asp-action="Edit" asp-controller="Coupon" asp-route-Id="@coupon.Id" >
+                            <i class="fa-solid fa-pen" style="color:yellow"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

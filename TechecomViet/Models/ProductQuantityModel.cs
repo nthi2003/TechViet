@@ -15,10 +15,7 @@ namespace TechecomViet.Models
         public int ProductId { get; set; }
 
         public DateTime DateCreated { get; set; }
-
-
         [ForeignKey("ProductId")]
-
         public ProductModel? Product { get; set; }
     }
 }
