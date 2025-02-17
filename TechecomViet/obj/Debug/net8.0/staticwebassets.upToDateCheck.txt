@@ -1,3 +1,5 @@
+wwwroot\brands\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png
+wwwroot\categories\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\admin-img.png
@@ -59,3 +61,10 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\products\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png
+wwwroot\products\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png
+wwwroot\products\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png
+wwwroot\products\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png
+wwwroot\products\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png
+wwwroot\products\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png
+wwwroot\sliders\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg

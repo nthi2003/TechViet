@@ -17,125 +17,169 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TechecomViet
 build_property.RootNamespace = TechecomViet
-build_property.ProjectDir = C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet\
+build_property.ProjectDir = C:\Users\ADMIN\Desktop\TechecomViet\TechecomViet\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\source\repos\TechecomViet\TechecomViet
+build_property.MSBuildProjectDirectory = C:\Users\ADMIN\Desktop\TechecomViet\TechecomViet
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Create.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Edit.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Create.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Edit.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Coupon/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Coupon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cG9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Coupon/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cG9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Coupon/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cG9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Doashboard/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Doashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9hc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Product/Create.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Product/AddQuantity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGRRdWFudGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Product/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Create.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Edit.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_PartitalHeader.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_PartitalHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYXJ0aXRhbEhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_PartitalNavBar.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_PartitalNavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYXJ0aXRhbE5hdkJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/User/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Ship/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hpcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Ship/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hpcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Ship/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hpcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Slider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/_ViewImports.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/_ViewStart.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Account/Login.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Account/Register.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Home/Index.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Shared/_PartialFooter.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Shared/_PartialFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Shared/_PartialHeader.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Shared/_PartialHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/_ViewImports.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/_ViewStart.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-b4sm8vtfj9
 
-[C:/Users/ADMIN/source/repos/TechecomViet/TechecomViet/Views/Shared/_Layout.cshtml]
+[C:/Users/ADMIN/Desktop/TechecomViet/TechecomViet/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5mqz406kam

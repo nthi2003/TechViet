@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).bgc5x0lfh5.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\brands\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bgc5x0lfh5"},{"Name":"integrity","Value":"sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="},{"Name":"label","Value":"_content/TechecomViet/brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"570146"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:47:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\brands\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"570146"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:47:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).5bh0nwktll.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\categories\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5bh0nwktll"},{"Name":"integrity","Value":"sha256-oc4F2\u002Ba4qrE2B6tr\u002BMCtm7rSLa\u002BK5Bm5KhB4xkuYOMQ="},{"Name":"label","Value":"_content/TechecomViet/categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"268289"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oc4F2\u002Ba4qrE2B6tr\u002BMCtm7rSLa\u002BK5Bm5KhB4xkuYOMQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\categories\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oc4F2\u002Ba4qrE2B6tr\u002BMCtm7rSLa\u002BK5Bm5KhB4xkuYOMQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"268289"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oc4F2\u002Ba4qrE2B6tr\u002BMCtm7rSLa\u002BK5Bm5KhB4xkuYOMQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TechecomViet/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -731,6 +755,90 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1117"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 14:28:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).1yata3vfmh.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1yata3vfmh"},{"Name":"integrity","Value":"sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="},{"Name":"label","Value":"_content/TechecomViet/products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"256725"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 19:04:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"256725"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 19:04:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).bgc5x0lfh5.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bgc5x0lfh5"},{"Name":"integrity","Value":"sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="},{"Name":"label","Value":"_content/TechecomViet/products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"570146"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"570146"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rNoUub2TwYqIPIu\u002BzkpO6feXDJEIXHftB6FDLLFnjUw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2155328"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022rNoUub2TwYqIPIu\u002BzkpO6feXDJEIXHftB6FDLLFnjUw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:50:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).sqh2rth3u2.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sqh2rth3u2"},{"Name":"integrity","Value":"sha256-rNoUub2TwYqIPIu\u002BzkpO6feXDJEIXHftB6FDLLFnjUw="},{"Name":"label","Value":"_content/TechecomViet/products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2155328"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022rNoUub2TwYqIPIu\u002BzkpO6feXDJEIXHftB6FDLLFnjUw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:50:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1904162"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).vyg6qbenpb.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vyg6qbenpb"},{"Name":"integrity","Value":"sha256-Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w="},{"Name":"label","Value":"_content/TechecomViet/products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1904162"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 15:48:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wzpJCmp5xxfj9Czm\u002BxgjrNnGpaPBf\u002BUF6WPymsVXWuI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"256802"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022wzpJCmp5xxfj9Czm\u002BxgjrNnGpaPBf\u002BUF6WPymsVXWuI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:59:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).xjngi64uan.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xjngi64uan"},{"Name":"integrity","Value":"sha256-wzpJCmp5xxfj9Czm\u002BxgjrNnGpaPBf\u002BUF6WPymsVXWuI="},{"Name":"label","Value":"_content/TechecomViet/products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"256802"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022wzpJCmp5xxfj9Czm\u002BxgjrNnGpaPBf\u002BUF6WPymsVXWuI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:59:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).1yata3vfmh.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1yata3vfmh"},{"Name":"integrity","Value":"sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="},{"Name":"label","Value":"_content/TechecomViet/products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"256725"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:59:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"256725"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 09 Feb 2025 18:59:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.93yfcpnklu.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sliders\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"93yfcpnklu"},{"Name":"integrity","Value":"sha256-q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk="},{"Name":"label","Value":"_content/TechecomViet/sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"107348"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 16:33:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TechecomViet/sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sliders\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"107348"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Feb 2025 16:33:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TechecomViet/TechecomViet.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\TechecomViet.i12wfl0b3e.bundle.scp.css'))</AssetFile>

@@ -1,5 +1,41 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\brands\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bgc5x0lfh5</Fingerprint>
+      <Integrity>S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\brands\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\categories\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5bh0nwktll</Fingerprint>
+      <Integrity>oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\categories\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>
       <SourceId>TechecomViet</SourceId>
@@ -1097,6 +1133,132 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1yata3vfmh</Fingerprint>
+      <Integrity>qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bgc5x0lfh5</Fingerprint>
+      <Integrity>S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sqh2rth3u2</Fingerprint>
+      <Integrity>rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vyg6qbenpb</Fingerprint>
+      <Integrity>Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xjngi64uan</Fingerprint>
+      <Integrity>wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1yata3vfmh</Fingerprint>
+      <Integrity>qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sliders\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechecomViet</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechecomViet</BasePath>
+      <RelativePath>sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>93yfcpnklu</Fingerprint>
+      <Integrity>q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sliders\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\TechecomViet.i12wfl0b3e.bundle.scp.css'))">
       <SourceType>Package</SourceType>

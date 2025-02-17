@@ -21,9 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\category\" />
-    <Folder Include="wwwroot\images\brand\" />
-    <Folder Include="wwwroot\images\product\" />
+    <Folder Include="wwwroot\brands\" />
+    <Folder Include="wwwroot\categories\" />
+    <Folder Include="wwwroot\sliders\" />
+    <Folder Include="wwwroot\products\" />
   </ItemGroup>
 
 </Project>

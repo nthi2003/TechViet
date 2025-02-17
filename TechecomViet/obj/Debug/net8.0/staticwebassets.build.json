@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WFdUuEohOutApSsJc0nhIQ2mvVP4T/dKi9R3TQOZYlM=",
+  "Hash": "e9qhJkYS6WNzusAXUDzifHCNMDvRjeYtYaq+XL/d4nA=",
   "Source": "TechecomViet",
   "BasePath": "_content/TechecomViet",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TechecomViet\\wwwroot",
       "Source": "TechecomViet",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
       "SourceId": "TechecomViet",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "TechecomViet#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "qooRliTpx5CN5PjF0NGP/A50C574c9fZT4AWAa6Zxok=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
       "SourceId": "TechecomViet",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "TechecomViet#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,55 @@
       "Integrity": "qooRliTpx5CN5PjF0NGP/A50C574c9fZT4AWAa6Zxok=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\brands\\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bgc5x0lfh5",
+      "Integrity": "S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\brands\\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\categories\\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5bh0nwktll",
+      "Integrity": "oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\categories\\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -101,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "images/admin-img#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -122,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\admin-img.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -143,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -185,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -227,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -269,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -290,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -311,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -332,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -353,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -374,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -395,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -416,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -437,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -458,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -479,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -500,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -521,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -542,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -584,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -605,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -626,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -647,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -668,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -689,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -710,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -731,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -752,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -773,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -794,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -836,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -878,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -920,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -962,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -983,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1004,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1025,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1046,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1067,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1088,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1109,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1130,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1151,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1172,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1277,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TechecomViet",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
       "BasePath": "_content/TechecomViet",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1338,12 +1380,323 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1yata3vfmh",
+      "Integrity": "qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bgc5x0lfh5",
+      "Integrity": "S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sqh2rth3u2",
+      "Integrity": "rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vyg6qbenpb",
+      "Integrity": "Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xjngi64uan",
+      "Integrity": "wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1yata3vfmh",
+      "Integrity": "qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products\\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\sliders\\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg",
+      "SourceId": "TechecomViet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\",
+      "BasePath": "_content/TechecomViet",
+      "RelativePath": "sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "93yfcpnklu",
+      "Integrity": "q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sliders\\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg"
     }
   ],
   "Endpoints": [
     {
+      "Route": "brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).bgc5x0lfh5.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\brands\\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:47:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bgc5x0lfh5"
+        },
+        {
+          "Name": "label",
+          "Value": "brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="
+        }
+      ]
+    },
+    {
+      "Route": "brands/f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\brands\\f9e6a4e7-4481-42e1-939f-1cc0b2bdcc96_Screenshot (321).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:47:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="
+        }
+      ]
+    },
+    {
+      "Route": "categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).5bh0nwktll.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\categories\\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "268289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bh0nwktll"
+        },
+        {
+          "Name": "label",
+          "Value": "categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ="
+        }
+      ]
+    },
+    {
+      "Route": "categories/b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\categories\\b9d92821-5418-479a-bc12-fd35a072bebd_Screenshot (328).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "268289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oc4F2+a4qrE2B6tr+MCtm7rSLa+K5Bm5KhB4xkuYOMQ="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1380,7 +1733,7 @@
     },
     {
       "Route": "css/site.feu6zjhqeo.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1425,7 +1778,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1470,7 +1823,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1507,7 +1860,7 @@
     },
     {
       "Route": "images/admin-img.png",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1544,7 +1897,7 @@
     },
     {
       "Route": "images/admin-img.rc584ipu0z.png",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\images\\admin-img.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1589,7 +1942,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1626,7 +1979,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1671,7 +2024,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1708,7 +2061,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1753,7 +2106,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1790,7 +2143,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1835,7 +2188,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1872,7 +2225,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1917,7 +2270,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1954,7 +2307,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1999,7 +2352,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2036,7 +2389,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2081,7 +2434,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2118,7 +2471,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2163,7 +2516,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2200,7 +2553,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2245,7 +2598,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2282,7 +2635,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2327,7 +2680,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2372,7 +2725,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2409,7 +2762,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2446,7 +2799,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2491,7 +2844,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2528,7 +2881,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2573,7 +2926,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2610,7 +2963,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2655,7 +3008,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2692,7 +3045,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2737,7 +3090,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2774,7 +3127,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2811,7 +3164,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2848,7 +3201,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2893,7 +3246,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +3291,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2983,7 +3336,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3028,7 +3381,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3065,7 +3418,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3110,7 +3463,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3147,7 +3500,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3184,7 +3537,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3221,7 +3574,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3266,7 +3619,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3311,7 +3664,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3356,7 +3709,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3393,7 +3746,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3791,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3475,7 +3828,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3512,7 +3865,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3549,7 +3902,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3594,7 +3947,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3639,7 +3992,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3676,7 +4029,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3721,7 +4074,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3758,7 +4111,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3803,7 +4156,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3840,7 +4193,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3877,7 +4230,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3922,7 +4275,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3967,7 +4320,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4004,7 +4357,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4049,7 +4402,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4086,7 +4439,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4123,7 +4476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4168,7 +4521,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4205,7 +4558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4250,7 +4603,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4295,7 +4648,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4332,7 +4685,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4377,7 +4730,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4414,7 +4767,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4459,7 +4812,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4504,7 +4857,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4541,7 +4894,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4939,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4623,7 +4976,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4660,7 +5013,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4705,7 +5058,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4742,7 +5095,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4787,7 +5140,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4824,7 +5177,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4861,7 +5214,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4906,7 +5259,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4951,7 +5304,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4988,7 +5341,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5033,7 +5386,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5070,7 +5423,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5107,7 +5460,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5144,7 +5497,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5189,7 +5542,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5234,7 +5587,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5279,7 +5632,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5316,7 +5669,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5361,7 +5714,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5406,7 +5759,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5443,7 +5796,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5488,7 +5841,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5533,7 +5886,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5570,7 +5923,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5607,7 +5960,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5652,7 +6005,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5689,7 +6042,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5734,7 +6087,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5771,7 +6124,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5816,7 +6169,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5853,7 +6206,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5890,7 +6243,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5935,7 +6288,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5972,7 +6325,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6017,7 +6370,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6054,7 +6407,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6099,7 +6452,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6144,7 +6497,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6181,7 +6534,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6226,7 +6579,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6263,7 +6616,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6308,7 +6661,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6344,8 +6697,582 @@
       ]
     },
     {
+      "Route": "products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).1yata3vfmh.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 19:04:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1yata3vfmh"
+        },
+        {
+          "Name": "label",
+          "Value": "products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="
+        }
+      ]
+    },
+    {
+      "Route": "products/17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\17f32fd2-234c-450d-81a2-da872b2a5620_Screenshot (331).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 19:04:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="
+        }
+      ]
+    },
+    {
+      "Route": "products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).bgc5x0lfh5.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bgc5x0lfh5"
+        },
+        {
+          "Name": "label",
+          "Value": "products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="
+        }
+      ]
+    },
+    {
+      "Route": "products/36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\36b308b6-e88c-423c-8860-125f29dbb037_Screenshot (321).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S584zuFGfmBgHOpKCexFHgPeRgB2AOJUJF9Wx0VhPeM="
+        }
+      ]
+    },
+    {
+      "Route": "products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2155328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:50:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw="
+        }
+      ]
+    },
+    {
+      "Route": "products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).sqh2rth3u2.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2155328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:50:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sqh2rth3u2"
+        },
+        {
+          "Name": "label",
+          "Value": "products/5ac3a036-0f29-492f-ab84-080725a27d27_Screenshot (322).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNoUub2TwYqIPIu+zkpO6feXDJEIXHftB6FDLLFnjUw="
+        }
+      ]
+    },
+    {
+      "Route": "products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1904162"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w="
+        }
+      ]
+    },
+    {
+      "Route": "products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).vyg6qbenpb.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1904162"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 15:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vyg6qbenpb"
+        },
+        {
+          "Name": "label",
+          "Value": "products/87b0839b-6842-462c-a422-d39c613717a2_Screenshot (323).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z6FzFe3WKzBAHwah3AvswrjQLftiGJffjZbz/GrrO3w="
+        }
+      ]
+    },
+    {
+      "Route": "products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:59:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI="
+        }
+      ]
+    },
+    {
+      "Route": "products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).xjngi64uan.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:59:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xjngi64uan"
+        },
+        {
+          "Name": "label",
+          "Value": "products/956a8e50-56cd-45dd-803c-de37fa4ffb53_Screenshot (332).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wzpJCmp5xxfj9Czm+xgjrNnGpaPBf+UF6WPymsVXWuI="
+        }
+      ]
+    },
+    {
+      "Route": "products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).1yata3vfmh.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:59:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1yata3vfmh"
+        },
+        {
+          "Name": "label",
+          "Value": "products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="
+        }
+      ]
+    },
+    {
+      "Route": "products/e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\products\\e450371e-42d6-47cc-b51c-9977a1561528_Screenshot (331).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Feb 2025 18:59:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qcL3LvVSvFtW9DKXmiatfj/Pmz1DB00UrUkJeLJGUlQ="
+        }
+      ]
+    },
+    {
+      "Route": "sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.93yfcpnklu.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\sliders\\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 16:33:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93yfcpnklu"
+        },
+        {
+          "Name": "label",
+          "Value": "sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk="
+        }
+      ]
+    },
+    {
+      "Route": "sliders/b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\sliders\\b3661112-49de-49a9-8d1b-1b542db5e226_f44596aca3e61da7ff3d0fc99b2b4870 (1) - Copy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 16:33:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6WCDDdrdXnv75gpyMoZc4VKoPhyfOwgV3X0bERXdPk="
+        }
+      ]
+    },
+    {
       "Route": "TechecomViet.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6382,7 +7309,7 @@
     },
     {
       "Route": "TechecomViet.i12wfl0b3e.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TechecomViet.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6427,7 +7354,7 @@
     },
     {
       "Route": "TechecomViet.i12wfl0b3e.styles.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6472,7 +7399,7 @@
     },
     {
       "Route": "TechecomViet.styles.css",
-      "AssetFile": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
+      "AssetFile": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TechecomViet.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {

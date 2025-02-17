@@ -1,266 +1,342 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\doashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\doashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\viewmodel\\userwithroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\userwithroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_partitalnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\shared\\_partitalnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\reponsitory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\reponsitory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128121704_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128120926_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128120831_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128110422_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\brandmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\brandmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128084856_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250128085011_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\models\\productquantitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\productquantitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250126140426_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\ship\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\ship\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\shipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\shipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250125153814_db06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\ship\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\ship\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250125153706_db05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_partitalnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\shared\\_partitalnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250125143257_db04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250125143039_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechecomViet\\Migrations\\20250125142625_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\coupon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\coupon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\reponsitory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\reponsitory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\doashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\doashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\slidermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\slidermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_partitalheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\shared\\_partitalheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\ship\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\ship\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\techecomviet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\shippingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\shippingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\productquantitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\productquantitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\brandmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\brandmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\couponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\couponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\coupon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\coupon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\coupon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\coupon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\coupon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\coupon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\controllers\\doashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\controllers\\doashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\viewmodel\\userwithroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\userwithroleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\validate\\customvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\validate\\customvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\product\\addquantity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\product\\addquantity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210064419_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210035618_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210033209_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250209181528_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\models\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\doashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\doashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\areas\\admin\\views\\shared\\_partitalheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\areas\\admin\\views\\shared\\_partitalheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\techecomviet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\techecomviet.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\techecomviet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\techecomviet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\techecomviet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\source\\repos\\techecomviet\\techecomviet\\migrations\\20250128132903_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\migrations\\20250128132903_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\migrations\\20250210064819_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\migrations\\20250210064819_db01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\migrations\\20250213163434_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\migrations\\20250213163434_db03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|c:\\users\\admin\\desktop\\techecomviet\\techecomviet\\migrations\\20250216160322_db04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E27128FD-04B1-4DB6-896E-1B3B21F20129}|TechecomViet\\TechecomViet.csproj|solutionrelative:techecomviet\\migrations\\20250216160322_db04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -269,8 +345,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 182,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 15,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -278,236 +354,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:37:56.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T13:45:53.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T14:34:32.924Z",
+              "WhenOpened": "2025-02-16T16:09:40.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T14:33:48.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:36:07.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T16:08:58.767Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DoashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwF8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T03:26:41.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CouponController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:36:29.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T15:18:22.845Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wI4AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T15:25:47.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "TechecomViet\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:21:06.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T01:18:16.579Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Program.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Program.cs",
-              "RelativeToolTip": "TechecomViet\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T14:30:25.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T14:34:15.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T13:20:21.725Z"
+              "WhenOpened": "2025-02-09T16:17:24.681Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UserWithRoleViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T13:51:08.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "_PartitalNavBar.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
               "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalNavBar.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwGEAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-08T03:44:03.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\UserModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T14:34:53.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Reponsitory\\DataContext.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Reponsitory\\DataContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Reponsitory\\DataContext.cs",
-              "RelativeToolTip": "TechecomViet\\Reponsitory\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T14:36:48.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-28T10:54:37.49Z"
+              "WhenOpened": "2025-01-12T14:34:32.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TechecomViet\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T15:21:06.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "TechecomViet\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-07T04:20:42.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "TechecomViet\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -515,71 +475,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 87,
+              "Title": "20250216160322_db04.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250216160322_db04.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250216160322_db04.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250216160322_db04.cs",
+              "RelativeToolTip": "TechecomViet\\Migrations\\20250216160322_db04.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T13:21:28.014Z"
+              "WhenOpened": "2025-02-16T16:03:22.893Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "TechecomViet\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T14:49:58.567Z"
+              "WhenOpened": "2025-01-08T03:35:07.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Reponsitory\\DataContext.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Reponsitory\\DataContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Reponsitory\\DataContext.cs",
+              "RelativeToolTip": "TechecomViet\\Reponsitory\\DataContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T14:36:48.015Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "_PartialHeader.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
-              "RelativeToolTip": "TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T05:43:35.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T04:09:26.961Z"
+              "Title": "DataContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\DataContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeToolTip": "TechecomViet\\Migrations\\DataContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T15:35:24.419Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "TechecomViet\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T08:49:07.813Z"
+              "WhenOpened": "2025-01-06T14:49:57.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 23,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Areas\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\_ViewImports.cshtml",
               "RelativeToolTip": "TechecomViet\\Areas\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -588,70 +548,418 @@
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "CouponController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\CouponController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T03:21:28.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CategoryModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\CategoryModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\CategoryModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\CategoryModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\CategoryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:04:03.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ProductModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ProductModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ProductModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T14:13:10.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T17:02:41.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductQuantityModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ProductQuantityModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ProductQuantityModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ProductQuantityModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ProductQuantityModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:50:42.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\UserModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T14:34:53.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BrandModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\BrandModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\BrandModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\BrandModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\BrandModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T07:27:58.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\appsettings.json",
+              "RelativeDocumentMoniker": "TechecomViet\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\appsettings.json",
+              "RelativeToolTip": "TechecomViet\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T14:46:04.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T14:37:56.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T07:41:26.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T10:54:51.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T10:54:37.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T15:20:13.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DoashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\DoashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T03:26:41.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserWithRoleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\UserWithRoleViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:51:08.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T06:50:53.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CustomValidation.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Validate\\CustomValidation.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Validate\\CustomValidation.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Validate\\CustomValidation.cs",
+              "RelativeToolTip": "TechecomViet\\Validate\\CustomValidation.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:11:55.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T03:17:51.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-23T08:49:07.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "20250210064819_db01.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250210064819_db01.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250210064819_db01.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250210064819_db01.cs",
+              "RelativeToolTip": "TechecomViet\\Migrations\\20250210064819_db01.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:48:19.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AddQuantity.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T06:32:52.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20250210064419_db01.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210064419_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210064419_db01.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210064419_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210064419_db01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:44:19.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20250210035618_db01.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210035618_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210035618_db01.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210035618_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210035618_db01.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:56:19.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20250210033209_db03.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210033209_db03.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210033209_db03.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210033209_db03.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250210033209_db03.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T03:32:09.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:22:16.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:21:28.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:20:21.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\_ViewStart.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T03:28:23.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TechecomViet\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T14:49:58.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "_PartialHeader.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeToolTip": "TechecomViet\\Views\\Shared\\_PartialHeader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T05:43:35.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T04:09:26.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
               "Title": "20250128121704_db01.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128121704_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128121704_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128121704_db01.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T12:17:04.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 66,
               "Title": "20250128120831_db01.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128120831_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128120831_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120831_db01.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T12:08:31.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 65,
               "Title": "20250128120926_db01.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128120926_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128120926_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128120926_db01.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T12:09:26.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\_ViewStart.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T03:28:23.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ProductModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ProductModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\ProductModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ProductModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\ProductModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowBUAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T08:50:05.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 67,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "TechecomViet\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Controllers\\HomeController.cs",
               "RelativeToolTip": "TechecomViet\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -659,130 +967,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\CategoryModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\CategoryModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\CategoryModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\CategoryModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T15:04:03.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 68,
               "Title": "20250128110422_db01.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128110422_db01.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128110422_db01.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128110422_db01.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T11:04:22.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-28T10:54:51.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "BrandModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\BrandModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\BrandModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\BrandModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\BrandModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:27:58.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 70,
               "Title": "20250128085011_db03.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128085011_db03.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128085011_db03.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128085011_db03.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T08:50:12.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T10:26:45.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 69,
               "Title": "20250128084856_db03.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128084856_db03.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128084856_db03.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128084856_db03.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T08:48:56.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T15:22:55.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ProductQuantityModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ProductQuantityModel.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Models\\ProductQuantityModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Models\\ProductQuantityModel.cs",
-              "RelativeToolTip": "TechecomViet\\Models\\ProductQuantityModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T08:50:42.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 71,
               "Title": "20250126140426_db02.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250126140426_db02.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250126140426_db02.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250126140426_db02.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T14:04:26.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 72,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "TechecomViet\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -790,11 +1026,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 73,
               "Title": "_PartialFooter.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
               "RelativeToolTip": "TechecomViet\\Views\\Shared\\_PartialFooter.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -802,102 +1038,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\appsettings.json",
-              "RelativeDocumentMoniker": "TechecomViet\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\appsettings.json",
-              "RelativeToolTip": "TechecomViet\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T14:46:04.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "TechecomViet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T15:22:16.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "TechecomViet\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T14:49:57.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 74,
               "Title": "20250125153814_db06.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250125153814_db06.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250125153814_db06.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153814_db06.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T15:38:14.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 75,
               "Title": "20250125153706_db05.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250125153706_db05.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250125153706_db05.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125153706_db05.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T15:37:06.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 78,
               "Title": "20250125142625_db02.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250125142625_db02.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250125142625_db02.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125142625_db02.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T14:26:25.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 77,
               "Title": "20250125143039_db03.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250125143039_db03.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250125143039_db03.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143039_db03.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T14:30:39.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 76,
               "Title": "20250125143257_db04.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250125143257_db04.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250125143257_db04.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250125143257_db04.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T14:32:57.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 79,
               "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeToolTip": "TechecomViet\\Views\\Shared\\_Layout.cshtml.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -905,11 +1105,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 80,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "TechecomViet\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\wwwroot\\css\\site.css",
               "RelativeToolTip": "TechecomViet\\wwwroot\\css\\site.css",
               "ViewState": "AgIAABABAAAAAAAAAAAiwBwBAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -917,23 +1117,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 81,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T14:34:22.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
               "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Doashboard\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -941,11 +1129,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 82,
               "Title": "_PartitalHeader.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
               "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
               "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_PartitalHeader.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -953,34 +1141,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T03:35:07.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 83,
               "Title": "TechecomViet",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
               "RelativeDocumentMoniker": "TechecomViet\\TechecomViet.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
               "RelativeToolTip": "TechecomViet\\TechecomViet.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-06T15:38:42.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 84,
               "Title": "TechecomViet.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
               "RelativeDocumentMoniker": "TechecomViet\\TechecomViet.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\TechecomViet.csproj",
               "RelativeToolTip": "TechecomViet\\TechecomViet.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -989,8 +1165,8 @@
           ]
         },
         {
-          "DockedWidth": 218,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 220,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -1018,76 +1194,245 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "20250128132903_db01.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128132903_db01.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250128132903_db01.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250128132903_db01.cs",
-              "RelativeToolTip": "TechecomViet\\Migrations\\20250128132903_db01.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T13:29:04.134Z"
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T13:55:10.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BrandController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\BrandController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-16T16:09:15.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T16:23:08.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T13:53:48.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAHIAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T15:25:24.465Z",
+              "WhenOpened": "2025-02-16T15:57:10.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-18T08:44:29.501Z"
+              "DocumentIndex": 13,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:45:53.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "ShipController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ShipController.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Controllers\\ShipController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Controllers\\ShipController.cs",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Controllers\\ShipController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T14:40:38.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T14:22:55.411Z"
+              "WhenOpened": "2025-02-13T16:22:07.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Ship\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Ship\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T16:22:53.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SliderModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\SliderModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\SliderModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\SliderModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\SliderModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T16:00:12.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CouponModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\CouponModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\CouponModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\CouponModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\CouponModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T04:11:00.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ShippingModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ShippingModel.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Models\\ShippingModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Models\\ShippingModel.cs",
+              "RelativeToolTip": "TechecomViet\\Models\\ShippingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T16:27:02.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "20250213163434_db03.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250213163434_db03.cs",
+              "RelativeDocumentMoniker": "TechecomViet\\Migrations\\20250213163434_db03.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Migrations\\20250213163434_db03.cs",
+              "RelativeToolTip": "TechecomViet\\Migrations\\20250213163434_db03.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T16:34:34.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Edit.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwDcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T02:51:11.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEYAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T04:20:51.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Coupon\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Coupon\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T08:12:51.581Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T14:23:04.216Z"
+              "WhenOpened": "2025-02-09T13:22:45.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T15:22:37.515Z"
+              "WhenOpened": "2025-02-09T13:27:40.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\TechecomViet\\TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeToolTip": "TechecomViet\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T16:29:45.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20250209181528_db02.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250209181528_db02.cs",
+              "RelativeDocumentMoniker": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250209181528_db02.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250209181528_db02.cs",
+              "RelativeToolTip": "..\\..\\source\\repos\\TechecomViet\\TechecomViet\\Migrations\\20250209181528_db02.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:15:28.344Z"
             }
           ]
         },

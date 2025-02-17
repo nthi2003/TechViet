@@ -1,0 +1,46 @@
+﻿@model ShippingModel
+@{
+    ViewData["Title"] = "Tạo giá giao hàng";
+}
+<div class="p-5" style="width:1720px">
+    <a asp-action="Index">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Trở về</span>
+    </a>
+    <h4>Tạo giá giao hàng</h4>
+    <div class="col-md-9">
+        <form asp-action="Create" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label>Tỉnh/Thành phố</label>
+            <select class="css_select" id="tinh" name="tinh" class="form-control" title="Chọn Tỉnh Thành">
+                <option value="0">Tỉnh Thành</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quận/huyện</label>
+            <select class="css_select" id="quan" name="quan" class="form-control" title="Chọn Quận Huyện">
+                <option value="0">Quận Huyện</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Phường/Xã</label>
+            <select class="css_select" id="phuong" name="phuong" class="form-control" title="Chọn Phường Xã">
+                <option value="0">Phường Xã</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Giá</label>
+            <input id="price-shipping" type="number" placeholder="vd: 20000" min="1" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-primary btn-add-shipping">Create</button>
+        </div>
+        </form>
+    </div>
+</div>

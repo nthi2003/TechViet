@@ -54,6 +54,7 @@ namespace TechecomViet.Areas.Admin.Controllers
                 TempData["error"] = "Mã giảm giá không tồn tại";
             }
             existingCoupon.Name = coupon.Name;
+            existingCoupon.Quantity = coupon.Quantity;
             existingCoupon.Description = coupon.Description;
             existingCoupon.DateStart = coupon.DateStart;
             existingCoupon.DateExpired = coupon.DateExpired;
@@ -61,6 +62,19 @@ namespace TechecomViet.Areas.Admin.Controllers
             _dataContext.Coupons.Update(existingCoupon);
             await _dataContext.SaveChangesAsync();
             TempData["success"] = "Cập nhật mã giảm giá.";
+            return RedirectToAction("Index");
+        }
+        [Route("Delete")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var coupon = await _dataContext.Coupons.FindAsync(id);
+            if(coupon == null)
+            {
+                TempData["error"] = "Mã giảm giá không tồn tại";
+            }
+            _dataContext.Coupons.Remove(coupon);
+            await _dataContext.SaveChangesAsync();
+            TempData["success"] = "Xóa mã giảm giá thành công";
             return RedirectToAction("Index");
         }
 

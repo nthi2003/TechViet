@@ -36,29 +36,20 @@ namespace TechecomViet.Controllers
                     var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
                     if (result.Succeeded)
                     {
-                        // Lấy danh sách roles của user
                         var roles = await _userManager.GetRolesAsync(user);
-
-                        // Tạo danh sách claims
                         var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, user.Id),
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(ClaimTypes.Email, user.Email)
                 };
-
-                        // Thêm roles vào claims
                         foreach (var role in roles)
                         {
                             claims.Add(new Claim(ClaimTypes.Role, role));
                         }
-
-                        // Tạo identity với claims mới
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                         var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-
-                        // Đăng nhập với claims mới
-                        await _signInManager.SignOutAsync(); // Đăng xuất trước để tránh trùng session
+                        await _signInManager.SignOutAsync(); 
                         await _signInManager.SignInAsync(user, isPersistent: false);
 
                         return RedirectToAction("Index", "Home");
@@ -106,10 +97,8 @@ namespace TechecomViet.Controllers
                 {
                     await _userManager.AddToRoleAsync(user, "User");
 
-                    // Lấy danh sách roles của user
                     var roles = await _userManager.GetRolesAsync(user);
 
-                    // Tạo danh sách claims
                     var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
@@ -117,17 +106,13 @@ namespace TechecomViet.Controllers
                 new Claim(ClaimTypes.Email, user.Email)
             };
 
-                    // Thêm roles vào claims
                     foreach (var role in roles)
                     {
                         claims.Add(new Claim(ClaimTypes.Role, role));
                     }
-
-                    // Tạo identity mới với claims
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
-                    // Đăng nhập với claims mới
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
                     return RedirectToAction("Index", "Home");
