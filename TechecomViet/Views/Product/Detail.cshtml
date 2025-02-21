@@ -1,0 +1,102 @@
+﻿@model ProductModel
+
+<div style="max-width: 1200px;  margin-left: auto; margin-right: auto;  padding-left: 1rem;">
+    <nav style=" display: flex;  margin-bottom: 2rem;   font-size: 0.875rem;  color: #4b5563;">
+        <a href="/" style="">
+            Trang chủ
+        </a>
+        <span style="margin-left: 8px; margin-right: 8px;">/</span>
+        <a href="/pc">
+            <span>@Model.Brand.Name </span>
+        </a>
+        <span style="margin-left: 8px; margin-right: 8px;">/</span>
+        <span>@Model.Name</span>
+    </nav>
+
+    <div style="display: grid; gap: 2rem; display:flex">
+        <div style="margin-top: 16px">
+            <div style=" border-radius: 8px;">
+                <img src="~/products/@Model.Images[0]"
+                     style="width:600px; height:600px; object-fit:cover " />
+            </div>
+            <div style="display: flex; gap: 8px; overflow: auto; padding-bottom: 8px;">
+                @foreach (var item in Model.Images)
+                {
+                    <button style=" flex-shrink: 0; overflow: hidden;">
+                        <img src="~/products/@item" *@
+                             style="object-fit:cover ; width:120px" />
+                    </button>
+                }
+            </div>
+        </div>
+        <div style="margin-top: 24px">
+            <div>
+                <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">
+                    @Model.Name
+                </h1>
+                <div style="display: flex; align-items: center; gap: 16px; font-size: 8px; color: #4b5563;">
+                </div>
+            </div>
+
+
+
+            <div>
+                <div style="display: flex; gap:8px;">
+                    <span style="font-size:30px; font-weight: 700; color:red">
+                        @(((decimal)Model.Price - ((decimal)Model.Price * (decimal)Model.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
+                    </span>
+
+                    <span style="font-size: 14px">
+                        <del>@Model.Price.ToString("#,##0 VNĐ")</del>
+                    </span>
+                    <span style="font-size:12px;">@Model.DiscountPercentage %</span>
+                </div>
+            </div>
+
+
+            <div style="">
+                <button style="padding: 8px 16px;">MUA NGAY</button>
+                <button style="padding: 8px 16px; border: 1px solid #d1d5db; border-radius: 4px;">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div style="font-size: 8px; max-height: 550px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;">
+                <h3>Mô tả sản phẩm</h3>
+                @Html.Raw(@Model.Description)
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div style="max-width: 1200px;  margin-left: auto; margin-right: auto;  padding-left: 1rem;">
+    <h3>Sản phẩm liên quan</h3>
+    <div style="display:flex">
+        @foreach (var relatedProduct in ViewBag.RelatedProducts as IEnumerable<ProductModel>)
+        {
+            <div class="product-card" style="gap:8px; margin-left:20px">
+                <div style="position: relative; display: inline-block;">
+                    <div>
+                        <img src="~/products/@relatedProduct.Images[0]" style="width: 220px; display: block;">
+                    </div>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <button class="add-btn-wishlist" data-product_id="@relatedProduct.Id"
+                                style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
+               border: none; border-radius: 50%; padding: 8px; cursor: pointer;
+               font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                            <i class="fa-solid fa-heart" style="color: red;"></i>
+                        </button>
+                    }
+                </div>
+                <div class="brand">@relatedProduct.Brand.Name</div>
+                <div class="product-name"><a asp-action="Detail" asp-controller="Product" asp-route-Id="@relatedProduct.Id">@relatedProduct.Name</a></div>
+                <div class="price">
+                    <div class="sale-price">
+                        @(((decimal)relatedProduct.Price - ((decimal)relatedProduct.Price * (decimal)relatedProduct.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
+                    </div>
+                    <div class="original-price">@relatedProduct.Price.ToString("#,##0 VNĐ")</div>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+        }
+    </div>
+</div>

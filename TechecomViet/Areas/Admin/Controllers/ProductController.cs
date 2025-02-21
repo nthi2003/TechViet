@@ -77,44 +77,40 @@ namespace TechecomViet.Areas.Admin.Controllers
         [Route("DeleteImage")]
         public async Task<IActionResult> DeleteImage(int productId, string imageName)
         {
+
             var product = await _dataContext.Products.FindAsync(productId);
-            if (product == null)
-            {
-                TempData["error"] = "Sản phẩm không tồn tại.";
-                return RedirectToAction("Edit", new { id = productId });
-            }
-            if (product.Images != null && product.Images.Count > 0)
-            {
-                if (string.IsNullOrEmpty(imageName))
-                {
-                    TempData["error"] = "Vui lòng chọn tên ảnh cần xóa.";
-                    return RedirectToAction("Edit", new { id = productId });
-                }
-                if (!product.Images.Contains(imageName))
-                {
-                    TempData["error"] = "Ảnh không tồn tại trong danh sách của sản phẩm.";
-                    return RedirectToAction("Edit", new { id = productId });
-                }
 
-                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
-                var filePath = Path.Combine(folderPath, imageName);
-
-                if (System.IO.File.Exists(filePath))
-                {
-                    System.IO.File.Delete(filePath);
-                }
-
-                product.Images.Remove(imageName);
-                _dataContext.Products.Update(product);
-                await _dataContext.SaveChangesAsync();
-
-                TempData["success"] = "Xóa ảnh thành công.";
-            }
-            else
+            if (product.Images == null || product.Images.Count == 0)
             {
                 TempData["error"] = "Không có ảnh để xóa.";
+                return RedirectToAction("Edit", new { id = productId });
             }
 
+            if (string.IsNullOrEmpty(imageName))
+            {
+                TempData["error"] = "Vui lòng chọn tên ảnh cần xóa.";
+                return RedirectToAction("Edit", new { id = productId });
+            }
+
+            if (!product.Images.Contains(imageName))
+            {
+                TempData["error"] = "Ảnh không tồn tại trong danh sách của sản phẩm.";
+                return RedirectToAction("Edit", new { id = productId });
+            }
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
+            var filePath = Path.Combine(folderPath, imageName);
+
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+
+            product.Images.Remove(imageName);
+            _dataContext.Products.Update(product);
+            await _dataContext.SaveChangesAsync();
+
+            TempData["success"] = "Xóa ảnh thành công.";
             return RedirectToAction("Edit", new { id = productId });
         }
         [Route("Edit")]
@@ -122,59 +118,67 @@ namespace TechecomViet.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int Id)
         {
             var product = await _dataContext.Products.FindAsync(Id);
-            ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
-            ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
+            if(product == null)
+            {
+                TempData["error"] = "Không tìm thấy sản phẩm";
+                return RedirectToAction("Index");
+            }
+            ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name");
+            ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name");
 
             return View(product);
         }
-       
+
         [Route("Edit")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ProductModel product)
-         {
-            var existed_product = _dataContext.Products.Find(product.Id);
+        {
+            var existed_product = await _dataContext.Products.FindAsync(product.Id);
+
+            if (existed_product == null)
+            {
+                TempData["error"] = "Sản phẩm không tồn tại";
+            }
+
             ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
             ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
-      
-
-                if (product.ImageUploads != null && product.ImageUploads.Count > 0)
+            if (product.ImageUploads != null && product.ImageUploads.Count > 0)
+            {
+                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
+                if (!Directory.Exists(folderPath))
                 {
-                    var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/products");
-                    if (!Directory.Exists(folderPath))
-                    {
-                        Directory.CreateDirectory(folderPath);
-                    }
-
-                    if (existed_product.Images == null)
-                    {
-                        existed_product.Images = new List<string>();
-                    }
-
-                    foreach (var image in product.ImageUploads)
-                    {
-                        string imageName = $"{Guid.NewGuid()}_{image.FileName}";
-                        string filePath = Path.Combine(folderPath, imageName);
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await image.CopyToAsync(stream);
-                        }
-                        existed_product.Images.Add(imageName);
-                    }
+                    Directory.CreateDirectory(folderPath);
                 }
 
-                existed_product.Name = product.Name;
-                existed_product.Description = product.Description;
-                existed_product.Price = product.Price;
-                existed_product.CategoryId = product.CategoryId;
-                existed_product.BrandId = product.BrandId;
+                if (existed_product.Images == null)
+                {
+                    existed_product.Images = new List<string>();
+                }
 
-
-                _dataContext.Update(existed_product);
-                await _dataContext.SaveChangesAsync();
-                TempData["success"] = "Cập nhật sản phẩm thành công";
-                return RedirectToAction("Index");
+                foreach (var image in product.ImageUploads)
+                {
+                    string imageName = $"{Guid.NewGuid()}_{image.FileName}";
+                    string filePath = Path.Combine(folderPath, imageName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(stream);
+                    }
+                    existed_product.Images.Add(imageName);
+                }
             }
+
+            existed_product.Name = product.Name;
+            existed_product.Description = product.Description;
+            existed_product.Price = product.Price;
+            existed_product.CategoryId = product.CategoryId;
+            existed_product.BrandId = product.BrandId;
+
+            _dataContext.Update(existed_product);
+            await _dataContext.SaveChangesAsync();
+            TempData["success"] = "Cập nhật sản phẩm thành công";
+            return RedirectToAction("Index");
+        }
+
 
 
         [Route("Delete")]
@@ -209,26 +213,28 @@ namespace TechecomViet.Areas.Admin.Controllers
         {
             var productQuantity = await _dataContext.ProductQuantities.Where(pq => pq.ProductId == Id).ToListAsync();
             ViewBag.ProductByQuantity = productQuantity; 
-            ViewBag.Id = Id;
+            ViewBag.ProductId = Id;
             return View();
         }
         [Route("AddQuantity")]
         [HttpPost]
-        public async Task<IActionResult> AddQuantity(ProductQuantityModel productQuantity)
+        public IActionResult AddQuantity(ProductQuantityModel productQuantityModel)
         {
-            var product = _dataContext.Products.Find(productQuantity.ProductId);
-            if(product == null)
+            var product = _dataContext.Products.Find(productQuantityModel.ProductId);
+            if (product == null)
             {
-                TempData["error"] = "Sản phẩm không tồn tại";
+                return NotFound();
             }
-            product.Quantity += productQuantity.Quantity;
-            productQuantity.Quantity = productQuantity.Quantity;
-            productQuantity.ProductId = productQuantity.ProductId;
-            productQuantity.DateCreated = DateTime.Now;
-            _dataContext.Add(productQuantity);
-            _dataContext.SaveChanges();
-            TempData["sussess"] = "Thêm số lượng sản phẩm thành công";
-            return RedirectToAction("AddQuantity", "Product", new { Id = productQuantity.Id });
+
+            product.Quantity += productQuantityModel.Quantity;
+            productQuantityModel.Quantity = productQuantityModel.Quantity;
+            productQuantityModel.ProductId = productQuantityModel.ProductId;
+            productQuantityModel.DateCreated = DateTime.Now;
+
+            _dataContext.Add(productQuantityModel);
+            _dataContext.SaveChangesAsync();
+            TempData["Success"] = "Thêm số lượng sản phẩm thành công";
+            return RedirectToAction("AddQuantity", "Product");
         }
     }
 }

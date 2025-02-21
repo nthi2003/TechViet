@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CategoryModel>
+
+<div class="category-bestsale">
+    <div class="category-title">
+        <span style="margin-left:12px; margin-top:10px">Danh mục nổi bật</span>
+    </div>
+    <div class="list-category">
+        @foreach (var item in Model)
+        {
+            <div>
+                <a href="#">
+                    <div class="img-div">
+                        <img style="width: 100%; height: 56px; object-fit: cover;" src="~/categories/@item.Image" alt="@item.Name" />
+                    </div>
+                    <div>
+                        <span>@item.Name</span>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>

@@ -17,6 +17,7 @@ namespace TechecomViet.Reponsitory
         public DbSet<CouponModel> Coupons { get; set; }
         public DbSet<ShippingModel> Shippings { get; set; }
         public DbSet<SliderModel> Sliders { get; set; }
+        public DbSet<WishlistModel> Wishlists { get; set; }
     }
     
 }

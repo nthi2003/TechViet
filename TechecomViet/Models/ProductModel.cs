@@ -7,7 +7,6 @@ namespace TechecomViet.Models
     public class ProductModel
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Đánh dấu trường này là identity
         public int Id { get; set; }
 
         [RequiredField]

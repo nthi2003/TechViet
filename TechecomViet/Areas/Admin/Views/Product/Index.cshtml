@@ -1,63 +1,67 @@
-﻿@model IEnumerable<ProductModel>
-@{
-    ViewData["Title"] = "Danh sách sản phẩm";
-}
-<div class="p-5" style="width:1720px">
+﻿<div class="p-5" style="width:1720px">
     <h3>Danh sách sản phẩm</h3>
     <a asp-action="Create" asp-controller="Product">Thêm sản phẩm</a>
-    <table class="table" id="mytable">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Tên sản phẩm</th>
-                <th scope="col">Số lượng</th>
-                <th scope="col">Đã bán </th>
-                <th scope="col">Chi tiết</th>
-                <th scope="col">Giá</th>
-                <th scope="col">Ảnh sản phẩm</th>
-                <th scope="col">Danh mục sản phẩm</th>
-                <th scope="col">Hãng</th>
-                <th scope="col">Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                @if (item != null)
+    <div style="max-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
+        <table class="table" style="width: 100%;">
+            <thead style="position: sticky; top: 0; background: white; z-index: 10;">
+                <tr>
+
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Đã bán</th>
+                    <th scope="col">Chi tiết</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Ảnh sản phẩm</th>
+                    <th scope="col">Danh mục sản phẩm</th>
+                    <th scope="col">Hãng</th>
+                    <th scope="col">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Name</td>
-                        <td><b>@item.Quantity</b><br /><a asp-action="AddQuantity" asp-controller="Product" asp-route-Id="@item.Id">Thêm số lượng</a></td>
-                        <td>@item.SoldOut</td>
-                        <td>@item.Description</td>
-                        <td>@item.Price</td>
-                        <td>
-                            @if (item.Images != null && item.Images.Count > 0)
-                            {
-                                <img src="~/products/@item.Images[0]" alt="@item.Name" width="120" />
-                            }
-                            else
-                            {
-                                <span>Không có ảnh</span>
-                            }
-                        </td>
-
-                        <td>@item.Category.Name</td>
-                        <td>@item.Brand.Name</td>
-                        <td>
-                            <a class="" asp-action="Edit" asp-controller="Product" asp-route-Id="@item.Id">
-                                <i class="fa-solid fa-pen" style="color:yellow"></i>
-                            </a>
-                            <a class="" asp-action="Delete" asp-controller="Product" asp-route-Id="@item.Id">
-                                <i class="fa-solid fa-trash" style="color:red"></i>
-                            </a>
-                        </td>
-                    </tr>
+                    @if (item != null)
+                    {
+                        <tr>
+                        
+                            <td>@item.Name</td>
+                            <td>
+                                <b>@item.Quantity</b><br />
+                                <a asp-action="AddQuantity" asp-controller="Product" asp-route-Id="@item.Id">Thêm số lượng</a>
+                            </td>
+                            <td>@item.SoldOut</td>
+                            <td>
+                                @{
+                                    string description = item.Description ?? "Không có mô tả";
+                                    string shortDescription = description.Length > 50 ? description.Substring(0, 50) + "..." : description;
+                                }
+                                @shortDescription
+                            </td>
+                            <td>@item.Price</td>
+                            <td>
+                                @if (item.Images != null && item.Images.Count > 0)
+                                {
+                                    <img src="~/products/@item.Images[0]" alt="@item.Name" width="120" />
+                                }
+                                else
+                                {
+                                    <span>Không có ảnh</span>
+                                }
+                            </td>
+                            <td>@(item.Category != null ? item.Category.Name : "Không có danh mục")</td>
+                            <td>@(item.Brand != null ? item.Brand.Name : "Không có hãng")</td>
+                            <td>
+                                <a asp-action="Edit" asp-controller="Product" asp-route-Id="@item.Id">
+                                    <i class="fa-solid fa-pen" style="color:yellow"></i>
+                                </a>
+                                <a asp-action="Delete" asp-controller="Product" asp-route-Id="@item.Id">
+                                    <i class="fa-solid fa-trash" style="color:red"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
                 }
-            }
-
-        </tbody>
-    </table>
-
+            </tbody>
+        </table>
+    </div>
 </div>

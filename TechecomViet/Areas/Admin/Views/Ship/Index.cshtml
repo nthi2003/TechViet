@@ -4,32 +4,32 @@
         <h2>Danh sách giá giao hàng</h2>
         <a asp-action="Create" asp-controller="Ship">Tạo mới</a>
     </div>
-<table class="table table-striped" id="myTable">
-     
-    <thead>
-        <tr>
-            <th>Thành phố/Tỉnh</th>
-            <th>Quận/Huyện</th>
-            <th>Phường/Xã</th>
-            <th>Giá</th>
-            <th>Xử lí</th>
-        </tr>
-    </thead>
-    @* <tbody> *@
-    @*     @foreach (var shipping in Model) *@
-    @*     { *@
-    @*         <tr> *@
-    @*             <td>@shipping.City</td> *@
-    @*             <td>@shipping.District</td> *@
-    @*             <td>@shipping.Ward</td> *@
-    @*             <td>@shipping.Price.ToString("#,##0 VNĐ")</td> *@
-    @*             <td> *@
+    <table class="table table-striped" id="myTable">
 
-    @*                 <a href="@Url.Action("Delete", "Shipping", new { id = shipping.Id })" class="btn btn-danger">Delete</a> *@
-    @*             </td> *@
-    @*         </tr> *@
-    @*     } *@
-    @* </tbody> *@
-</table>
+        <thead>
+            <tr>
+                <th>Thành phố/Tỉnh</th>
+                <th>Quận/Huyện</th>
+                <th>Phường/Xã</th>
+                <th>Giá</th>
+                <th>Xử lí</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var shipping in Model)
+            {
+                <tr>
+                    <td>@shipping.City</td>
+                    <td>@shipping.District</td>
+                    <td>@shipping.Ward</td>
+                    <td>@shipping.Price.ToString("#,##0 VNĐ")</td>
+                    <td>
+
+                        <a href="@Url.Action("Delete", "Shipping", new { id = shipping.Id })" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
 </div>

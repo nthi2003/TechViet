@@ -5,7 +5,6 @@
     var key = 1;
 
 }
-
 <div class="p-5" style="width:1720px">
     <a asp-action="Index">
         <i class="fa-solid fa-arrow-left"></i>
@@ -13,7 +12,7 @@
     </a>
     <h4>Tạo số lượng</h4>
     <form asp-action="AddQuantity" asp-controller="Product" enctype="multipart/form-data">
-        <input type="hidden" name="ProductId" value="@ViewBag.Id" />
+        <input type="hidden" name="ProductId" value="@ViewBag.ProductId" />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
             <label>Số lượng</label>

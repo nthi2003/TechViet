@@ -1,14 +1,15 @@
-﻿<div class="header-top">
+﻿
+<div class="header-top">
     <div class="header-list">
         <div class="header-items">
             <a href="#">
                 <div class="d-flex list-content">
                     <i class="fa-solid fa-tag header-title"></i>
                     <div class="header-title">Khuyến mại</div>
-               </div>
+                </div>
             </a>
             <a href="#">
-                <div class="d-flex list-content" >
+                <div class="d-flex list-content">
                     <i class="fa-solid fa-city header-title"></i>
                     <div class="header-title">Hệ thống Showroom</div>
                 </div>
@@ -36,13 +37,13 @@
 </div>
 <div class="nav-search">
     <div>
-        <div class="nav-list d-flex" >
-            <div >
+        <div class="nav-list d-flex">
+            <div>
                 <div class="d-flex">
-                    <a href="/" >
+                    <a href="/">
                         <i class="fa-solid fa-house" style="margin-top:47px ; margin-right:10px"></i>
                     </a>
-                    <div style="margin-top:42px ; font-size:18px" >TECHVIET</div>
+                    <div style="margin-top:42px ; font-size:18px">TECHVIET</div>
                 </div>
             </div>
             <div class="input-group" style="">
@@ -64,11 +65,11 @@
 
                         <div style="width: 150px;"> Xin chào @User.Identity.Name</div>
 
-                       
+
                         <div style="margin-top: 5px ; width:150px">
                             <a asp-action="Logout" asp-controller="Account">Đăng xuất</a>
+                        </div>
                     </div>
-                   </div>
                 }
                 else
                 {
@@ -86,18 +87,43 @@
                     </div>
                 }
             </div>
-            <div style="margin-left:60px">
+            <div style="margin-left:90px">
                 <a href="#" class="d-flex" style="text-decoration:none">
-                    <div style="margin-top: 45px;padding-left: 10px;">
-                        <i class="fa-solid fa-cart-shopping" style="line-height: 20px;font-size: 30px;" ></i>
+                    <div style="position: relative; display: inline-block;  margin-top:45px">
+                        <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+                        <div style="
+                           position: absolute;
+                           top: -5px;
+                           right: -5px;
+                           border-radius: 50%;
+                           background: red;
+                           width: 20px;
+                           height: 20px;
+                           text-align: center;
+                           color: white;
+                           font-size: 12px;
+                           line-height: 20px;
+                           font-weight: bold;
+    ">
+                            0
+                        </div>
                     </div>
-                    <div style="margin-top:30px; width:150px;margin-left: 5px;">
-                        <div>Giỏ hàng của bạn</div>
-                        <div>(1) sản phẩm</div>
+
+                    <div style="margin-top:45px; width:100px;margin-left: 5px;">
+                        <span>Giỏ hàng</span>
                     </div>
                 </a>
             </div>
-           
+             <div style="margin-top:40px"> 
+                 @if (User.Identity?.IsAuthenticated ?? false){
+                    <a asp-action="Wishlist" asp-controller="Home">
+                        <div style="width:100px; margin-top:7px">
+                            <i class="fa-solid fa-heart" style="color: red;"></i>
+                          <span>Yêu thích</span>
+                      </div>
+                    </a> 
+               } 
+            </div>
         </div>
     </div>
 </div>

@@ -52,13 +52,13 @@
             <span asp-validation-for="ImageUploads" class="text-danger"></span>
                <div style="display: flex">
                 <div id="existingImage" style="display:flex">
-                    @if (Model.Images != null && Model.Images.Any())
+                    @if (Model != null && Model.Images != null && Model.Images.Any())
                     {
                         foreach (var image in Model.Images)
                         {
                             <div style="position: relative; width: 200px; height: 152px; margin-right: 40px;">
                                 <img src="@Url.Content("~/products/" + image)" style="width: 200px; height: 112px; object-fit: cover; margin:20px" />
-                                <a asp-action="DeleteImage" asp-route-brandId="@Model.Id" style="position: absolute; top: 27px; right: -16px; background-color: rgba(255, 255, 255, 0.7); border-radius: 50%; padding: 5px; cursor: pointer; z-index: 10;">
+                                <a asp-action="DeleteImage" asp-route-productId="@Model.Id" asp-route-imageName="@image" style="position: absolute; top: 27px; right: -16px; background-color: rgba(255, 255, 255, 0.7); border-radius: 50%; padding: 5px; cursor: pointer; z-index: 10;">
                                     <i class="fa-solid fa-trash" style="color: #ff4d4f; font-size: 16px;"></i>
                                 </a>
                             </div>
@@ -106,5 +106,9 @@
             }
         };
     </script>
-   
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace("Description");
+    </script>
 }
