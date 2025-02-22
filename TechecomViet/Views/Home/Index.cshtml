@@ -35,11 +35,18 @@
             <div class="product-name"><a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id">@item.Name</a></div>
             <div class="price">
                 <div class="sale-price">
-                    @(((decimal)item.Price - ((decimal)item.Price * (decimal)item.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
+                    <div class="sale-price">
+                        @(((decimal)item.Price - ((decimal)item.Price * (decimal)(item.DiscountPercentage ?? 0) / 100)).ToString("#,##0 VNĐ"))
+                    </div>
                 </div>
                 <div class="">@item.Price.ToString("#,##0 VNĐ")</div>
             </div>
-            <button class="add-to-cart">Thêm vào giỏ</button>
+             @if(item.Quantity != 0){
+                <button class="add-to-cart" data-product-id="@item.Id">Thêm vào giỏ</button>
+             }
+             else {
+                 <div>Hết hàng</div>
+             }
         </div>
     }
 </div>
@@ -70,4 +77,39 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $(".add-to-cart").click(function () {
+                var productId = $(this).data("product-id"); // Lấy productId từ button
+                var quantity = 1; // Mặc định số lượng là 1
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("AddToCart", "Cart")",
+                    data: { productId: productId, quantity: quantity },
+                    success: function (response) {
+                        Swal.fire({
+                            title: "Thành công!",
+                            text: response.message,
+                            icon: "success",
+                            confirmButtonText: "OK"
+                        });
+                    },
+                    error: function (xhr) {
+                        var errorMessage = "Có lỗi xảy ra!";
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMessage = xhr.responseJSON.message;
+                        }
+                        Swal.fire({
+                            title: "Lỗi!",
+                            text: errorMessage,
+                            icon: "error",
+                            confirmButtonText: "OK"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
 }

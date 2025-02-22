@@ -7,6 +7,7 @@ namespace TechecomViet.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        public int DiscountPercentage { get; set; }
         public string Description { get; set; }
         public DateTime DateStart { get; set; }
         public DateTime DateExpired { get; set; }

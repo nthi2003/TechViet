@@ -18,6 +18,8 @@ namespace TechecomViet.Reponsitory
         public DbSet<ShippingModel> Shippings { get; set; }
         public DbSet<SliderModel> Sliders { get; set; }
         public DbSet<WishlistModel> Wishlists { get; set; }
+        public DbSet<CartItemModel> CartItem { get; set; }
+        public DbSet<CartModel> Carts { get; set; }
     }
     
 }

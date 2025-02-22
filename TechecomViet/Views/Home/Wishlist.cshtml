@@ -1,45 +1,46 @@
 ﻿@{
     ViewData["title"] = "Danh sách yêu thích";
 }
-<div>
-    <nav style=" display: flex;  margin-bottom: 2rem;   font-size: 0.875rem;  color: #4b5563;">
-        <a href="/" style="">
-            Trang chủ
-        </a>
-        <span style="margin-left: 8px; margin-right: 8px;">/</span>
-        <a href="">
-            <span>Yêu thích</span>
-        </a>
+<div style="min-height:700px">
+    <nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 17px 30px; padding: 20px;">
+        <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="font-weight: bold; color: #333;">Yêu thích</span>
     </nav>
-    <h3>Danh sách yêu thích</h3>
 
+    <div style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #333;">Danh sách yêu thích</h3>
 
-    <table class="table" id="myTable">
-        <thead>
-            <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giá tiền</th>
-                <th>Hình ảnh</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var wishlist_product in Model)
-            {
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
                 <tr>
-                    <td>@wishlist_product.Product.Name</td>
-                    <td>@wishlist_product.Product.Price.ToString("#,##0 VNĐ")</td>
-                    <td> <img src="~/products/@wishlist_product.Product.Images[0]" width="120px" height="150px" /> </td>
-                    <td>
-                        <a class="btn btn-danger btn-sm confirmDeletion"
-                           asp-action="DeleteWishlist" asp-controller="Home"
-                           asp-route-Id="@wishlist_product.Wishlists?.Id">
-                            Xóa
-                        </a>
-                    </td>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên sản phẩm</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hình ảnh</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Giá tiền</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hành động</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody style="color: #555; font-size: 14px;">
+                @foreach (var wishlist_product in Model)
+                {
+                    <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                        <td style="padding: 12px;">@wishlist_product.Product.Name</td>
+                        <td style="padding: 12px;">
+                            <img src="~/products/@wishlist_product.Product.Images[0]"
+                                 style="width: 70px; height: 70px; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);" />
+                        </td>
+                        <td style="padding: 12px; font-weight: bold; color: #d9534f;">@wishlist_product.Product.Price.ToString("#,##0 VNĐ")</td>
+                        <td style="padding: 12px;">
+                            <a asp-action="DeleteWishlist" asp-controller="Home"
+                               asp-route-Id="@wishlist_product.Wishlists?.Id"
+                               style="color: red; font-weight: bold; cursor: pointer">
+                                X
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
 </div>
