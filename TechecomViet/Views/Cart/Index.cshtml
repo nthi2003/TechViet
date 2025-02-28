@@ -1,4 +1,6 @@
-﻿@{
+﻿@using TechecomViet.Models.ViewModel
+@model CartItemViewModel
+@{
     ViewData["title"] = "Giỏ hàng";
 }
 <div style="min-height:500px">
@@ -8,48 +10,346 @@
         <span style="font-weight: bold; color: #333;">Giỏ hàng</span>
     </nav>
     <div style="display:flex">
-        <div style="width: 800px; margin:34px; ">
+        <div style="width: 900px; margin:34px; ">
             <div style="display: flex ; justify-content: space-between;">
                 <h2>Giỏ hàng</h2>
-                <a href="" style="color:#007bff ; margin:10px; ">Xóa tất cả</a>
+                <a asp-action="ClearCart" asp-controller="Cart" style="color:#007bff ; margin:10px; ">Xóa tất cả</a>
             </div>
             <div>
                 <div style="background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius:8px;">
-                    <div style="display:flex">
-                        <img style="width:80px; height:80px;" src="https://lh3.googleusercontent.com/3Li1VCWnn41ijEfIFO4BFH6sZgkb6NF0msb9299cRg4BGv3HirYFTvi6ZeiTGVve9YqDmU_fRJWEbkrgu19YYMzKt1igQuk=rw" alt="Alternate Text" />
-                        <span style="margin:20px; width:200px">e1321312312easdsadasda</span>
-                        <span style="font-weight: bold ; margin:20px;">47.190.000đ</span>
-                        <div style="margin:10px">
-                            <a class="btn btn-default btn-sm" style="margin:5px ; border: 1px solid #000"> + </a>
-                            <input class="btn btn-default btn-sm" style="border: 1px solid #000" type="text" autocomplete="off" size="2">
-                            <a class="btn btn-default btn-sm" style="margin:5px ; border: 1px solid #000"> - </a>
-                        </div>
-                        <span style="font-weight: bold ; margin:20px;">47.190.000đ</span>
-                        <a style="font-weight: bold ; margin:20px;">x</a>
-                    </div>
+                    @if ((Model.CartItems ?? new List<CartItemModel>()).Any())
+                    {
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <div style="display:flex ; width: 1200px ; padding: 10px;">
+                                <img style="width:80px; height:80px;" src="~/products/@item.Product.Images[0]" alt="Alternate Text" />
+                                <span style="margin:20px; width:250px">@item.Product.Name</span>
+                                <span style="font-weight: bold ; margin:20px;">@item.Price.ToString("#,##0 VNĐ") </span>
+                                <div style="margin:10px">
+                                    <a asp-action="Decrease" asp-controller="Cart" asp-route-id="@item.Product.Id" class="btn btn-default btn-sm" style="margin:5px ; border: 1px solid #000"> - </a>
+
+                                    <input class="btn btn-default btn-sm"
+                                           style="border: 1px solid #000; width: 40px; text-align: center;"
+                                           type="text" value="@item.Quantity" />
+
+
+                                    <a asp-action="Increase" asp-controller="Cart" asp-route-id="@item.Product.Id" class="btn btn-default btn-sm" style="margin:5px ; border: 1px solid #000">  + </a>
+                                </div>
+
+                                <span class="total-price" style="font-weight: bold ; margin:20px;">
+                                    @((item.Price * item.Quantity).ToString("#,##0 VNĐ"))
+                                </span>
+                                <a class="delete-btn" data-id="@item.Id" style="font-weight: bold; margin:20px;">x</a>
+
+                            </div>
+                            <hr />
+                        }
+                    }
+                    else
+                    {
+                        <p>Giỏ hàng của bạn đang trống.</p>
+                    }
                 </div>
             </div>
-
         </div>
-        <div style="">
-            <div style="width: 400px; margin-top:82px; padding: 10px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius:8px;">
-                <span>Khuyến mãi</span>
+        <div>
+            <div style="width: 400px; margin-top:82px; padding: 10px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <span style="font-weight: 700">Khuyến mãi</span>
+                <div>
+                    <span style="color: dimgray">Nhập mã khuyến mãi để có thể giảm giá trị đơn hàng lên đến 90%</span>
+                </div>
+
+                <form method="post" action="/AddCoupon" style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                    <input name="coupon_value" style="border: 2px solid #007bff; border-radius: 5px; padding: 8px 12px; width: 200px; font-size: 14px; color: #333; outline: none; transition: border-color 0.3s ease;"
+                           type="text"
+                           placeholder="Nhập mã giảm giá" required />
+                    <button type="submit" style="border: none; border-radius: 5px; background-color: #1435c3; color: white; padding: 8px 16px; font-size: 14px; cursor: pointer; transition: background-color 0.3s ease;">
+                        Áp dụng
+                    </button>
+                </form>
+
+                @if (Context.Request.Cookies["CouponTitle"] != null)
+                {
+                    <div style="margin-top: 10px;">
+                        <span style="color: green; font-weight: bold;">Mã giảm giá đã áp dụng: @Context.Request.Cookies["CouponTitle"]</span>
+                    </div>
+                }
+            </div>
+            <div style="width: 400px; margin-top:20px; padding: 10px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius:8px;">
+                <span style="font-weight: 700">Địa chỉ giao hàng</span>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label style="display: block; font-weight: bold;">Tỉnh/Thành phố</label>
+                    <select id="tinh" name="tinh" title="Chọn Tỉnh Thành"
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="0">Tỉnh/Thành</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label style="display: block; font-weight: bold;">Quận/huyện</label>
+                    <select id="quan" name="quan" title="Chọn Quận/Huyện"
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="0">Quận/Huyện</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label style="display: block; font-weight: bold;">Phường/Xã</label>
+                    <select id="phuong" name="phuong" title="Chọn Phường/Xã"
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="0">Phường/Xã</option>
+                    </select>
+                </div>
+                <button type="button" style="border: none; border-radius: 5px; background-color: #1435c3; color: white; padding: 8px 16px; font-size: 14px; cursor: pointer; margin-left: 115px;" class="btn-add-shipping">Tính phí vận chuyển</button>
             </div>
             <div style="width: 400px; margin-top:10px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius:8px;">
-                <span>Thanh toán</span>
+                <span style="font-weight: 700">Thanh toán</span>
                 <div style="display:flex ;justify-content: space-between;">
                     <div><span>Tổng tạm tính</span></div>
-                    <div><span>3123123123123</span></div>
+                    <div>
+                        <span>@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
+
+                    </div>
+                </div>
+                <div style="margin-left: 244px;">
+                    <div>
+                        @{
+                            if (Context.Request.Cookies["CouponTitle"] != null)
+                            {
+                                var couponTitle = Context.Request.Cookies["CouponTitle"];
+                                var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
+                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage))
+                                {
+                                    // Tính toán giảm giá
+                                    var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
+                                    var discountAmount = totalPrice * (discountPercentage / 100);
+                                    <span style="color:red"> - @discountAmount.ToString("#,##0 VNĐ")</span>
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+                <div style="margin-left: 259px;">
+                    <div>
+                        @{
+                            if (Context.Request.Cookies["ShippingPrice"] != null)
+                            {
+                                if (int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
+                                {
+                                    <span style="color:green"> + @shippingPrice.ToString("#,##0 VNĐ")</span>
+                                }
+                            }
+                        }
+                    </div>
+
                 </div>
                 <div style="display:flex ;justify-content: space-between;">
                     <span>Thành tiền</span>
                     <div>
-                        <span style="color: #007bff">e12312312312</span>
+                        @{
+                            if (Context.Request.Cookies["CouponTitle"] != null && Context.Request.Cookies["ShippingPrice"] != null)
+                            {
+                                var couponTitle = Context.Request.Cookies["CouponTitle"];
 
+                                // Tách chuỗi để lấy DiscountPercentage
+                                var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
+                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage) && int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
+                                {
+                                    // Tính toán giảm giá
+                                    var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
+                                    var discountAmount = totalPrice * (discountPercentage / 100);
+                                    var finalPrice = totalPrice - discountAmount;
+
+                                    <span style="color:#007bff">@((finalPrice + shippingPrice).ToString("#,##0 VNĐ"))</span>
+                                }
+                                else {
+                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
+                                }
+                            }
+                            else if (Context.Request.Cookies["CouponTitle"] != null){
+                                var couponTitle = Context.Request.Cookies["CouponTitle"];
+                                var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
+                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage) )
+                                
+                                {
+                                    var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
+                                    var discountAmount = totalPrice * (discountPercentage / 100);
+                                    var priceCoupon = totalPrice - discountAmount;
+
+                                    <span style="color:#007bff">@((priceCoupon).ToString("#,##0 VNĐ"))</span>
+                                }
+                                else {
+                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
+                                }
+                            }
+                   
+                            else
+                            {
+
+                                if (Context.Request.Cookies["ShippingPrice"] != null)
+                                {
+                                    if (int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
+                                    {
+                                        <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity + shippingPrice).ToString("#,##0 VNĐ"))</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
+                                }
+
+                            }
+                        }
                     </div>
                 </div>
                 <span style="margin-left: 230px">(Đã bao gồm VAT)</span>
+                <form asp-controller="Checkout" asp-action="Checkout" method="post">
+                    <button type="submit" style="font-weight: 600; color:white; background-color:#1435c3; border:none; border-radius:8px; height: 50px; width:100%;">Thanh toán bằng tiền mặt</button>
+                </form>
+
+                <div style="text-align: center ; margin-top: 20px;">Hoặc</div>
+                <div style="color:white; background-color:red; border-radius:8px; height: 50px; text-align:center; display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                    <span>Thanh toán bằng VNPAY</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    @section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            document.querySelectorAll(".delete-btn").forEach(btn => {
+                btn.addEventListener("click", async () => {
+                    if (!(await Swal.fire({
+                        title: "Bạn có chắc chắn?",
+                        text: "Sản phẩm này sẽ bị xóa!",
+                        icon: "warning",
+                        showCancelButton: true,
+                        confirmButtonText: "Xóa",
+                        cancelButtonText: "Hủy"
+                    })).isConfirmed) return;
+
+                    try {
+                        let res = await fetch(`/DeleteCartItem?Id=${btn.dataset.id}`, { method: "POST" });
+                        if (!res.ok) throw new Error("Xóa thất bại!");
+                        await Swal.fire("Thành công!", "Xóa sản phẩm thành công!", "success");
+                        location.reload();
+                    } catch (err) {
+                        Swal.fire("Lỗi!", err.message, "error");
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".btn-apply-coupon").click(function (e) {
+                    e.preventDefault();
+
+                    var coupon_value = $(".coupon-value").val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/AddCoupon",
+                        data: { coupon_value: coupon_value },
+                        success: function (result) {
+                            console.log(result); // Debug API response
+
+                            if (result.success) {
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Thành công",
+                                    text: result.message,
+                                }).then(() => {
+                                    window.location.href = result.redirectUrl || "/Cart"; // Chuyển hướng đúng
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Lỗi",
+                                    text: result.message,
+                                });
+                            }
+                        },
+                        error: function (xhr) {
+                            console.log("Lỗi AJAX:", xhr);
+                            Swal.fire({
+                                icon: "error",
+                                title: "Lỗi",
+                                text: "Có lỗi xảy ra khi áp dụng mã giảm giá!",
+                            });
+                        }
+                    });
+                });
+            });
+
+        </script>
+        <script>
+                $(".btn-add-shipping").click(function () {
+                var tinh = $("#tinh").find('option:selected').text();
+                var quan = $("#quan").find('option:selected').text();
+                var phuong = $("#phuong").find('option:selected').text();
+
+                if (tinh == 'Tỉnh/Thành' || quan == 'Quận/Huyện' || phuong == 'Phường/Xã') {
+                    Swal.fire("Lỗi", "Vui lòng chọn đầy đủ thông tin địa chỉ.", "error");
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "/AddShipping",
+                    data: { tinh: tinh, quan: quan, phuong: phuong },
+                    success: function (result) {
+                        if (result.success) {
+                            Swal.fire("Thành công", "Phí vận chuyển đã được áp dụng.", "success").then(() => {
+                                window.location.href = result.redirectUrl;
+                            });
+                        } else {
+                            Swal.fire("Lỗi", result.message || "Có lỗi xảy ra khi tính phí vận chuyển.", "error");
+                        }
+                    },
+                    error: function () {
+                        Swal.fire("Lỗi", "Có lỗi xảy ra khi gửi yêu cầu.", "error");
+                    }
+                });
+            });
+            $(document).ready(function () {
+                //Lấy tỉnh thành
+                $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                    if (data_tinh.error == 0) {
+                        $.each(data_tinh.data, function (key_tinh, val_tinh) {
+                            $("#tinh").append('<option value="' + val_tinh.id + '">' + val_tinh.full_name + '</option>');
+                        });
+                        $("#tinh").change(function (e) {
+                            var idtinh = $(this).val();
+                            //Lấy quận huyện
+                            $.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+                                if (data_quan.error == 0) {
+                                    $("#quan").html('<option value="0">Quận Huyện</option>');
+                                    $("#phuong").html('<option value="0">Phường Xã</option>');
+                                    $.each(data_quan.data, function (key_quan, val_quan) {
+                                        $("#quan").append('<option value="' + val_quan.id + '">' + val_quan.full_name + '</option>');
+                                    });
+                                    //Lấy phường xã
+                                    $("#quan").change(function (e) {
+                                        var idquan = $(this).val();
+                                        $.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+                                            if (data_phuong.error == 0) {
+                                                $("#phuong").html('<option value="0">Phường Xã</option>');
+                                                $.each(data_phuong.data, function (key_phuong, val_phuong) {
+                                                    $("#phuong").append('<option value="' + val_phuong.id + '">' + val_phuong.full_name + '</option>');
+                                                });
+                                            }
+                                        });
+                                    });
+
+                                }
+                            }); //end $.getJson
+
+                        });
+
+                    }
+                });
+            });
+        </script>
+
+
+    }

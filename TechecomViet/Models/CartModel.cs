@@ -6,9 +6,8 @@ namespace TechecomViet.Models
     {
         [Key]
         public int Id { get; set; } 
-        public string UserId { get; set; } 
-
+        public string UserId { get; set; }
         public List<CartItemModel> Items { get; set; } = new List<CartItemModel>();
-        public decimal TotalAmount => Items.Sum(i => i.TotalPrice);
+        public int TotalAmount => Items.Sum(i => i.TotalPrice);
     }
 }

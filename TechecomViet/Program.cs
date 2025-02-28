@@ -18,6 +18,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("TechViet"));
 });
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 // Cấu hình Identity
 builder.Services.AddIdentity<UserModel, IdentityRole>()
@@ -26,6 +27,11 @@ builder.Services.AddIdentity<UserModel, IdentityRole>()
 
 // Cấu hình các dịch vụ MVC
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 

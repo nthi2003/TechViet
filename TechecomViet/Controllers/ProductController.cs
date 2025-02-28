@@ -4,15 +4,16 @@ using TechecomViet.Reponsitory;
 
 namespace TechecomViet.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         private readonly DataContext _dataContext;
-        public ProductController(DataContext context)
+        public ProductController(DataContext context) : base(context)
         {
             _dataContext = context;
         }
         public async Task<IActionResult> Detail(int id)
         {
+            await SetCartItemCountAsync();
             var product = await _dataContext.Products
                                 .Include(p => p.Brand)
                                 .FirstOrDefaultAsync(p => p.Id == id);

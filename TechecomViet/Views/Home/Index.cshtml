@@ -58,21 +58,31 @@
             $('.add-btn-wishlist').click(function () {
                 var Id = $(this).data("product_id");
 
-                //alert(product_id);
 
                 $.ajax({
                     type: "POST",
                     url: "@Url.Action("AddWishlist", "Home")",
-                    data: { Id: Id }, // Send data to the server
+                    data: { Id: Id },
 
-                    success: function (result) {
-                        // Handle successful update
-                        if (result) {
+                    success: function (response) {
+                        if (response) {
 
-                            Swal.fire("Thêm yêu thích sản phẩm thành công.");
+                            Swal.fire({
+                            title: "Thành công!",
+                            text: response.message,
+                            icon: "success",
+                            confirmButtonText: "OK"
+                            });
                         }
+                    },
+                     error: function () {
+                        Swal.fire({
+                            title: "Lỗi!",
+                            text: errorMessage,
+                            icon: "error",
+                            confirmButtonText: "OK"
+                        });
                     }
-
                 });
             });
         });
@@ -80,8 +90,8 @@
     <script>
         $(document).ready(function () {
             $(".add-to-cart").click(function () {
-                var productId = $(this).data("product-id"); // Lấy productId từ button
-                var quantity = 1; // Mặc định số lượng là 1
+                var productId = $(this).data("product-id"); 
+                var quantity = 1; 
 
                 $.ajax({
                     type: "POST",
@@ -95,11 +105,7 @@
                             confirmButtonText: "OK"
                         });
                     },
-                    error: function (xhr) {
-                        var errorMessage = "Có lỗi xảy ra!";
-                        if (xhr.responseJSON && xhr.responseJSON.message) {
-                            errorMessage = xhr.responseJSON.message;
-                        }
+                    error: function () {
                         Swal.fire({
                             title: "Lỗi!",
                             text: errorMessage,

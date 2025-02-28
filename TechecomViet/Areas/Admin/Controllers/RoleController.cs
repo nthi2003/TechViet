@@ -8,7 +8,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/[controller]")]
-    [Authorize(Roles = "ADMIN")]
+    //[Authorize(Roles = "ADMIN")]
     public class RoleController : Controller
     {
         private readonly DataContext _dataContext;
@@ -18,6 +18,7 @@ namespace TechecomViet.Areas.Admin.Controllers
             _dataContext = context;
             _roleManager = roleManager;
         }
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(await _dataContext.Roles.OrderByDescending(p => p.Id).ToListAsync());
@@ -83,10 +84,10 @@ namespace TechecomViet.Areas.Admin.Controllers
             {
                 _roleManager.CreateAsync(new IdentityRole(model.Name)).GetAwaiter().GetResult();
             }
-            return Redirect("Index");
+            return RedirectToAction("Index");
         }
 
-        [HttpGet]
+        [HttpDelete]
         [Route("Delete")]
         public async Task<IActionResult> Delete(string id)
         {
@@ -109,10 +110,10 @@ namespace TechecomViet.Areas.Admin.Controllers
             }
             catch (Exception)
             {
-                ModelState.AddModelError("", "An error occurred while deleting the role.");
+                ModelState.AddModelError("", "Xóa quyền bị lỗi");
             }
 
-            return Redirect("Index");
+            return RedirectToAction("Index");
         }
 
     }

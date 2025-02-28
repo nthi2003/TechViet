@@ -49,7 +49,10 @@
                     <span style="font-size: 14px">
                         <del>@Model.Price.ToString("#,##0 VNĐ")</del>
                     </span>
-                    <span style="font-size:12px;">@Model.DiscountPercentage %</span>
+                    <span style="font-size:12px;">
+                        @(Model.DiscountPercentage ?? 0) %
+                    </span>
+
                 </div>
             </div>
 

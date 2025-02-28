@@ -1,61 +1,69 @@
-﻿<div class="p-5" style="width:1720px">
+﻿@{
+    ViewData["title"] = "Danh sách sản phẩm";
+}
+<div class="p-5" style="width:1720px">
     <h3>Danh sách sản phẩm</h3>
     <a asp-action="Create" asp-controller="Product">Thêm sản phẩm</a>
     <div style="max-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
-        <table class="table" style="width: 100%;">
-            <thead style="position: sticky; top: 0; background: white; z-index: 10;">
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
                 <tr>
-
-                    <th scope="col">Tên sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Đã bán</th>
-                    <th scope="col">Chi tiết</th>
-                    <th scope="col">Giá</th>
-                    <th scope="col">Ảnh sản phẩm</th>
-                    <th scope="col">Danh mục sản phẩm</th>
-                    <th scope="col">Hãng</th>
-                    <th scope="col">Hành động</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên sản phẩm</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Số lượng</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Đã bán</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Chi tiết</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Giá</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Ảnh sản phẩm</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Danh mục</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hãng</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hành động</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="color: #555; font-size: 14px;">
                 @foreach (var item in Model)
                 {
                     @if (item != null)
                     {
-                        <tr>
-                        
-                            <td>@item.Name</td>
-                            <td>
+                        <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                            <td style="padding: 12px; font-weight: bold;">@item.Name</td>
+                            <td style="padding: 12px;">
                                 <b>@item.Quantity</b><br />
-                                <a asp-action="AddQuantity" asp-controller="Product" asp-route-Id="@item.Id">Thêm số lượng</a>
+                                <a asp-action="AddQuantity" asp-controller="Product" asp-route-Id="@item.Id"
+                                   style="color: #007bff; text-decoration: none; font-size: 12px;">
+                                    + Thêm số lượng
+                                </a>
                             </td>
-                            <td>@item.SoldOut</td>
-                            <td>
+                            <td style="padding: 12px; font-weight: bold; color: #28a745;">@item.SoldOut</td>
+                            <td style="padding: 12px;">
                                 @{
                                     string description = item.Description ?? "Không có mô tả";
                                     string shortDescription = description.Length > 50 ? description.Substring(0, 50) + "..." : description;
                                 }
                                 @shortDescription
                             </td>
-                            <td>@item.Price</td>
-                            <td>
+                            <td style="padding: 12px; font-weight: bold; color: #d9534f;">@item.Price.ToString("#,##0 VNĐ")</td>
+                            <td style="padding: 12px;">
                                 @if (item.Images != null && item.Images.Count > 0)
                                 {
-                                    <img src="~/products/@item.Images[0]" alt="@item.Name" width="120" />
+                                    <img src="~/products/@item.Images[0]"
+                                         alt="@item.Name"
+                                         style="width: 70px; height: 70px; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);" />
                                 }
                                 else
                                 {
                                     <span>Không có ảnh</span>
                                 }
                             </td>
-                            <td>@(item.Category != null ? item.Category.Name : "Không có danh mục")</td>
-                            <td>@(item.Brand != null ? item.Brand.Name : "Không có hãng")</td>
-                            <td>
-                                <a asp-action="Edit" asp-controller="Product" asp-route-Id="@item.Id">
-                                    <i class="fa-solid fa-pen" style="color:yellow"></i>
+                            <td style="padding: 12px;">@(item.Category != null ? item.Category.Name : "Không có danh mục")</td>
+                            <td style="padding: 12px;">@(item.Brand != null ? item.Brand.Name : "Không có hãng")</td>
+                            <td style="padding: 12px;">
+                                <a asp-action="Edit" asp-controller="Product" asp-route-Id="@item.Id"
+                                   style="margin-right: 10px; color: #ffc107; text-decoration: none; font-size: 18px;">
+                                    <i class="fa-solid fa-pen"></i>
                                 </a>
-                                <a asp-action="Delete" asp-controller="Product" asp-route-Id="@item.Id">
-                                    <i class="fa-solid fa-trash" style="color:red"></i>
+                                <a asp-action="Delete" asp-controller="Product" asp-route-Id="@item.Id"
+                                   style="color: red; text-decoration: none; font-size: 18px;">
+                                    <i class="fa-solid fa-trash"></i>
                                 </a>
                             </td>
                         </tr>

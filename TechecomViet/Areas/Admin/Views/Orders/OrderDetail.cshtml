@@ -1,0 +1,38 @@
+﻿@model IEnumerable<OrderItemsModel>
+
+@{
+    ViewData["title"] = "Chi tiết đơn hàng";
+}
+
+<div class="p-5" style="width:1722px">
+    <h3 class="text-xl font-bold mb-4">Chi tiết đơn hàng</h3>
+    <div style="max-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
+        <table style="width: 1622px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
+                <tr>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hình ảnh</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên sản phẩm</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Số lượng</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Giá sản phẩm</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    @if (item != null)
+                    {
+                        <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                            <td style="padding: 12px; font-weight: bold;">
+                                <img style=" width:70px; height:70px;" src="~/products/@item.Image" alt="Alternate Text" />
+                            </td>
+                            <td style="padding: 12px; font-weight: bold;">@item.ProductName</td>
+                            <td style="padding: 12px">@item.Quantity</td>
+                            <td style="padding: 12px">@item.Price.ToString("#,##0 VNĐ")</td>
+                            
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -54,6 +54,7 @@ namespace TechecomViet.Areas.Admin.Controllers
                 TempData["error"] = "Mã giảm giá không tồn tại";
             }
             existingCoupon.Name = coupon.Name;
+            existingCoupon.DiscountPercentage = coupon.DiscountPercentage;
             existingCoupon.Quantity = coupon.Quantity;
             existingCoupon.Description = coupon.Description;
             existingCoupon.DateStart = coupon.DateStart;

@@ -14,6 +14,7 @@
                 <th>Ngày hết hạn</th>
                 <th>Số lượng</th>
                 <th>Trang thái</th>
+                <th>Giảm giá</th>
                 <th>Hạn sử dụng</th>
                 <th>Hành động</th>
             </tr>
@@ -44,7 +45,7 @@
                         }
 
                     </td>
-
+                    <td>@coupon.DiscountPercentage</td>
                     <td>
                         @if (coupon.DateExpired < DateTime.Now)
                         {

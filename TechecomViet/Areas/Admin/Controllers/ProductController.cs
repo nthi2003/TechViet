@@ -168,6 +168,7 @@ namespace TechecomViet.Areas.Admin.Controllers
             }
 
             existed_product.Name = product.Name;
+            existed_product.DiscountPercentage = product.DiscountPercentage;
             existed_product.Description = product.Description;
             existed_product.Price = product.Price;
             existed_product.CategoryId = product.CategoryId;

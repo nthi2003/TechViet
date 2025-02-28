@@ -1,5 +1,4 @@
-﻿
-<div class="header-top">
+﻿<div class="header-top">
     <div class="header-list">
         <div class="header-items">
             <a href="#">
@@ -60,14 +59,14 @@
             <div>
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
-                    <div class="" style="width: 71px;height: 50px;margin-top: 30px;margin-left: 20px;">
-
-
-                        <div style="width: 150px;"> Xin chào @User.Identity.Name</div>
-
-
-                        <div style="margin-top: 5px ; width:150px">
-                            <a asp-action="Logout" asp-controller="Account">Đăng xuất</a>
+                    <div style="width: 150px; margin-top: 45px; margin-left: 20px;">
+                        <a asp-action="AccountInfomation" asp-controller="Account" style="cursor: pointer;">
+                            Xin chào, @User.Identity.Name
+                        </a>
+                        <div  style="display: none; margin-top: 5px;">
+                            <a asp-action="Logout" asp-controller="Account" style="display: block; padding: 5px; text-decoration: none; color: black;">
+                                Đăng xuất
+                            </a>
                         </div>
                     </div>
                 }
@@ -105,7 +104,7 @@
                            line-height: 20px;
                            font-weight: bold;
     ">
-                            0
+                            <span style="color: white">@ViewBag.CartItemCount</span>
                         </div>
                     </div>
 

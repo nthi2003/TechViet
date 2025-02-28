@@ -40,7 +40,10 @@
             <input asp-for="Quantity" min="1" value="1" class="form-control" />
             <span asp-validation-for="Quantity" class="text-danger"></span>
         </div>
-
+        <div class="form-group">
+            <label>Giảm giá %</label>
+            <input asp-for="DiscountPercentage" type="number" placeholder="Nhập phần trăm giảm giá" min="1" class="form-control" />
+        </div>
         <div class="form-group">
             <label>Trạng thái</label>
             <select name="Status" class="form-control">

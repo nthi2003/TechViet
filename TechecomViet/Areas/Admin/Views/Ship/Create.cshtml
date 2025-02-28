@@ -1,46 +1,128 @@
 ﻿@model ShippingModel
 @{
-    ViewData["Title"] = "Tạo giá giao hàng";
+    ViewData["Title"] = "Tạo giá giao hàng";
 }
 <div class="p-5" style="width:1720px">
     <a asp-action="Index">
         <i class="fa-solid fa-arrow-left"></i>
-        <span>Trở về</span>
+        <span>Trở về</span>
     </a>
-    <h4>Tạo giá giao hàng</h4>
+    <h4>Tạo giá giao hàng</h4>
     <div class="col-md-9">
         <form asp-action="Create" enctype="multipart/form-data">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label>Tỉnh/Thành phố</label>
-            <select class="css_select" id="tinh" name="tinh" class="form-control" title="Chọn Tỉnh Thành">
-                <option value="0">Tỉnh Thành</option>
-            </select>
-        </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label style="display: block; font-weight: bold;">Tỉnh/Thành phố</label>
+                <select id="tinh" name="tinh" title="Chọn Tỉnh Thành"
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="0">Tỉnh/Thành</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label>Quận/huyện</label>
-            <select class="css_select" id="quan" name="quan" class="form-control" title="Chọn Quận Huyện">
-                <option value="0">Quận Huyện</option>
-            </select>
-        </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label style="display: block; font-weight: bold;">Quận/huyện</label>
+                <select id="quan" name="quan" title="Chọn Quận/Huyện"
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="0">Quận/Huyện</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label>Phường/Xã</label>
-            <select class="css_select" id="phuong" name="phuong" class="form-control" title="Chọn Phường Xã">
-                <option value="0">Phường Xã</option>
-            </select>
-        </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label style="display: block; font-weight: bold;">Phường/Xã</label>
+                <select id="phuong" name="phuong" title="Chọn Phường/Xã"
+                        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="0">Phường/Xã</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label>Giá</label>
-            <input id="price-shipping" type="number" placeholder="vd: 20000" min="1" class="form-control" />
 
-        </div>
+            <div class="form-group">
+                <label>Giá</label>
+                <input id="price-shipping" type="number" placeholder="vd: 20000" min="1" class="form-control" />
 
-        <div class="form-group">
-            <button type="button" class="btn btn-primary btn-add-shipping">Create</button>
-        </div>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-add-shipping">Tạo</button>
+            </div>
         </form>
     </div>
 </div>
+
+@section Scripts {
+    <script src="https://esgoo.net/scripts/jquery.js"></script>
+    <script>
+        $(".btn-add-shipping").click(function(){
+            var tinh = $("#tinh").find('option:selected').text();
+            var quan = $("#quan").find('option:selected').text();
+            var phuong = $("#phuong").find('option:selected').text();
+            var price = $("#price-shipping").val();
+
+            if (tinh == '' || quan == '' || phuong == '' || price == '') {
+                Swal.fire("Làm ơn ko bỏ trống.");
+            }else{
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("Create", "Ship")",
+                    data: { tinh: tinh, quan: quan, phuong: phuong, price: price }, 
+
+                    success: function (result) {
+            
+                        if (result.success) {
+
+                            Swal.fire("Thêm vận chuyển thành công. Load lại page để thấy data.");
+
+                        } else if (result.duplicate) {
+
+                            Swal.fire("Dữ liệu trùng lặp.");
+
+                        }
+                    }
+
+                });
+            }
+
+
+        })
+        $(document).ready(function () {
+            //Lấy tỉnh thành
+            $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                if (data_tinh.error == 0) {
+                    $.each(data_tinh.data, function (key_tinh, val_tinh) {
+                        $("#tinh").append('<option value="' + val_tinh.id + '">' + val_tinh.full_name + '</option>');
+                    });
+                    $("#tinh").change(function (e) {
+                        var idtinh = $(this).val();
+                        //Lấy quận huyện
+                        $.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+                            if (data_quan.error == 0) {
+                                $("#quan").html('<option value="0">Quận Huyện</option>');
+                                $("#phuong").html('<option value="0">Phường Xã</option>');
+                                $.each(data_quan.data, function (key_quan, val_quan) {
+                                    $("#quan").append('<option value="' + val_quan.id + '">' + val_quan.full_name + '</option>');
+                                });
+                                //Lấy phường xã
+                                $("#quan").change(function (e) {
+                                    var idquan = $(this).val();
+                                    $.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+                                        if (data_phuong.error == 0) {
+                                            $("#phuong").html('<option value="0">Phường Xã</option>');
+                                            $.each(data_phuong.data, function (key_phuong, val_phuong) {
+                                                $("#phuong").append('<option value="' + val_phuong.id + '">' + val_phuong.full_name + '</option>');
+                                            });
+                                        }
+                                    });
+                                });
+
+                            }
+                        }); //end $.getJson
+
+                    });
+
+                }
+            });
+        });
+    </script>
+
+}

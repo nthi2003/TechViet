@@ -12,7 +12,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 
     [Area("Admin")]
     [Route("Admin/User")]
-    [Authorize(Roles = "ADMIN")]
+    //[Authorize(Roles = "ADMIN")]
     public class UserController : Controller
     {
         private readonly UserManager<UserModel> _userManager;

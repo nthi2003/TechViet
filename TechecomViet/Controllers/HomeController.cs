@@ -10,18 +10,19 @@ using TechecomViet.Reponsitory;
 namespace TechecomViet.Controllers
 {
     
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly DataContext _dataContext;
         private readonly UserManager<UserModel> _userManager;
-        public HomeController( DataContext context , UserManager<UserModel> userManager)
+        public HomeController( DataContext context , UserManager<UserModel> userManager) : base(context)
         {
             _dataContext = context;
             _userManager = userManager;
 
         }
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
+            await SetCartItemCountAsync();
             var categories = _dataContext.Categories.Where(c => c.Status == 1).ToList();
             var brands = _dataContext.Brands.Where(b => b.Status == 1).ToList();
             var products = _dataContext.Products.ToList();
@@ -36,6 +37,7 @@ namespace TechecomViet.Controllers
         }
         public async Task<IActionResult> Wishlist()
         {
+            await SetCartItemCountAsync();
             var wishlist_product = await (from w in _dataContext.Wishlists
                                           join p in _dataContext.Products on w.ProductId equals p.Id
                                           select new { Product = p, Wishlists = w })
