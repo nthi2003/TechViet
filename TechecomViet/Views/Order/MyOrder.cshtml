@@ -1,0 +1,109 @@
+﻿@model IEnumerable<OrderModel>
+
+<div style="display:flex">
+    <div>
+        @Html.Partial("~/Views/Shared/_PartialInformation.cshtml")
+    </div>
+    <div style="margin-top: 10px; padding: 20px">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var orders in Model)
+            {
+                <div style="background-color:white; width: 950px; margin-top: 10px; padding: 20px">
+                    <div style="display: flex ; justify-content: space-between;">
+                        <div style="display: flex">
+                            <span>Đơn hàng mã : </span>
+                            <p style="color: #0d6efd ; margin-left: 4px;"> @orders.OrderCode</p>
+                        </div>
+                        <div style="display: flex;">
+                            <div>
+                                <span style="margin-right:20px;"> Trạng thái đơn hàng : </span>
+                            </div>
+                            <div>
+                                @if (orders.Status == 0)
+                                {
+                                    <span style="color: red">Hủy đơn</span>
+                                }
+                                @if (orders.Status == 1)
+                                {
+                                    <span style="color: yellowgreen">Chờ xác nhận</span>
+                                }
+                                @if (orders.Status == 2)
+                                {
+                                    <span style="color: blue">Đã xác nhận</span>
+                                }
+                                @if (orders.Status == 3)
+                                {
+                                    <span style="color: gray">Đã đóng gói</span>
+                                }
+                                @if (orders.Status == 4)
+                                {
+                                    <span style="color: orange">Đã vận chuyển</span>
+                                }
+                                @if (orders.Status == 5)
+                                {
+                                    <span style="color: green">Đã nhận hàng</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        @if (orders.OrderItems != null && orders.OrderItems.Any())
+                        {
+                            @foreach (var item in orders.OrderItems)
+                            {
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <div style="display: flex">
+                                        <div>
+                                            <img src="~/products/@item.Image" style="width: 100px; height: 100px;" />
+                                        </div>
+                                        <div style="margin-left: 20px">
+                                            <div>@item.ProductName</div>
+                                            <div>Số lượng: @item.Quantity</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>Giá: @((item.Price * item.Quantity).ToString("#, ##0 VNĐ"))</label>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div>Không có mặt hàng nào trong đơn hàng này.</div>
+                        }
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                        </div>
+                        <div>
+                            <div style="margin-left: 5px">
+                                Thành tiền : @orders.TotalPrices.ToString("#, ##0 VNĐ")
+                            </div>
+                            @if (orders.Status == 1)
+                            {
+                                <div style="background-color: red ; margin-left: 107px; padding: 10px; width: 102px;">
+                                    <a style="color: white ; padding: 10px;" asp-action="UpdateOrder" asp-controller="Order" asp-route-id="@orders.Id">Hủy đơn</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            }
+        }
+        else
+        {
+            <div style="background-color:white; width: 950px; margin-top: 10px; padding: 20px">
+                <div style="margin-left: 270px">
+                    <img style="width: 400px ; height: 400px; align-items: center" src="/images/Box.png" alt="Alternate Text" />
+                </div>
+                <div style="margin-left: 393px">
+                    <span style="">Không có đơn hàng .</span>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>

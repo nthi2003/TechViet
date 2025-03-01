@@ -5,7 +5,7 @@ namespace TechecomViet.Models
 {
     public class UserModel : IdentityUser
     {
-        public string FullName { get; set; }
+        public string? FullName { get; set; } = "";
         public int Status { get; set; } = 1;
         public string Address { get; set; } = "";
         public string Image { get; set; } = string.Empty;

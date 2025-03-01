@@ -65,7 +65,7 @@ namespace TechecomViet.Controllers
 
             var newOrder = new OrderModel
             {
-                OrderCode = Guid.NewGuid().ToString(),
+                OrderCode = Guid.NewGuid().ToString("N").Substring(0, 8),
                 UserId = userId,
                 UserName = userName,
                 Status = 1,

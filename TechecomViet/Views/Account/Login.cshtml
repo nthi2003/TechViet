@@ -1,7 +1,7 @@
 ﻿@model TechecomViet.Models.ViewModel.LoginViewModel
 @{
     ViewData["title"] = "Đăng Kí";
- }
+}
 <div class="form-input">
     <h2>Chào mừng bạn đến với VietTech | Laptop, PC, Màn hình, điện thoại, linh kiện Chính Hãng!</h2>
     @Html.Partial("_ValidationScriptsPartial")
@@ -22,9 +22,11 @@
         <a href="#" style="text-decoration: none;">Quên mật khẩu?</a>
     </form>
     <hr />
-    <button style="background-color: red; border: none; margin-top: 20px; color: white; padding: 10px; width: 100%;">
-        <span>Tiếp tục với Google</span>
-    </button>
+    <div style="background-color: red; border: none; margin-top: 20px; color: white; padding: 10px; width: 100%; text-align: center">
+        <a asp-action="LoginByGoogle" asp-controller="Account">
+            <span style="color:white ">Tiếp tục với Google</span>
+        </a>
+    </div>
     <div class="d-flex">
         <span style="">Chưa có tài khoản</span>
         <a style="" asp-action="Register" asp-controller="Account">

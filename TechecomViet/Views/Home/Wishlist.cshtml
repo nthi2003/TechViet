@@ -14,10 +14,10 @@
         <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
             <thead style="background: #f8f9fa; color: #333;">
                 <tr>
-                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên sản phẩm</th>
-                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hình ảnh</th>
-                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Giá tiền</th>
-                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hành động</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; ">Tên sản phẩm</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; ">Hình ảnh</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; ">Giá tiền</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; text-align: center">Hành động</th>
                 </tr>
             </thead>
             <tbody style="color: #555; font-size: 14px;">
@@ -30,10 +30,10 @@
                                  style="width: 70px; height: 70px; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);" />
                         </td>
                         <td style="padding: 12px; font-weight: bold; color: #d9534f;">@wishlist_product.Product.Price.ToString("#,##0 VNĐ")</td>
-                        <td style="padding: 12px;">
+                        <td style="padding: 2px; text-align: center">
                             <a asp-action="DeleteWishlist" asp-controller="Home"
                                asp-route-Id="@wishlist_product.Wishlists?.Id"
-                               style="color: red; font-weight: bold; cursor: pointer">
+                               style="color: red; font-weight: bold; cursor: pointer;">
                                 X
                             </a>
                         </td>

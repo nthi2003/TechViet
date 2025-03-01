@@ -59,15 +59,10 @@
             <div>
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
-                    <div style="width: 150px; margin-top: 45px; margin-left: 20px;">
+                    <div style="width: 150px; margin-top: 40px; margin-left: 20px;">
                         <a asp-action="AccountInfomation" asp-controller="Account" style="cursor: pointer;">
                             Xin chào, @User.Identity.Name
                         </a>
-                        <div  style="display: none; margin-top: 5px;">
-                            <a asp-action="Logout" asp-controller="Account" style="display: block; padding: 5px; text-decoration: none; color: black;">
-                                Đăng xuất
-                            </a>
-                        </div>
                     </div>
                 }
                 else
@@ -86,11 +81,13 @@
                     </div>
                 }
             </div>
-            <div style="margin-left:90px">
+            <div style="margin-left:50px">
                 <a  asp-action="Index"  asp-controller="Cart" class="d-flex" style="text-decoration:none">
-                    <div style="position: relative; display: inline-block;  margin-top:45px">
-                        <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
-                        <div style="
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <div style="position: relative; display: inline-block;  margin-top:45px">
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i>
+                            <div style="
                            position: absolute;
                            top: -5px;
                            right: -5px;
@@ -103,14 +100,16 @@
                            font-size: 12px;
                            line-height: 20px;
                            font-weight: bold;
-    ">
-                            <span style="color: white">@ViewBag.CartItemCount</span>
+        ">
+                                <span style="color: white">@ViewBag.CartItemCount</span>
+                            </div>
                         </div>
-                    </div>
+                        <div style="margin-top:45px; width:100px;margin-left: 5px;">
+                            <span asp-contr>Giỏ hàng</span>
+                        </div>
+                    } 
 
-                    <div style="margin-top:45px; width:100px;margin-left: 5px;">
-                        <span asp-contr>Giỏ hàng</span>
-                    </div>
+                  
                 </a>
             </div>
              <div style="margin-top:40px"> 
@@ -121,7 +120,8 @@
                           <span>Yêu thích</span>
                       </div>
                     </a> 
-               } 
+               }
+                
             </div>
         </div>
     </div>

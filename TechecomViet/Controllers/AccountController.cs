@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -125,10 +127,11 @@ namespace TechecomViet.Controllers
         }
 
 
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Logout(string returnUrl = "/")
         {
-            await _signInManager.SignOutAsync();
-            return RedirectToAction("Login", "Account");
+            await _signInManager.SignOutAsync(); // thoat bang gg
+            await HttpContext.SignOutAsync();
+            return Redirect(returnUrl);
         }
         [HttpGet]
         public async Task<IActionResult> AccountInfomation()
@@ -177,13 +180,11 @@ namespace TechecomViet.Controllers
                 return RedirectToAction("AccountInfomation");
             }
 
-            // Cập nhật thông tin user
             user.UserName = userModel.UserName;
             user.FullName = userModel.FullName;
             user.PhoneNumber = userModel.PhoneNumber;
             user.Address = userModel.Address;
 
-            // Cập nhật ảnh nếu có
             if (userModel.ImageUpload != null && userModel.ImageUpload.Length > 0)
             {
                 var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/accounts");
@@ -192,7 +193,6 @@ namespace TechecomViet.Controllers
                     Directory.CreateDirectory(folderPath);
                 }
 
-                // Xóa ảnh cũ nếu có
                 if (!string.IsNullOrEmpty(user.Image))
                 {
                     var oldFilePath = Path.Combine(folderPath, user.Image);
@@ -201,8 +201,6 @@ namespace TechecomViet.Controllers
                         System.IO.File.Delete(oldFilePath);
                     }
                 }
-
-                // Lưu ảnh mới
                 var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(userModel.ImageUpload.FileName)}";
                 var filePath = Path.Combine(folderPath, fileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
@@ -218,6 +216,81 @@ namespace TechecomViet.Controllers
             TempData["success"] = "Cập nhật người dùng thành công";
             return RedirectToAction("AccountInfomation");
         }
+        public async Task LoginByGoogle()
+        {
+            // Use Google authentication scheme for challenge
+            await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme,
+                new AuthenticationProperties
+                {
+                    RedirectUri = Url.Action("GoogleResponse")
+                });
+        }
+        public async Task<IActionResult> GoogleResponse()
+        {
+            var result = await HttpContext.AuthenticateAsync(GoogleDefaults.AuthenticationScheme);
+
+            if (!result.Succeeded)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var claims = result.Principal.Identities.FirstOrDefault().Claims.Select(claim => new
+            {
+                claim.Issuer,
+                claim.OriginalIssuer,
+                claim.Type,
+                claim.Value
+            });
+
+            var email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+            string emailName = email.Split('@')[0];
+
+            var existingUser = await _userManager.FindByEmailAsync(email);
+
+            if (existingUser == null)
+            {
+                var passwordHasher = new PasswordHasher<UserModel>();
+                var hashedPassword = passwordHasher.HashPassword(null, "123456789");
+
+                var newUser = new UserModel
+                {
+                    UserName = emailName,
+                    Email = email
+                };
+                newUser.PasswordHash = hashedPassword;
+
+                var createUserResult = await _userManager.CreateAsync(newUser);
+                if (!createUserResult.Succeeded)
+                {
+                    TempData["error"] = "Đăng ký tài khoản thất bại. Vui lòng thử lại sau.";
+                    return RedirectToAction("Login", "Account");
+                }
+
+                // Kiểm tra nếu user chưa có role thì mới gán
+                var userRoles = await _userManager.GetRolesAsync(newUser);
+                if (!userRoles.Contains("User"))
+                {
+                    await _userManager.AddToRoleAsync(newUser, "User");
+                }
+
+                await _signInManager.SignInAsync(newUser, isPersistent: false);
+                TempData["success"] = "Đăng ký tài khoản thành công.";
+            }
+            else
+            {
+                // Nếu user đã tồn tại, kiểm tra xem có role chưa
+                var userRoles = await _userManager.GetRolesAsync(existingUser);
+                if (!userRoles.Contains("User"))
+                {
+                    await _userManager.AddToRoleAsync(existingUser, "User");
+                }
+
+                await _signInManager.SignInAsync(existingUser, isPersistent: false);
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
 
 
     }
