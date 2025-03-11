@@ -114,7 +114,6 @@
 }
 .list-category {
     display: flex;
-    justify-content: space-between;
     padding: 8px 16px 24px;
     text-align: center;
     gap: 16px;
@@ -283,4 +282,26 @@ a {
 }
 .form-group {
     padding : 10px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-toggle {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Hi?n th? bên d??i ph?n t? chính */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

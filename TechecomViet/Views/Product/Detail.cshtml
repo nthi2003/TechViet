@@ -1,105 +1,224 @@
-﻿@model ProductModel
+﻿@using TechecomViet.Models.ViewModel
+@model ProductDetailViewModel
 
-<div style="max-width: 1200px;  margin-left: auto; margin-right: auto;  padding-left: 1rem;">
-    <nav style=" display: flex;  margin-bottom: 2rem;   font-size: 0.875rem;  color: #4b5563;">
-        <a href="/" style="">
-            Trang chủ
-        </a>
-        <span style="margin-left: 8px; margin-right: 8px;">/</span>
-        <a href="/pc">
-            <span>@Model.Brand.Name </span>
-        </a>
-        <span style="margin-left: 8px; margin-right: 8px;">/</span>
-        <span>@Model.Name</span>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <nav style="display: flex; align-items: center; margin-bottom: 2rem; font-size: 0.875rem; color: #4b5563;">
+        <a href="/" style="text-decoration: none; color: inherit;">Trang chủ</a>
+        <span style="margin: 0 8px;">/</span>
+        <a href="/pc" style="text-decoration: none; color: inherit;">@Model.Product.Brand.Name</a>
+        <span style="margin: 0 8px;">/</span>
+        <span>@Model.Product.Name</span>
     </nav>
 
-    <div style="display: grid; gap: 2rem; display:flex">
-        <div style="margin-top: 16px">
-            <div style=" border-radius: 8px;">
-                <img src="~/products/@Model.Images[0]"
-                     style="width:600px; height:600px; object-fit:cover " />
+
+    <div style="display: flex; gap: 2rem;">
+        <div style="flex: 1;">
+            <div style="border-radius: 8px; overflow: hidden;">
+                <img src="~/products/@Model.Product.Images[0]" alt="@Model.Product.Name" style="width: 100%; height: 600px; object-fit: cover;" />
             </div>
-            <div style="display: flex; gap: 8px; overflow: auto; padding-bottom: 8px;">
-                @foreach (var item in Model.Images)
+            <div style="display: flex; gap: 8px; margin-top: 16px; overflow-x: auto; padding-bottom: 8px;">
+                @foreach (var item in Model.Product.Images)
                 {
-                    <button style=" flex-shrink: 0; overflow: hidden;">
-                        <img src="~/products/@item" *@
-                             style="object-fit:cover ; width:120px" />
+                    <button style="flex-shrink: 0; border: none; background: none; padding: 0; cursor: pointer;">
+                        <img src="~/products/@item" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;" />
                     </button>
                 }
             </div>
         </div>
-        <div style="margin-top: 24px">
+        <div style="flex: 1; margin-top: 24px;">
+            <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">@Model.Product.Name</h1>
             <div>
-                <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">
-                    @Model.Name
-                </h1>
-                <div style="display: flex; align-items: center; gap: 16px; font-size: 8px; color: #4b5563;">
-                </div>
+                <span>Lượt bán : @Model.Product.SoldOut</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <span style="font-size: 30px; font-weight: 700; color: #1435c3;">
+                    @((Model.Product.Price - (Model.Product.Price * Model.Product.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
+                </span>
+                <span style="font-size: 14px; color: #6b7280; text-decoration: line-through;">
+                    @Model.Product.Price.ToString("#,##0 VNĐ")
+                </span>
+                <span style="font-size: 12px; color: #1435c3; background: #dbeafe; padding: 2px 8px; border-radius: 4px;">
+                    @Model.Product.DiscountPercentage%
+                </span>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 24px;">
+                <button style="padding: 8px 16px; background: #1435c3; color: white; border: none; border-radius: 4px; cursor: pointer;">MUA NGAY</button>
+                <button style="padding: 8px 16px; border: 1px solid #1435c3; border-radius: 4px; background: white; color: #1e3a8a; cursor: pointer;">THÊM VÀO GIỎ HÀNG</button>
             </div>
 
-
-
-            <div>
-                <div style="display: flex; gap:8px;">
-                    <span style="font-size:30px; font-weight: 700; color:red">
-                        @(((decimal)Model.Price - ((decimal)Model.Price * (decimal)Model.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
-                    </span>
-
-                    <span style="font-size: 14px">
-                        <del>@Model.Price.ToString("#,##0 VNĐ")</del>
-                    </span>
-                    <span style="font-size:12px;">
-                        @(Model.DiscountPercentage ?? 0) %
-                    </span>
-
-                </div>
+            <div style="font-size: 14px; max-height: 550px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+                <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 8px; color: #1435c3;">Mô tả sản phẩm</h3>
+                @Html.Raw(@Model.Product.Description)
             </div>
-
-
-            <div style="">
-                <button style="padding: 8px 16px;">MUA NGAY</button>
-                <button style="padding: 8px 16px; border: 1px solid #d1d5db; border-radius: 4px;">THÊM VÀO GIỎ HÀNG</button>
-            </div>
-            <div style="font-size: 8px; max-height: 550px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;">
-                <h3>Mô tả sản phẩm</h3>
-                @Html.Raw(@Model.Description)
-            </div>
-
         </div>
     </div>
+    @if (Model.CheckReview)
+    {
+    <div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #1e3a8a;">Đánh giá và nhận xét @Model.Product.Name</h3>
+            <form asp-action="CreateReview" asp-controller="Review" method="POST">
+                <input type="hidden" name="productId" value="@Model.Product.Id" />
 
-</div>
-<div style="max-width: 1200px;  margin-left: auto; margin-right: auto;  padding-left: 1rem;">
-    <h3>Sản phẩm liên quan</h3>
-    <div style="display:flex">
-        @foreach (var relatedProduct in ViewBag.RelatedProducts as IEnumerable<ProductModel>)
-        {
-            <div class="product-card" style="gap:8px; margin-left:20px">
-                <div style="position: relative; display: inline-block;">
+                <div style="display: flex; align-items: center;">
                     <div>
-                        <img src="~/products/@relatedProduct.Images[0]" style="width: 220px; display: block;">
+                        <img src="~/accounts/@Model.Users.Image" style="width: 40px ; height: 40px ; border-radius: 50%;" />
                     </div>
-                    @if (User.Identity?.IsAuthenticated ?? false)
-                    {
-                        <button class="add-btn-wishlist" data-product_id="@relatedProduct.Id"
-                                style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
-               border: none; border-radius: 50%; padding: 8px; cursor: pointer;
-               font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-                            <i class="fa-solid fa-heart" style="color: red;"></i>
+
+                    <div style="margin-left: 10px;">
+                        <input name="comment" style="border: none; border-bottom: 1px solid #007bff; outline: none; width: 400px;" placeholder="Điền đánh giá của bạn" />
+                    </div>
+
+                    <div style="margin-left: 10px;">
+                        <select name="rating" class="form-control">
+                            <option value="1">1 sao</option>
+                            <option value="2">2 sao</option>
+                            <option value="3">3 sao</option>
+                            <option value="4">4 sao</option>
+                            <option value="5" selected>5 sao</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-left: 30px;">
+                        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+                            <i class="fa-solid fa-paper-plane"></i>
                         </button>
-                    }
-                </div>
-                <div class="brand">@relatedProduct.Brand.Name</div>
-                <div class="product-name"><a asp-action="Detail" asp-controller="Product" asp-route-Id="@relatedProduct.Id">@relatedProduct.Name</a></div>
-                <div class="price">
-                    <div class="sale-price">
-                        @(((decimal)relatedProduct.Price - ((decimal)relatedProduct.Price * (decimal)relatedProduct.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
                     </div>
-                    <div class="original-price">@relatedProduct.Price.ToString("#,##0 VNĐ")</div>
                 </div>
-                <button class="add-to-cart">Thêm vào giỏ</button>
-            </div>
-        }
+            </form>
+            <hr />
+
+           @foreach(var item in Model.Reviews){
+                <div style="display: flex">
+                    <div>
+                        <img src="~/accounts/@item.User.Image" style="width: 40px ; height: 40px ; border-radius:50%" />
+                    </div>
+                    <div style="margin-top: 10px">
+                        <div style="display:flex">
+                            <div style=" margin-left: 10px">@item.User.FullName</div>
+                            <div style=" margin-left: 20px">@item.CreatedAt</div>
+                        </div>
+                        @if (@item.Rating == 1)
+                        {
+                            <div style="margin-left: 10px">
+                                <span>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        }
+                        @if (@item.Rating == 2)
+                        {
+                            <div style="margin-left: 10px">
+                                <span>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        }
+                         @if (@item.Rating == 3)
+                        {
+                            <div style="margin-left: 10px">
+                                <span>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        }
+                        @if (@item.Rating == 4)
+                        {
+                            <div style="margin-left: 10px">
+                                <span>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: gray" class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        }
+                        @if (@item.Rating == 5)
+                        {
+                            <div style="margin-left: 10px">
+                                <span>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                        }
+                      
+                        <div style="margin-top: 2px ;  margin-left: 10px">
+                            <span>@item.Comment</span>
+                        </div>
+                    </div>
+                </div>
+
+           }
+
+    </div>
+    }
+    <div style="margin-top: 48px;">
+        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #1e3a8a;">Sản phẩm liên quan</h3>
+        <div style="display: flex; gap: 16px; overflow-x: auto;">
+            @foreach (var relatedProduct in ViewBag.RelatedProducts as IEnumerable<ProductModel>)
+            {
+                <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                    <div style="position: relative; display: inline-block;">
+                        <div>
+                            <img src="~/products/@relatedProduct.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
+                        </div>
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            <button class="add-btn-wishlist" data-product_id="@relatedProduct.Id"
+                                    style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
+                                       border: none; border-radius: 50%; padding: 8px; cursor: pointer;
+                                       font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                                <i class="fa-solid fa-heart" style="color: red;"></i>
+                            </button>
+                        }
+
+                    </div>
+                    <div style="padding: 15px;">
+                        <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">@relatedProduct.Brand.Name</div>
+                        <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                            <a asp-action="Detail" asp-controller="Product" asp-route-Id="@relatedProduct.Id"
+                               style="text-decoration: none; color: inherit;">
+                                @(relatedProduct.Name.Length > 20 ? relatedProduct.Name.Substring(0, 20) + "..." : relatedProduct.Name)
+                            </a>
+                        </div>
+                        <div style="align-items: center; gap: 8px;">
+                            <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                                <div>
+                                    @((relatedProduct.Price - (relatedProduct.Price * (relatedProduct.DiscountPercentage) / 100)).ToString("#,##0 VNĐ"))
+                                </div>
+                            </div>
+                            <del style="font-size: 14px; color: #6b7280;">@relatedProduct.Price.ToString("#,##0 VNĐ")</del>
+                        </div>
+                        @if (relatedProduct.Quantity != 0)
+                        {
+                            <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                    class="add-to-cart" data-product-id="@relatedProduct.Id">
+                                Thêm vào giỏ
+                            </button>
+                        }
+                        else
+                        {
+                            <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
     </div>
 </div>

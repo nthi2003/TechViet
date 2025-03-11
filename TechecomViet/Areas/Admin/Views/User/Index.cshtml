@@ -3,55 +3,57 @@
 @{
     ViewData["Title"] = "Danh sách người dùng";
 }
-<div class="p-5" style="width:1720px">
+<div class="p-5" style="width:1895px">
     <h3>Danh sách người dùng</h3>
     <a asp-action="Create" asp-controller="User">Thêm người dùng</a>
-    <table class="table" id="myTable">
-        <thead>
-            <tr>
-                <th>Tên người dùng</th>
-                <th>Email</th>
-                <th>Tên đầy đủ</th>
-                <th>Số điện thoại</th>
-                <th>Quyền</th>
-                <th>Trạng thái</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
+    <div style="max-height: 700px; border: 1px solid #ddd;">
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
                 <tr>
-                    <form method="post" asp-action="SaveUser" asp-controller="User">
-                    <td>@user.UserName</td>
-                    <td>@user.Email</td>
-                    <td>@user.FullName</td>
-                    <td>@user.PhoneNumber</td>
-                    <td>
-                        <select name="RoleId">
-                                @foreach (var role in ViewBag.Roles as SelectList)
-                                {
-                                <option value="@role.Value" selected="@(user.RoleId == role.Value ? "selected" : null)">@role.Text</option>
-                                }
-                        </select>
-                    </td>
-
-                       <td>
-                        <select name="Status">
-                            <option value="1" selected="@(user.Status == 1 ? "selected" : null)">Hoạt động</option>
-                            <option value="0" selected="@(user.Status == 0 ? "selected" : null)">Khóa</option>
-                        </select>
-                       </td>
-                    <td>
-                        <input type="hidden" name="Id" value="@user.Id" />
-                        <button type="submit" style="border: none; background: none;">
-                            <i class="fa-solid fa-check" style="color:green; margin-left:20px"></i>
-                        </button>
-                    </td>
-                    </form>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên người dùng</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Email</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên đầy đủ</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Số điện thoại</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Quyền</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Trạng thái</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hành động</th>
                 </tr>
-            }
-        </tbody>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                        <form method="post" asp-action="SaveUser" asp-controller="User">
+                        <td style="padding: 12px; font-weight: bold;">@user.UserName</td>
+                        <td style="padding: 12px;" >@user.Email</td>
+                        <td style="padding: 12px;">@user.FullName</td>
+                        <td style="padding: 12px;">@user.PhoneNumber</td>
+                        <td style="padding: 12px;">
+                            <select name="RoleId">
+                                    @foreach (var role in ViewBag.Roles as SelectList)
+                                    {
+                                    <option value="@role.Value" selected="@(user.RoleId == role.Value ? "selected" : null)">@role.Text</option>
+                                    }
+                            </select>
+                        </td>
 
-    </table>
+                        <td style="padding: 12px;">
+                            <select name="Status">
+                                <option value="1" selected="@(user.Status == 1 ? "selected" : null)">Hoạt động</option>
+                                <option value="0" selected="@(user.Status == 0 ? "selected" : null)">Khóa</option>
+                            </select>
+                        </td>
+                        <td style="padding: 12px;">
+                            <input type="hidden" name="Id" value="@user.Id" />
+                            <button type="submit" style="border: none; background: none;">
+                                <i class="fa-solid fa-check" style="color:green; margin-left:20px"></i>
+                            </button>
+                        </td>
+                        </form>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
 </div>

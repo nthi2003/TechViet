@@ -24,7 +24,7 @@ namespace TechecomViet.Models
         public int CategoryId { get; set; }
         public CategoryModel Category { get; set; }
         public BrandModel Brand { get; set; }
-        public int? DiscountPercentage { get; set; }
+        public int DiscountPercentage { get; set; }
 
         public List<string> Images { get; set; } = new List<string>();
 

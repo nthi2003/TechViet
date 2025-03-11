@@ -1,0 +1,84 @@
+﻿@model IEnumerable<BlogModel>
+
+@{
+    ViewData["title"] = "Danh sách bài viết";
+}
+
+<div class="p-5" style="max-width: 1895px;">
+    <h3 class="text-xl font-bold mb-4">Danh sách bài viết</h3>
+    <a asp-action="Create" asp-controller="Blog">+ Tạo mới</a>
+    <div style="max-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
+        <table style="width: 1795px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
+                <tr>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tiêu đề</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Nội dung</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hình ảnh</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tác giả</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Ngày giờ</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Trạng thái</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hành động</th>
+                </tr>
+            </thead>
+            <tbody style="color: #555; font-size: 14px;">
+                @if (Model != null)
+                {
+                    @foreach (var item in Model)
+                    {
+                        @if (item != null)
+                        {
+                            <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                                <td style="padding: 12px">@item.Title</td>
+                                <td style="padding: 12px">
+                                        @{
+                                            string description = item.Description ?? "Không có mô tả";
+                                            string shortDescription = description.Length > 50 ? description.Substring(0, 50) + "..." : description;
+                                        }
+                                    @shortDescription
+                                </td>
+                                <td style="padding: 12px">
+                                    @if (!string.IsNullOrEmpty(item.Image))
+                                    {
+                                        <img src="~/blogs/@item.Image" style="width: 70px; height: 70px; object-fit: cover; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);" />
+                                    }
+                                    else
+                                    {
+                                        <span>Không có ảnh</span>
+                                    }
+                                </td>
+                                <td style="padding: 12px">@item.Author</td>
+                                <td style="padding: 12px">
+                                    @item.CreatedDate
+                                </td>
+                                <td style="padding: 12px">
+                                    @if (item.Status == 1)
+                                    {
+                                        <span style="font-weight: bold; color: #28a745;">Hiển thị</span>
+                                    }
+                                    else
+                                    {
+                                        <span style="font-weight: bold; color: #d9534f">Ẩn</span>
+                                    }
+                                </td>
+                                <td style="padding: 12px;">
+                                    <a asp-action="Edit" asp-controller="Blog" asp-route-Id="@item.Id" style="margin-right: 10px; color: #ffc107; text-decoration: none; font-size: 18px;">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </a>
+                                    <a asp-action="Delete" asp-controller="Blog" asp-route-Id="@item.Id" style="color: red; text-decoration: none; font-size: 18px;">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" style="padding: 12px; text-align: center;">Không có bài viết</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

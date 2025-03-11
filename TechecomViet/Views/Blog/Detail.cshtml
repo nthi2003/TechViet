@@ -1,0 +1,35 @@
+﻿@using TechecomViet.Models.ViewModel
+@model BlogDetailViewModel
+@{
+    ViewData["title"] = @Model.Blog.Title;
+}
+<div>
+    <nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
+        <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+        <span style="margin: 0 8px;">/</span>
+        <span style="font-weight: bold; color: #333;">Bài viết</span>
+        <span style="margin: 0 8px;">/</span>
+        <span style="font-weight: bold; color: #333;">@Model.Blog.Title</span>
+    </nav>
+    <div style="margin: 4px 15px; padding: 1px 20px;">
+        <h2>
+            @Model.Blog.Title
+        </h2>
+        <p>Bởi<span style="color:#007bff; margin: 3px">@Model.Blog.Author</span>-<span>@Model.Blog.CreatedDate</span></p>
+        <span>@Html.Raw(Model.Blog.Description)</span>
+    </div>
+    <div >
+        <span>Bài viết cùng tác giả</span>
+        <hr />
+           @foreach(var item in Model.RelatedBlogs){
+            <div style="width: 200px; height:300px">
+                   <div>
+                    <img src="~/blogs/@item.Image" style="width: 200px ; height: 200px" />
+                   </div>
+                   <div>
+                    <span>@item.Title</span>
+                   </div>
+               </div>
+           }
+    </div>
+</div>

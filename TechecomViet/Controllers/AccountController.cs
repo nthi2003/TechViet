@@ -10,14 +10,14 @@ using TechecomViet.Reponsitory;
 
 namespace TechecomViet.Controllers
 {
-   
+
     public class AccountController : BaseController
     {
         private readonly SignInManager<UserModel> _signInManager;
         private readonly UserManager<UserModel> _userManager;
         private readonly DataContext _dataContext;
 
-        public AccountController(DataContext context ,SignInManager<UserModel> signInManager, UserManager<UserModel> userManager) : base(context)
+        public AccountController(DataContext context, SignInManager<UserModel> signInManager, UserManager<UserModel> userManager) : base(context)
         {
             _dataContext = context;
             _signInManager = signInManager;
@@ -26,7 +26,7 @@ namespace TechecomViet.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            return View("Login"); 
+            return View("Login");
         }
 
 
@@ -54,7 +54,7 @@ namespace TechecomViet.Controllers
                         }
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                         var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-                        await _signInManager.SignOutAsync(); 
+                        await _signInManager.SignOutAsync();
                         await _signInManager.SignInAsync(user, isPersistent: false);
 
                         return RedirectToAction("Index", "Home");
@@ -138,7 +138,8 @@ namespace TechecomViet.Controllers
         {
             await SetCartItemCountAsync();
             var email = User.FindFirstValue(ClaimTypes.Email);
-            if (email == null) {
+            if (email == null)
+            {
                 TempData["error"] = "Bạn chưa đăng nhập";
                 return RedirectToAction("Index");
             }
@@ -160,7 +161,7 @@ namespace TechecomViet.Controllers
             };
 
             return View(model);
-     
+
         }
         [HttpPost]
         public async Task<IActionResult> UpdateAccount(UserModel userModel)
@@ -187,38 +188,34 @@ namespace TechecomViet.Controllers
 
             if (userModel.ImageUpload != null && userModel.ImageUpload.Length > 0)
             {
-                var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/accounts");
-                if (!Directory.Exists(folderPath))
-                {
-                    Directory.CreateDirectory(folderPath);
-                }
 
                 if (!string.IsNullOrEmpty(user.Image))
                 {
-                    var oldFilePath = Path.Combine(folderPath, user.Image);
+                    var oldFilePath = Path.Combine("wwwroot/accounts", user.Image);
                     if (System.IO.File.Exists(oldFilePath))
                     {
                         System.IO.File.Delete(oldFilePath);
                     }
                 }
                 var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(userModel.ImageUpload.FileName)}";
-                var filePath = Path.Combine(folderPath, fileName);
+                var filePath = Path.Combine("wwwroot/accounts", fileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await userModel.ImageUpload.CopyToAsync(stream);
                 }
 
-                user.Image = fileName; 
+                user.Image = fileName;
             }
+
             _dataContext.Update(user);
             await _dataContext.SaveChangesAsync();
 
             TempData["success"] = "Cập nhật người dùng thành công";
             return RedirectToAction("AccountInfomation");
         }
+
         public async Task LoginByGoogle()
         {
-            // Use Google authentication scheme for challenge
             await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme,
                 new AuthenticationProperties
                 {
@@ -266,7 +263,6 @@ namespace TechecomViet.Controllers
                     return RedirectToAction("Login", "Account");
                 }
 
-                // Kiểm tra nếu user chưa có role thì mới gán
                 var userRoles = await _userManager.GetRolesAsync(newUser);
                 if (!userRoles.Contains("User"))
                 {
@@ -278,7 +274,6 @@ namespace TechecomViet.Controllers
             }
             else
             {
-                // Nếu user đã tồn tại, kiểm tra xem có role chưa
                 var userRoles = await _userManager.GetRolesAsync(existingUser);
                 if (!userRoles.Contains("User"))
                 {

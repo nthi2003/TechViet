@@ -1,5 +1,12 @@
 ﻿@model IEnumerable<OrderModel>
-
+@{
+    ViewData["title"] = "Đơn hàng của bạn";
+}
+<nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
+    <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+    <span style="margin: 0 8px;">/</span>
+    <span style="font-weight: bold; color: #333;">Đơn hàng của bạn</span>
+</nav>
 <div style="display:flex">
     <div>
         @Html.Partial("~/Views/Shared/_PartialInformation.cshtml")

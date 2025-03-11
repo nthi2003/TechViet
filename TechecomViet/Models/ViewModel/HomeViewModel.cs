@@ -5,5 +5,6 @@
         public IEnumerable<CategoryModel> Categories { get; set; }
         public IEnumerable<BrandModel> Brands { get; set; }
         public IEnumerable<ProductModel> Products { get; set; }
+        public IEnumerable<SliderModel> Sliders { get; set; }
     }
 }

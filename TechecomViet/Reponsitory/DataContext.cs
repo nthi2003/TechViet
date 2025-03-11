@@ -22,6 +22,9 @@ namespace TechecomViet.Reponsitory
         public DbSet<CartModel> Carts { get; set; }
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<OrderItemsModel> OrderItems { get; set; }
+        public DbSet<VpayModel> VnInfos { get; set; }
+        public DbSet<ReviewModel> Reviews { get; set; }
+        public DbSet<BlogModel> Blogs { get; set; }
     }
     
 }

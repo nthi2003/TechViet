@@ -12,10 +12,12 @@ namespace TechecomViet.Models
         public int DiscountPercentage { get; set; }
         public string UserId { get; set; }
         public string UserName { get; set; }
+        public string? Email { get; set; }
         public DateTime CreatedDate { get; set; }
         public int TotalPrices { get; set; }
         public int Status { get; set; }
         public List<OrderItemsModel> OrderItems { get; set; } = new List<OrderItemsModel>();
+        public string PaymentMethod {  get; set; }
     }
 
 }

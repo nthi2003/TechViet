@@ -16,9 +16,22 @@ namespace TechecomViet.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
-            return View(await _dataContext.Orders.OrderByDescending(o => o.Id).ToListAsync());
+            int pageSize = 15;
+            int pageNumber = (page ?? 1);
+            int skip = (pageNumber - 1) * pageSize;
+            int totalItems = await _dataContext.Orders.CountAsync();
+            var orders = await _dataContext.Orders
+                                          .OrderByDescending(o => o.Id)
+                                          .Skip(skip)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+            ViewBag.TotalItems = totalItems;
+            ViewBag.PageNumber = pageNumber;
+            ViewBag.PageSize = pageSize;
+
+            return View(orders);
         }
         [HttpGet("OrderDetail/{Id}")]
         public async Task<IActionResult> OrderDetail(int Id)
@@ -31,7 +44,7 @@ namespace TechecomViet.Areas.Admin.Controllers
         }
         [HttpPost]
         [Route("UpdateOrder/{Id}")]
-        public async Task<IActionResult> UpdateOrder(int Id, int Status)
+        public async Task<IActionResult> UpdateOrderAdmin(int Id, int Status)
         {
             var checkOrder = await _dataContext.Orders.FirstOrDefaultAsync(o => o.Id == Id);
             if (checkOrder == null)

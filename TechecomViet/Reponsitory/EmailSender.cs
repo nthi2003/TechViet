@@ -11,7 +11,7 @@ namespace TechecomViet.Reponsitory
             {
                 EnableSsl = true, //bật bảo mật
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("quocthi4321@gmail.com", "gnvqbpddtnaxbsoi")
+                Credentials = new NetworkCredential("quocthi4321@gmail.com", "hqxomwmsdffyprae")
             };
             return client.SendMailAsync(
                 new MailMessage(from: "quocthi4321@gmail.com",

@@ -1,4 +1,5 @@
-﻿<div class="header-top">
+﻿
+<div class="header-top">
     <div class="header-list">
         <div class="header-items">
             <a href="#">
@@ -25,7 +26,7 @@
                     <div class="header-title">Hotline (miễn phí): 18006867</div>
                 </div>
             </a>
-            <a href="#">
+            <a asp-action="Index" asp-controller="Blog">
                 <div class="d-flex list-content">
                     <i class="fa-solid fa-newspaper header-title"></i>
                     <div class="header-title">Tin công nghệ</div>
@@ -40,29 +41,34 @@
             <div>
                 <div class="d-flex">
                     <a href="/">
-                        <i class="fa-solid fa-house" style="margin-top:47px ; margin-right:10px"></i>
+                        <img src="~/images/logo.jpg" style="width: 100px" />
                     </a>
-                    <div style="margin-top:42px ; font-size:18px">TECHVIET</div>
-                </div>
-            </div>
-            <div class="input-group" style="">
-                <div class="input-contentsearch">
-                    <input class="search-input" placeholder="Nhập từ khóa tìm kiếm" style="border: none; outline: none;" name="name" value="" />
-                </div>
-                <div>
-                    <button style="border: none; background: none;">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-            </div>
 
+                </div>
+            </div>
+            <form asp-action="Search" asp-controller="Product" method="post" style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 500px; margin: 0 auto;">
+                <div class="input-group" style="display: flex; align-items: center; width: 100%; border: 1px solid #ddd; border-radius: 25px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                    <div class="input-contentsearch" style="flex: 1;">
+                        <input placeholder="Nhập từ khóa tìm kiếm"
+                               style="width: 100%; padding: 10px 15px; border: none; outline: none; font-size: 16px; color: #333; background: transparent;" name="searchTerm" />
+                    </div>
+                    <div>
+                        <button type="submit"
+                                style="border: none; background: none; padding: 10px 15px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 18px; color: #555;"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
             <div>
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
-                    <div style="width: 150px; margin-top: 40px; margin-left: 20px;">
-                        <a asp-action="AccountInfomation" asp-controller="Account" style="cursor: pointer;">
-                            Xin chào, @User.Identity.Name
-                        </a>
+                    <div>
+                        <div style="width: 150px; margin-top: 40px; margin-left: 20px;">
+                            <a asp-action="AccountInfomation" asp-controller="Account" style="cursor: pointer;">
+                                Xin chào, @User.Identity.Name
+                            </a>
+                        </div>
                     </div>
                 }
                 else
@@ -82,7 +88,7 @@
                 }
             </div>
             <div style="margin-left:50px">
-                <a  asp-action="Index"  asp-controller="Cart" class="d-flex" style="text-decoration:none">
+                <a asp-action="Index" asp-controller="Cart" class="d-flex" style="text-decoration:none">
                     @if (User.Identity?.IsAuthenticated ?? false)
                     {
                         <div style="position: relative; display: inline-block;  margin-top:45px">
@@ -100,28 +106,29 @@
                            font-size: 12px;
                            line-height: 20px;
                            font-weight: bold;
-        ">
+                ">
                                 <span style="color: white">@ViewBag.CartItemCount</span>
                             </div>
                         </div>
                         <div style="margin-top:45px; width:100px;margin-left: 5px;">
                             <span asp-contr>Giỏ hàng</span>
                         </div>
-                    } 
+                    }
 
-                  
+
                 </a>
             </div>
-             <div style="margin-top:40px"> 
-                 @if (User.Identity?.IsAuthenticated ?? false){
+            <div style="margin-top:40px">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
                     <a asp-action="Wishlist" asp-controller="Home">
                         <div style="width:100px; margin-top:7px">
                             <i class="fa-solid fa-heart" style="color: red;"></i>
-                          <span>Yêu thích</span>
-                      </div>
-                    </a> 
-               }
-                
+                            <span>Yêu thích</span>
+                        </div>
+                    </a>
+                }
+
             </div>
         </div>
     </div>

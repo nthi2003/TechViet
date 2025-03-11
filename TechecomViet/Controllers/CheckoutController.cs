@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using TechecomViet.Models;
 using TechecomViet.Reponsitory;
+using TechecomViet.Services.Vnpay;
 
 namespace TechecomViet.Controllers
 {
@@ -10,20 +12,31 @@ namespace TechecomViet.Controllers
     {
         private readonly DataContext _dataContext;
         private readonly IEmailSender _emailSender;
+        private readonly IVnPayService _vnPayService;
+        private readonly UserManager<UserModel> _userManager;
 
-        public CheckoutController(DataContext dataContext, IEmailSender emailSender)
+        public CheckoutController(DataContext dataContext, UserManager<UserModel> userManager, IEmailSender emailSender, IVnPayService vnPayService)
         {
             _dataContext = dataContext;
             _emailSender = emailSender;
+            _vnPayService = vnPayService;
+            _userManager = userManager;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Checkout()
+        public async Task<IActionResult> Checkout(string PaymentMethod, string PaymentId)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var userName = User.FindFirstValue(ClaimTypes.Name);
+            var email = User.FindFirstValue(ClaimTypes.Email);
 
             if (userId == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
             {
                 return RedirectToAction("Login", "Account");
             }
@@ -49,6 +62,7 @@ namespace TechecomViet.Controllers
                     discountPercentage = parsedDiscountPercentage;
                 }
             }
+
             var shippingPrice = 0;
             if (int.TryParse(Request.Cookies["ShippingPrice"], out int parsedShippingPrice))
             {
@@ -69,12 +83,14 @@ namespace TechecomViet.Controllers
                 UserId = userId,
                 UserName = userName,
                 Status = 1,
+                Email = email,
                 CreatedDate = DateTime.Now,
                 TotalPrices = totalPrice,
                 ShippingPrice = shippingPrice,
                 CouponCode = couponCode ?? "",
                 DiscountPercentage = discountPercentage,
-                OrderItems = new List<OrderItemsModel>()
+                OrderItems = new List<OrderItemsModel>(),
+                AddressDetails = user.Address
             };
 
             foreach (var item in cart.Items)
@@ -87,7 +103,6 @@ namespace TechecomViet.Controllers
                     _dataContext.Products.Update(product);
                 }
 
-
                 newOrder.OrderItems.Add(new OrderItemsModel
                 {
                     Image = item.Product.Images[0],
@@ -95,8 +110,14 @@ namespace TechecomViet.Controllers
                     Quantity = item.Quantity,
                     Price = item.Price
                 });
-
             }
+            if (PaymentMethod == "VnPay")
+            {
+                newOrder.PaymentMethod = "Vnpay" + PaymentId;
+                newOrder.Status = 6;
+            }
+
+            else newOrder.PaymentMethod = "COD";
 
             _dataContext.Orders.Add(newOrder);
             await _dataContext.SaveChangesAsync();
@@ -106,6 +127,35 @@ namespace TechecomViet.Controllers
 
             TempData["success"] = "Đặt hàng thành công!";
             return RedirectToAction("Index", "Cart");
+        }
+        [HttpGet]
+        public async Task<IActionResult> PaymentCallbackVnpayAsync()
+        {
+            var response = _vnPayService.PaymentExecute(Request.Query);
+            if (response.VnPayResponseCode == "00")
+            {
+                var newVnpayInsert = new VpayModel
+                {
+                    OrderId = response.OrderId,
+                    PaymentMethod = response.PaymentMethod,
+                    OrderDescription = response.OrderDescription,
+                    TransactionId = response.TransactionId,
+                    PaymentId = response.PaymentId,
+                    DateCreated = DateTime.Now
+                };
+                _dataContext.Add(newVnpayInsert);
+                await _dataContext.SaveChangesAsync();
+                var PaymentMethod = response.PaymentMethod;
+                var PaymentId = response.PaymentId;
+                await Checkout(PaymentMethod, PaymentId);
+            }
+            else
+            {
+                TempData["success"] = "Giao dịch Vnpay thành công.";
+                return RedirectToAction("Index", "Cart");
+            }
+
+            return View(response);
         }
 
     }

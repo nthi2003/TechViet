@@ -1,0 +1,122 @@
+﻿@using TechecomViet.Models.ViewModel
+@model BadgeViewModel
+@{
+    ViewData["title"] = "Huy hiệu";
+}
+<nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
+    <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+    <span style="margin: 0 8px;">/</span>
+    <span style="font-weight: bold; color: #333;">Huy hiệu</span>
+</nav>
+<div style="display: flex; width: 1200px">
+    <div>
+        @Html.Partial("~/Views/Shared/_PartialInformation.cshtml")
+    </div>
+    <div style="width: 100%; padding: 20px;">
+        <p style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">Huy hiệu người dùng</p>
+        <div style="background: white; display: flex; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);">
+            @if (Model.TotalSum > 300000000)
+            {
+                <div style="position: relative; display: inline-block;">
+                    <img src="/images/vang.jpg" style="width: 400px; height: 400px; border-radius: 10px;" />
+
+                    <p style="position: absolute; top: 71%; left: 50%; transform: translateX(-50%); color: red; font-size: 18px; font-weight: bold;">
+                        @(Model.TotalSum.ToString("#,##0 VNĐ"))
+                    </p>
+                    <div style="position: absolute; top: 15%; left: 50%; transform: translateX(-50%);">
+                        <img src="~/accounts/@Model.User.Image" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid white;" />
+                    </div>
+                    <div style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;">Hạng: Vàng</div>
+                </div>
+            }
+            else if (Model.TotalSum > 40000000)
+            {
+                <div style="position: relative; display: inline-block;">
+                    <img src="/images/bac.jpg" style="width: 400px; height: 400px; border-radius: 10px;" />
+
+                    <p style="position: absolute; top: 71%; left: 50%; transform: translateX(-50%); color: red; font-size: 18px; font-weight: bold;">
+                        @(Model.TotalSum.ToString("#,##0 VNĐ"))
+                    </p>
+                    <div style="position: absolute; top: 15%; left: 50%; transform: translateX(-50%);">
+                        <img src="~/accounts/@Model.User.Image" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid white;" />
+                    </div>
+                    <div style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;">Hạng: Bạc</div>
+                </div>
+            }
+            else if (Model.TotalSum > 3000000)
+            {
+                <div style="position: relative; display: inline-block;">
+                    <img src="/images/dong.jpg" style="width: 400px; height: 400px; border-radius: 10px;" />
+
+                    <p style="position: absolute; top: 71%; left: 50%; transform: translateX(-50%); color: red; font-size: 18px; font-weight: bold;">
+                        @(Model.TotalSum.ToString("#,##0 VNĐ"))
+                    </p>
+                    <div style="position: absolute; top: 15%; left: 50%; transform: translateX(-50%);">
+                        <img src="~/accounts/@Model.User.Image" style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid white;" />
+                    </div>
+                    <div style="text-align: center; font-size: 18px; font-weight: bold; margin-top: 10px;">Hạng: Đồng</div>
+                </div>
+            }
+            @if (Model.TotalSum > 300000000)
+            {
+                <div style="border-left: 2px solid #000; padding: 70px; margin-top: 50px; margin-left: 20px; width: 100%;">
+                    <div style="font-size: 18px; font-weight: bold;">
+                    Khách hàng:
+                    <span style="color:#0d6efd;">@Model.UserName</span>
+                </div>
+                <div style="margin-top: 10px; font-size: 16px;">
+                    Cảm ơn khách hàng <span style="color:#0d6efd;">@Model.UserName</span> đã luôn luôn ủng hộ cửa hàng. Quý khách sẽ nhận được những đặc quyền như sau:
+                </div>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="color:green; font-size: 16px;">
+                        <i class="fa-solid fa-check"></i> Mã giảm giá lên đến 40% hàng tháng
+                    </li>
+                    <li style="color:green; font-size: 16px;">
+                        <i class="fa-solid fa-check"></i> Phiếu quà tặng sản phẩm theo năm
+                    </li>
+                </ul>
+                <div style="color:gray">(*) Mã giảm giá sẽ được cung cấp qua mail của khác hàng</div>
+            </div>
+            }
+            else if (Model.TotalSum > 40000000)
+            {
+                <div style="border-left: 2px solid #000; padding: 70px; margin-top: 50px; margin-left: 20px; width: 100%;">
+                    <div style="font-size: 18px; font-weight: bold;">
+                        Khách hàng:
+                        <span style="color:#0d6efd;">@Model.UserName</span>
+                    </div>
+                    <div style="margin-top: 10px; font-size: 16px;">
+                        Cảm ơn khách hàng <span style="color:#0d6efd;">@Model.UserName</span> đã luôn luôn ủng hộ cửa hàng. Quý khách sẽ nhận được những đặc quyền như sau:
+                    </div>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li style="color:green; font-size: 16px;">
+                            <i class="fa-solid fa-check"></i> Mã giảm giá lên đến 20% hàng tháng
+                        </li>
+                        <li style="color:green; font-size: 16px;">
+                            <i class="fa-solid fa-check"></i> Phiếu quà tặng sản phẩm theo năm
+                        </li>
+                    </ul>
+                    <div style="color:gray">(*) Mã giảm giá sẽ được cung cấp qua mail của khác hàng</div>
+                </div>
+            }
+            else if (Model.TotalSum > 3000000)
+            {
+                <div style="border-left: 2px solid #000; padding: 70px; margin-top: 50px; margin-left: 20px; width: 100%;">
+                    <div style="font-size: 18px; font-weight: bold;">
+                        Khách hàng:
+                        <span style="color:#0d6efd;">@Model.UserName</span>
+                    </div>
+                    <div style="margin-top: 10px; font-size: 16px;">
+                        Cảm ơn khách hàng <span style="color:#0d6efd;">@Model.UserName</span> đã luôn luôn ủng hộ cửa hàng. Quý khách sẽ nhận được những đặc quyền như sau:
+                    </div>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li style="color:green; font-size: 16px;">
+                            <i class="fa-solid fa-check"></i> Mã giảm giá lên đến 10% hàng tháng
+                        </li>
+                       
+                    <div style="color:gray">(*) Mã giảm giá sẽ được cung cấp qua mail của khác hàng</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

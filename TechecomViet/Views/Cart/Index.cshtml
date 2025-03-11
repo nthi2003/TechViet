@@ -2,6 +2,38 @@
 @model CartItemViewModel
 @{
     ViewData["title"] = "Giỏ hàng";
+
+    int finalAmount = Model.CartItems.Sum(item => item.Price * item.Quantity); 
+
+    if (Context.Request.Cookies["CouponTitle"] != null && Context.Request.Cookies["ShippingPrice"] != null)
+    {
+        var couponTitle = Context.Request.Cookies["CouponTitle"];
+        var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
+        if (parts.Length > 1 && int.TryParse(parts[1].Trim(), out int discountPercentage) && int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
+        {
+            var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
+            var discountAmount = (totalPrice * discountPercentage ) / 100;
+            finalAmount = totalPrice - discountAmount + shippingPrice;
+        }
+    }
+    else if (Context.Request.Cookies["ShippingPrice"] != null)
+    {
+        if (int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
+        {
+            finalAmount = Model.CartItems.Sum(item => item.Price * item.Quantity) + shippingPrice;
+        }
+    }
+    else if (Context.Request.Cookies["CouponTitle"] != null)
+    {
+        var couponTitle = Context.Request.Cookies["CouponTitle"];
+        var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
+        if (parts.Length > 1 && int.TryParse(parts[1].Trim(), out int discountPercentage))
+        {
+            var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
+            var discountAmount = (totalPrice * discountPercentage) / 100;
+            finalAmount = totalPrice - discountAmount;
+        }
+    }
 }
 <div style="min-height:500px">
     <nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 17px 30px; padding: 20px;">
@@ -47,7 +79,10 @@
                     }
                     else
                     {
-                        <p>Giỏ hàng của bạn đang trống.</p>
+                        <div style="height: 530px ; text-align: center; ">
+                            <img src="~/images/Shoping.png" style="margin-top: 10px" alt="Alternate Text" />
+                            <p>Giỏ hàng của bạn đang trống.</p>
+                        </div>
                     }
                 </div>
             </div>
@@ -108,7 +143,6 @@
                     <div><span>Tổng tạm tính</span></div>
                     <div>
                         <span>@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
-
                     </div>
                 </div>
                 <div style="margin-left: 244px;">
@@ -118,11 +152,10 @@
                             {
                                 var couponTitle = Context.Request.Cookies["CouponTitle"];
                                 var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
-                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage))
+                                if (parts.Length > 1 && int.TryParse(parts[1].Trim(), out int discountPercentage))
                                 {
-                                    // Tính toán giảm giá
                                     var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
-                                    var discountAmount = totalPrice * (discountPercentage / 100);
+                                    var discountAmount = (totalPrice * discountPercentage ) / 100;
                                     <span style="color:red"> - @discountAmount.ToString("#,##0 VNĐ")</span>
                                 }
                             }
@@ -141,65 +174,11 @@
                             }
                         }
                     </div>
-
                 </div>
                 <div style="display:flex ;justify-content: space-between;">
                     <span>Thành tiền</span>
                     <div>
-                        @{
-                            if (Context.Request.Cookies["CouponTitle"] != null && Context.Request.Cookies["ShippingPrice"] != null)
-                            {
-                                var couponTitle = Context.Request.Cookies["CouponTitle"];
-
-                                // Tách chuỗi để lấy DiscountPercentage
-                                var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
-                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage) && int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
-                                {
-                                    // Tính toán giảm giá
-                                    var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
-                                    var discountAmount = totalPrice * (discountPercentage / 100);
-                                    var finalPrice = totalPrice - discountAmount;
-
-                                    <span style="color:#007bff">@((finalPrice + shippingPrice).ToString("#,##0 VNĐ"))</span>
-                                }
-                                else {
-                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
-                                }
-                            }
-                            else if (Context.Request.Cookies["CouponTitle"] != null){
-                                var couponTitle = Context.Request.Cookies["CouponTitle"];
-                                var parts = couponTitle.Split(new[] { "||" }, StringSplitOptions.None);
-                                if (parts.Length > 1 && decimal.TryParse(parts[1].Trim(), out decimal discountPercentage) )
-                                
-                                {
-                                    var totalPrice = Model.CartItems.Sum(item => item.Price * item.Quantity);
-                                    var discountAmount = totalPrice * (discountPercentage / 100);
-                                    var priceCoupon = totalPrice - discountAmount;
-
-                                    <span style="color:#007bff">@((priceCoupon).ToString("#,##0 VNĐ"))</span>
-                                }
-                                else {
-                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
-                                }
-                            }
-                   
-                            else
-                            {
-
-                                if (Context.Request.Cookies["ShippingPrice"] != null)
-                                {
-                                    if (int.TryParse(Context.Request.Cookies["ShippingPrice"], out int shippingPrice))
-                                    {
-                                        <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity + shippingPrice).ToString("#,##0 VNĐ"))</span>
-                                    }
-                                }
-                                else
-                                {
-                                    <span style="color:#007bff">@(Model.CartItems.Sum(item => item.Price * item.Quantity).ToString("#,##0 VNĐ"))</span>
-                                }
-
-                            }
-                        }
+                        <span style="color:#007bff">@finalAmount.ToString("#,##0 VNĐ")</span>
                     </div>
                 </div>
                 <span style="margin-left: 230px">(Đã bao gồm VAT)</span>
@@ -209,7 +188,13 @@
 
                 <div style="text-align: center ; margin-top: 20px;">Hoặc</div>
                 <div style="color:white; background-color:red; border-radius:8px; height: 50px; text-align:center; display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-                    <span>Thanh toán bằng VNPAY</span>
+                    <form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment">
+                        <input type="hidden" name="Name" value="@User.Identity.Name" />
+                        <input type="hidden" name="Amount" value="@finalAmount" />
+                        <input type="hidden" name="OrderDescription" value="Thanh toán qua Vnpay tại VietTech" />
+                        <input type="hidden" name="OrderType" value="other" />
+                        <button style="border: none ; color: white ; background-color: red ; font-weight: 600;" type="submit">Thanh toán bằng VNPAY</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -251,15 +236,13 @@
                         url: "/AddCoupon",
                         data: { coupon_value: coupon_value },
                         success: function (result) {
-                            console.log(result); // Debug API response
-
                             if (result.success) {
                                 Swal.fire({
                                     icon: "success",
                                     title: "Thành công",
                                     text: result.message,
                                 }).then(() => {
-                                    window.location.href = result.redirectUrl || "/Cart"; // Chuyển hướng đúng
+                                    window.location.href = result.redirectUrl || "/Cart";
                                 });
                             } else {
                                 Swal.fire({
@@ -280,10 +263,9 @@
                     });
                 });
             });
-
         </script>
         <script>
-                $(".btn-add-shipping").click(function () {
+            $(".btn-add-shipping").click(function () {
                 var tinh = $("#tinh").find('option:selected').text();
                 var quan = $("#quan").find('option:selected').text();
                 var phuong = $("#phuong").find('option:selected').text();
@@ -312,7 +294,7 @@
                 });
             });
             $(document).ready(function () {
-                //Lấy tỉnh thành
+                // Lấy tỉnh thành
                 $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
                     if (data_tinh.error == 0) {
                         $.each(data_tinh.data, function (key_tinh, val_tinh) {
@@ -320,7 +302,7 @@
                         });
                         $("#tinh").change(function (e) {
                             var idtinh = $(this).val();
-                            //Lấy quận huyện
+                            // Lấy quận huyện
                             $.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
                                 if (data_quan.error == 0) {
                                     $("#quan").html('<option value="0">Quận Huyện</option>');
@@ -328,7 +310,7 @@
                                     $.each(data_quan.data, function (key_quan, val_quan) {
                                         $("#quan").append('<option value="' + val_quan.id + '">' + val_quan.full_name + '</option>');
                                     });
-                                    //Lấy phường xã
+                                    // Lấy phường xã
                                     $("#quan").change(function (e) {
                                         var idquan = $(this).val();
                                         $.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
@@ -340,16 +322,12 @@
                                             }
                                         });
                                     });
-
                                 }
-                            }); //end $.getJson
-
+                            });
                         });
-
                     }
                 });
             });
         </script>
-
-
     }
+</div>

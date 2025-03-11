@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ProductModel>
+<nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
+    <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+    <span style="margin: 0 8px;">/</span>
+    <span style="font-weight: bold; color: #333;">@ViewBag.Categories.Name</span>
+</nav>
+<div style="display: flex; margin:30px; gap :20px">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var item in Model)
+        {
+            <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                <div style="position: relative; display: inline-block;">
+                    <div>
+                        @if (item.Images != null && item.Images.Any())
+                        {
+                            <img src="~/products/@item.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
+                        }
+
+                    </div>
+                </div>
+                <div style="padding: 15px;">
+                    <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">
+                        @item.Brand?.Name
+                    </div>
+                    <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                        <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id"
+                           style="text-decoration: none; color: inherit;">
+                            @(item.Name != null && item.Name.Length > 20 ? item.Name.Substring(0, 20) + "..." : item.Name)
+                        </a>
+                    </div>
+                    <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                        <div>
+                            @if (item.Price != null && item.DiscountPercentage != null)
+                            {
+                                var discountedPrice = item.Price - (item.Price * item.DiscountPercentage / 100);
+                                @discountedPrice.ToString("#,##0 VNĐ")
+                            }
+                        </div>
+                    </div>
+                    @if (item.Price != null)
+                    {
+                        <del style="font-size: 14px; color: #6b7280;">@item.Price.ToString("#,##0 VNĐ")</del>
+                    }
+                    @if (item.Quantity != 0)
+                    {
+                        <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                class="add-to-cart" data-product-id="@item.Id">
+                            Thêm vào giỏ
+                        </button>
+                    }
+                    else
+                    {
+                        <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                    }
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div style="text-align: center; font-size: 16px; color: #6b7280;">Không có sản phẩm nào.</div>
+    }
+</div>

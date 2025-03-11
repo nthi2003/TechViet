@@ -1,1 +1,64 @@
-﻿
+﻿@model IEnumerable<ProductModel>
+@{
+    ViewData["Title"] = @ViewBag.Keyword;
+}
+<div style="padding: 20px; background-color: #f0f9ff; min-height: 100vh;">
+    <h2 style="text-align: center; font-size: 28px; color: #2563eb; margin-bottom: 20px;">@ViewBag.Keyword</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        @foreach (var item in Model)
+        {
+            <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                <div style="position: relative; display: inline-block;">
+                    <div>
+                        @if (item?.Images != null && item.Images.Any())
+                        {
+                            <img src="~/products/@item.Images[0]" style="width: 100%; height: 150px; object-fit: cover; display: block;">
+                        }
+                        else
+                        {
+                            <img src="~/images/default-product-image.jpg" style="width: 100%; height: 150px; object-fit: cover; display: block;" alt="Default Image">
+                        }
+                    </div>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <button class="add-btn-wishlist" data-product_id="@item.Id"
+                                style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
+                                       border: none; border-radius: 50%; padding: 8px; cursor: pointer;
+                                       font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                            <i class="fa-solid fa-heart" style="color: red;"></i>
+                        </button>
+                    }
+                </div>
+                <div style="padding: 15px;">
+                    <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">@item?.Brand?.Name</div>
+                    <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                        <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item?.Id" style="text-decoration: none; color: inherit;">@item?.Name</a>
+                    </div>
+                    <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                        @if (item != null)
+                        {
+                            <div>
+                                @((item.Price - (item.Price * (item.DiscountPercentage) / 100)).ToString("#,##0 VNĐ"))
+                            </div>
+                        }
+                    </div>
+                    @if (item != null)
+                    {
+                        <del style="font-size: 14px; color: #6b7280;">@item.Price.ToString("#,##0 VNĐ")</del>
+                    }
+                    @if (item?.Quantity != 0)
+                    {
+                        <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                class="add-to-cart" data-product-id="@item?.Id">
+                            Thêm vào giỏ
+                        </button>
+                    }
+                    else
+                    {
+                        <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,14 +1,14 @@
 ﻿<div style="width: 200px;  min-height:500px">
     <div style="padding: 20px;">
-        <div  style="padding-top: 10px;padding-bottom: 10px;">
+        <div style="padding-top: 10px;padding-bottom: 10px;">
             <a style="text-decoration:none ;  color:black;" asp-action="AccountInfomation" asp-controller="Account">
                 <i style="margin-top: 3px;margin-right: 9px;" class="fa-solid fa-user"></i>
                 <span>
-                    Sửa hồ sơ
+                    Hồ sơ cá nhân
                 </span>
             </a>
         </div>
-        <div  style="padding-top: 10px;padding-bottom: 10px;">
+        <div style="padding-top: 10px;padding-bottom: 10px;">
             <a style="text-decoration:none ;  color:black;" asp-action="MyOrder" asp-controller="Order">
                 <i style="margin-top: 3px;margin-right: 9px;" class="fa-solid fa-boxes-stacked"></i>
                 <span>
@@ -16,6 +16,40 @@
                 </span>
             </a>
         </div>
+        
+            <div style="padding-top: 10px;padding-bottom: 10px;">
+
+            <a style="text-decoration:none; color:black;" asp-action="Index" asp-controller="Badge">
+                <i class="fa-solid fa-trophy" style="margin-top: 3px;margin-right: 9px;"></i>
+                    <span>
+                        Huy hiệu
+                    </span>
+                </a>
+            </div>
+        @if (User.IsInRole("ADMIN") || User.IsInRole("STAFF") || User.IsInRole("BLOG"))
+        {
+            <div style="padding-top: 10px;padding-bottom: 10px;">
+                
+                <a style="text-decoration:none; color:black;" href="/Admin/Dashboard">
+                    <i style="margin-top: 3px;margin-right: 9px;" class="fa-solid fa-table-columns"></i>
+                    <span>
+                        Thống kê
+                    </span>
+                </a>
+            </div>
+        }
+        @if (User.IsInRole("ADMIN") || User.IsInRole("STAFF"))
+        {
+            <div style="padding-top: 10px;padding-bottom: 10px;">
+
+                <a style="text-decoration:none; color:black;" asp-action="OrderStaff" asp-controller="Order">
+                    <i style="margin-top: 3px;margin-right: 9px;" class="fa-solid fa-user-plus"></i>
+                    <span>
+                        Tạo đơn hàng
+                    </span>
+                </a>
+            </div>
+        }
         <div style="padding-top: 10px;padding-bottom: 10px;">
             <a style="text-decoration:none ;  color:black;" asp-action="Logout" asp-controller="Account">
                 <i style="margin-top: 3px;margin-right: 9px;" class="fa-solid fa-right-from-bracket"></i>
@@ -24,5 +58,5 @@
                 </span>
             </a>
         </div>
-</div>
+    </div>
 </div>

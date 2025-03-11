@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Thống kê";
+}
+
+<h2 style="margin: 30px">Thống kê</h2>
+<div style="margin: 30px; display: flex; gap: 20px">
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 300px; height: 100px;">
+        <div style="display: flex">
+            <div style="margin-top: 4px; height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                <i class="fa-solid fa-barcode"></i>
+            </div>
+            <div>
+                <div>@ViewBag.CountProduct</div>
+                <div>Tổng sản phẩm</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 300px; height: 100px;">
+        <div style="display: flex">
+            <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div>
+                <div>@ViewBag.CountOrder</div>
+                <div>Tổng đơn hàng</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 300px; height: 100px;">
+        <div style="display: flex">
+            <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+                <div>@ViewBag.CountUser</div>
+                <div>Tổng người dùng</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin: 30px; gap: 20px">
+    <span>Biểu đồ thống kê</span>
+    <div style="margin: 20px;">
+        <label for="filterMonth">Chọn tháng:</label>
+        <input type="month" id="filterMonth">
+        <button onclick="loadChartData()">Lọc</button>
+    </div>
+    <div id="myfirstchart" style="height: 250px;"></div>
+</div>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script>
+        function loadChartData() {
+            var selectedMonth = $("#filterMonth").val();
+            if (!selectedMonth) {
+                alert("Vui lòng chọn tháng!");
+                return;
+            }
+
+            $.ajax({
+                url: `/Admin/Dashboard/GetStatisticsMonth?filterMonth=${selectedMonth}`,
+                type: 'GET',
+                success: function (data) {
+                    console.log("Dữ liệu nhận được:", data);
+                    if (data.length === 0) {
+                        alert("Không có dữ liệu để hiển thị!");
+                        return;
+                    }
+
+                    // Cập nhật bảng dữ liệu
+                    let tableContent = "";
+                    data.forEach(item => {
+                        tableContent += `<tr><td>${item.date}</td><td>${item.totalRevenue.toLocaleString()} VNĐ</td></tr>`;
+                    });
+                    $("#statisticsTable").html(tableContent);
+
+                    // Vẽ biểu đồ
+                    $("#myfirstchart").empty();
+                    new Morris.Bar({
+                        element: 'myfirstchart',
+                        data: data,
+                        xkey: 'date',
+                        ykeys: ["totalRevenue"],
+                        labels: ['Doanh thu'],
+                        barColors: ['#2563EB'],
+                        hideHover: 'auto',
+                        resize: true,
+                        xLabelAngle: 45
+                    });
+                },
+                error: function (error) {
+                    console.error("Lỗi khi lấy dữ liệu:", error);
+                }
+            });
+        }
+    </script>
+}
+

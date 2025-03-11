@@ -1,67 +1,81 @@
-﻿
-@model UserModel;
+﻿@model UserModel
+@{
+    ViewData["title"] = "Hồ sơ cá nhân";
+}
+<nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
+    <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
+    <span style="margin: 0 8px;">/</span>
+    <span style="font-weight: bold; color: #333;">Hồ sơ cá nhân</span>
+</nav>
 <div style="display:flex">
     <div>
         @Html.Partial("~/Views/Shared/_PartialInformation.cshtml")
     </div>
     <div style="background-color:white; width: 950px; margin-top: 10px; padding: 20px">
-        <div style="">
-            <h4>Hồ sơ của tôi</h4>
-            <span>Quản lý thông tin hồ sơ để bảo mật tài khoản</span>
-        </div>
+        <h4>Hồ sơ của tôi</h4>
+        <span>Quản lý thông tin hồ sơ để bảo mật tài khoản</span>
         <hr />
+
         <div style="display: flex">
-            <div>
-                <form asp-action="UpdateAccount" method="post" style="display: flex; flex-direction: column; gap: 10px;" enctype="multipart/form-data">
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <label style="width: 150px;">Tên đăng nhập</label>
-                        <input asp-for="UserName"  style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+            <form asp-action="UpdateAccount" method="post" enctype="multipart/form-data"
+                  style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label style="width: 150px;">Tên đăng nhập</label>
+                            <input asp-for="UserName" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label style="width: 150px;">Tên đầy đủ</label>
+                            <input asp-for="FullName" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+                        </div>
+                        <div style="align-items: center; gap: 10px;">
+                            <label style="width: 150px;">Email:</label>
+                            <label style="margin-left:10px;">@Model.Email</label>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label style="width: 150px;">Số điện thoại</label>
+                            <input asp-for="PhoneNumber" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label style="width: 150px;">Địa chỉ chi tiết</label>
+                            <input asp-for="Address" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+                        </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <label style="width: 150px;">Tên đầy đủ</label>
-                        <input asp-for="FullName" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
+
+                    <div style="border-left: 1px solid #ccc; margin-left: 40px; padding-left: 20px; margin-left: 100px;">
+                        <div style="margin-left: 100px;">
+                            <img id="profileImage" src="@(string.IsNullOrEmpty(Model.Image) ? "/images/default-avatar.png" : Url.Content("~/accounts/" + Model.Image))"
+                                 style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" />
+                            <input asp-for="ImageUpload" id="fileInput" style="display: none;" accept="image/*" />
+                        </div>
+                        <div style="margin-top: 20px; margin-left: 136px;">
+                            <button type="button" onclick="document.getElementById('fileInput').click()">Chọn ảnh</button>
+                        </div>
                     </div>
-                    <div style="align-items: center; gap: 10px;">
-                        <label style="width: 150px;">Email : </label>
-                        <label style="margin-left:10px;">@Model.Email</label>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <label style="width: 150px;">Số điện thoại</label>
-                        <input asp-for="PhoneNumber" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <label style="width: 150px;">Địa chỉ chi tiết</label>
-                        <input asp-for="Address" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; width: 300px" />
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Cập nhật</button>
-                    </div>
-                </form>
-            </div>
-            <div style="border-left: 1px solid #ccc; margin-left: 40px">
-                <div >
-                    <img id="profileImage" src="~/accounts/@Model.Image" />
-                    <input asp-for ="ImageUpload" id="fileInput" style="display: none;" accept="image/*" />
                 </div>
-                <div style="margin-left: 170px ; margin-top: 30px;">
-                    <button onclick="document.getElementById('fileInput').click()">Chọn ảnh</button>
+
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+                        Cập nhật
+                    </button>
                 </div>
-           </div>
+            </form>
         </div>
     </div>
 </div>
-@section Scripts {
-<script>
-    document.getElementById('fileInput').addEventListener('change', function(e) {
-        const file = e.target.files[0];
-        if (file != null) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('profileImage').src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-</script>
 
+@section Scripts {
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    document.getElementById('profileImage').src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 }

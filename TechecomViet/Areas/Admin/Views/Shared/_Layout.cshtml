@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="~/images/logo.jpg" />
     <title>@ViewData["Title"] - TechViet</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TechViet.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body style="background-color:#F8FAFC">
@@ -16,7 +18,8 @@
             @Html.Partial("_PartitalNavbar")
        </div>
         <div>
-            <main role="main">
+            <main role="main" style="">
+				@Html.Partial("_PartitalHeader")
                 @RenderBody()
             </main>
         </div>
@@ -25,7 +28,6 @@
     
 	<script src="~/js/jquery.js"></script>
 	<script src="~/js/bootstrap.min.js"></script>
-	<script src="~/js/jquery.scrollUp.min.js"></script>
 	<script src="~/js/price-range.js"></script>
 	<script src="~/js/jquery.prettyPhoto.js"></script>
 
@@ -53,15 +55,7 @@
 			Swal.fire(message);
 		})
 	</script>
-	<script>
-		new DataTable('#mytable', {
-			layout: {
-				topStart: {
-					buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-				}
-			}
-		});
-	</script>
+
 	@RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -10,11 +10,11 @@ namespace TechecomViet.Controllers
     public class OrderController : BaseController
     {
         private readonly DataContext _dataContext;
-        private readonly UserManager<UserModel> _userManager;
-        public OrderController(DataContext context, UserManager<UserModel> userManager) : base(context)
+
+        public OrderController(DataContext context) : base(context)
         {
             _dataContext = context;
-            _userManager = userManager;
+
         }
         public async Task<IActionResult> MyOrder()
         {
@@ -30,6 +30,11 @@ namespace TechecomViet.Controllers
                 .ToListAsync();
             return View(order);
         }
+        public async Task<IActionResult> OrderStaff()
+        {
+            await SetCartItemCountAsync();
+            return View();
+        }
         public async Task<IActionResult> UpdateOrder(int Id)
         {
 
@@ -39,7 +44,7 @@ namespace TechecomViet.Controllers
                 TempData["error"] = "Đơn hàng không tồn tại";
                 return RedirectToAction("MyOrder");
             }
-            checkOrder.Status =  0;
+            checkOrder.Status = 0;
             _dataContext.Update(checkOrder);
             await _dataContext.SaveChangesAsync();
             TempData["success"] = "Hủy đơn thành công";

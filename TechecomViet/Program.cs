@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TechecomViet.Models;
 using TechecomViet.Reponsitory;
+using TechecomViet.Services.Vnpay;
 
 var builder = WebApplication.CreateBuilder(args);
 //cau hing google
@@ -18,6 +19,7 @@ builder.Services.AddAuthentication(options =>
     options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
     options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
 });
+
 // Cấu hình Session
 builder.Services.AddSession(options =>
 {
@@ -45,7 +47,8 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.IsEssential = true;
 });
-
+//Connect VNPay API
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 var app = builder.Build();
 
 // Cấu hình môi trường và các Middleware

@@ -1,44 +1,45 @@
 ﻿@model IEnumerable<ShippingModel>
-<div class="p-5" style="width:1720px">
+<div class="p-5" style="width:1895px">
     <div>
         <h2>Danh sách giá giao hàng</h2>
         <a asp-action="Create" asp-controller="Ship">Tạo mới</a>
     </div>
-    <table class="table table-striped" id="myTable">
-
-        <thead>
-            <tr>
-                <th>Thành phố/Tỉnh</th>
-                <th>Quận/Huyện</th>
-                <th>Phường/Xã</th>
-                <th>Giá</th>
-                <th>Xử lí</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                @foreach (var shipping in Model)
+    <div style="max-height: 700px; border: 1px solid #ddd;">
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+            <thead style="background: #f8f9fa; color: #333;">
+                <tr>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Thành phố/Tỉnh</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Quận/Huyện</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Phường/Xã</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Giá</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Xử lí</th>
+                </tr>
+            </thead>
+            <tbody style="color: #555; font-size: 14px;">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var shipping in Model)
+                    {
+                        <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
+                            <td style="padding: 12px;">@shipping.City</td>
+                            <td style="padding: 12px;">@shipping.District</td>
+                            <td style="padding: 12px;">@shipping.Ward</td>
+                            <td style="padding: 12px;">@shipping.Price.ToString("#,##0 VNĐ")</td>
+                            <td style="padding: 12px;">
+                                <a asp-action="Delete" asp-controller="Ship" asp-route-Id="@shipping.Id"><i class="fa-solid fa-trash" style="color:red"></i></a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
                 {
                     <tr>
-                        <td>@shipping.City</td>
-                        <td>@shipping.District</td>
-                        <td>@shipping.Ward</td>
-                        <td>@shipping.Price.ToString("#,##0 VNĐ")</td>
-                        <td>
-                            <a  asp-action="Delete" asp-controller="Ship" asp-route-Id="@shipping.Id"><i class="fa-solid fa-trash" style="color:red"></i></a>
-                        </td>
+                        <td colspan="5" class="text-center text-muted">Chưa có giá giao hàng</td>
                     </tr>
                 }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="5" class="text-center text-muted">Chưa có giá giao hàng</td>
-                </tr>
-            }
-        </tbody>
+            </tbody>
 
-    </table>
+        </table>
+    </div>
 
 </div>

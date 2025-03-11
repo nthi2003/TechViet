@@ -84,13 +84,15 @@ namespace TechecomViet.Controllers
                 {
                     return NotFound(new { message = "Sản phẩm không tồn tại" });
                 }
+                 ;
+                int discountedPrice =  product.Price - (product.Price * product.DiscountPercentage) / 100 ;
 
                 cartItem = new CartItemModel
                 {
                     CartId = cart.Id,
                     ProductId = productId,
                     Quantity = quantity,
-                    Price = product.Price
+                    Price = discountedPrice 
                 };
 
                 cart.Items.Add(cartItem);

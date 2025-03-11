@@ -4,13 +4,13 @@
     <div class="category-title">
         <span style="margin-left:12px; margin-top:10px">Danh mục nổi bật</span>
     </div>
-    <div class="list-category">
+    <div class="list-category" style="gap:35px">
         @foreach (var item in Model)
         {
             <div>
-                <a href="#">
-                    <div class="img-div">
-                        <img style="width: 100%; height: 56px; object-fit: cover;" src="~/categories/@item.Image" alt="@item.Name" />
+                <a asp-action="FindProductCategory" asp-controller="Product" asp-route-categoryId="@item.Id">
+                    <div class="">
+                        <img style="width: 100px; height: 100px; object-fit: cover;" src="~/categories/@item.Image" alt="@item.Name" />
                     </div>
                     <div>
                         <span>@item.Name</span>

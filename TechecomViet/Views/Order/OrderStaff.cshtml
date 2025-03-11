@@ -1,0 +1,28 @@
+﻿
+<div style="display:flex">
+    <div>
+        @Html.Partial("~/Views/Shared/_PartialInformation.cshtml")
+    </div>
+    <div style="background-color:white; width: 950px; margin-top: 10px; padding: 20px">
+        <h4>Đơn hàng</h4>
+     
+        <hr />
+        <div>
+            <span>Danh sách sản phẩm</span>
+           
+            </div>
+        </div>
+        <div style="display: flex ; margin-top: 10px">
+            <form asp-action="UpdateAccount" method="post" enctype="multipart/form-data"
+                  style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+                        Tạo đơn
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+</div>
+

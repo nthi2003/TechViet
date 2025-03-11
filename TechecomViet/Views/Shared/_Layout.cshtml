@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="~/images/logo.jpg" />
     <title>@ViewData["Title"] - TechViet</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -12,12 +13,13 @@
 <body style="background-color:#F8FAFC">
     @Html.Partial("_PartialHeader.cshtml")
     <div class="container" >
-        <main role="main"  class="pb-3">
+        <main role="main"  >
             @RenderBody()
         </main>
     </div>
 
     @Html.Partial("_PartialFooter.cshtml")
+    <script type="text/javascript" src="https://cdn.fchat.vn/assets/embed/webchat.js?id=67c728125ec7292c540b16c0" async="async"></script><!--End of Fchat.vn-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -5,77 +5,121 @@
     ViewData["title"] = "TechViet - Nơi ươm mầm công nghệ Việt";
 }
 
-<div>
-    <partial name="_PartialCategory" model="Model.Categories" />
-</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-<div style="margin-left: 600px; margin-top: 20px">
-    <h3>Sản phẩm mới</h3>
-</div>
-
-<div class="product-grid">
-    @foreach (var item in Model.Products)
+<div class="slider">
+    @foreach (var item in Model.Sliders)
     {
-        <div class="product-card">
-            <div style="position: relative; display: inline-block;">
-                <div>
-                    <img src="~/products/@item.Images[0]" style="width: 100%; display: block;">
-                </div>
-                @if (User.Identity?.IsAuthenticated ?? false)
-                {
-                    <button class="add-btn-wishlist" data-product_id="@item.Id"
-                            style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
-               border: none; border-radius: 50%; padding: 8px; cursor: pointer;
-               font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
-                        <i class="fa-solid fa-heart" style="color: red;"></i>
-                    </button>
-                }
-            </div>
-            <div class="brand">@item.Brand.Name</div>
-            <div class="product-name"><a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id">@item.Name</a></div>
-            <div class="price">
-                <div class="sale-price">
-                    <div class="sale-price">
-                        @(((decimal)item.Price - ((decimal)item.Price * (decimal)(item.DiscountPercentage ?? 0) / 100)).ToString("#,##0 VNĐ"))
-                    </div>
-                </div>
-                <div class="">@item.Price.ToString("#,##0 VNĐ")</div>
-            </div>
-             @if(item.Quantity != 0){
-                <button class="add-to-cart" data-product-id="@item.Id">Thêm vào giỏ</button>
-             }
-             else {
-                 <div>Hết hàng</div>
-             }
+        <div>
+            <img src="~/sliders/@item.Image" alt="@item.Name" />
         </div>
     }
 </div>
 
+<div style="padding: 20px; min-height: 100vh; ">
+    <div>
+        <partial name="_PartialCategory" model="Model.Categories" />
+    </div>
+
+    <div style="margin-top: 20px; text-align: center">
+        <h3 style="font-size: 24px; color: #2563eb; font-weight: bold;">Sản phẩm mới</h3>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        @foreach (var item in Model.Products)
+        {
+            <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                <div style="position: relative; display: inline-block;">
+                    <div>
+                        <img src="~/products/@item.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
+                    </div>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <button class="add-btn-wishlist" data-product_id="@item.Id"
+                                style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
+                                       border: none; border-radius: 50%; padding: 8px; cursor: pointer;
+                                       font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                            <i class="fa-solid fa-heart" style="color: red;"></i>
+                        </button>
+                    }
+                    @if (User.IsInRole("ADMIN") || User.IsInRole("STAFF"))
+                    {
+                        <button class="add-btn-puss" data-product_id="@item.Id"
+                                style="position: absolute; top: 10px; left: 10px; background: rgba(255, 255, 255, 0.8);
+                                       border: none; border-radius: 50%; padding: 8px; cursor: pointer;
+                                       font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                            <i class="fa-solid fa-plus" style="color: #2563eb;"></i>
+                        </button>
+                    }
+                </div>
+                <div style="padding: 15px;">
+                    <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">@item.Brand.Name</div>
+                    <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                        <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id"
+                           style="text-decoration: none; color: inherit;">
+                            @(item.Name.Length > 20 ? item.Name.Substring(0, 20) + "..." : item.Name)
+                        </a>
+                    </div>
+                    <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                        <div>
+                            @((item.Price - (item.Price * (item.DiscountPercentage) / 100)).ToString("#,##0 VNĐ"))
+                        </div>
+                    </div>
+                    <del style="font-size: 14px; color: #6b7280;">@item.Price.ToString("#,##0 VNĐ")</del>
+                    @if (item.Quantity != 0)
+                    {
+                        <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                class="add-to-cart" data-product-id="@item.Id">
+                            Thêm vào giỏ
+                        </button>
+                    }
+                    else
+                    {
+                        <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+
         $(document).ready(function () {
             $('.add-btn-wishlist').click(function () {
                 var Id = $(this).data("product_id");
-
 
                 $.ajax({
                     type: "POST",
                     url: "@Url.Action("AddWishlist", "Home")",
                     data: { Id: Id },
-
                     success: function (response) {
                         if (response) {
-
                             Swal.fire({
-                            title: "Thành công!",
-                            text: response.message,
-                            icon: "success",
-                            confirmButtonText: "OK"
+                                title: "Thành công!",
+                                text: response.message,
+                                icon: "success",
+                                confirmButtonText: "OK"
                             });
                         }
                     },
-                     error: function () {
+                    error: function () {
                         Swal.fire({
                             title: "Lỗi!",
                             text: errorMessage,
@@ -86,12 +130,41 @@
                 });
             });
         });
-    </script>
-    <script>
+
+        $(document).ready(function () {
+            $('.add-btn-puss').click(function () {
+                var Id = $(this).data("product_id");
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("AddOrderStaff", "Home")",
+                    data: { Id: Id },
+                    success: function (response) {
+                        if (response) {
+                            Swal.fire({
+                                title: "Thành công!",
+                                text: response.message,
+                                icon: "success",
+                                confirmButtonText: "OK"
+                            });
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            title: "Lỗi!",
+                            text: errorMessage,
+                            icon: "error",
+                            confirmButtonText: "OK"
+                        });
+                    }
+                });
+            });
+        });
+
         $(document).ready(function () {
             $(".add-to-cart").click(function () {
-                var productId = $(this).data("product-id"); 
-                var quantity = 1; 
+                var productId = $(this).data("product-id");
+                var quantity = 1;
 
                 $.ajax({
                     type: "POST",
@@ -117,5 +190,4 @@
             });
         });
     </script>
-
 }

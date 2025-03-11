@@ -30,20 +30,30 @@ namespace TechecomViet.Areas.Admin.Controllers
         }
         [Route("Create")]
         [HttpPost]
-        public async Task<IActionResult> Create(ShippingModel shippingModel , string phuong, string quan , string tinh , int price)
+        public async Task<IActionResult> Create(ShippingModel shippingModel, string phuong, string quan, string tinh, int price)
         {
-            shippingModel.City = tinh;
-            shippingModel.District = quan;
-            shippingModel.Ward = phuong;
+            // Gán giá trị từ form vào model
+            shippingModel.City = tinh?.Trim(); // Loại bỏ khoảng trắng thừa
+            shippingModel.District = quan?.Trim();
+            shippingModel.Ward = phuong?.Trim();
             shippingModel.Price = price;
-            var existingShipping = await _dataContext.Shippings.AnyAsync(x => x.City == tinh && x.District == quan && x.Ward == phuong);
+
+            // Kiểm tra xem khu vực đã tồn tại chưa
+            var existingShipping = await _dataContext.Shippings
+                .AnyAsync(x => x.City == shippingModel.City
+                            && x.District == shippingModel.District
+                            && x.Ward == shippingModel.Ward);
+
             if (existingShipping)
             {
                 TempData["error"] = "Giá khu vực này đã tồn tại";
                 return RedirectToAction("Index");
             }
+
+            // Thêm bản ghi mới vào database
             _dataContext.Shippings.Add(shippingModel);
             await _dataContext.SaveChangesAsync();
+
             TempData["success"] = "Thêm giá giao hàng theo khu vực thành công";
             return RedirectToAction("Index");
         }

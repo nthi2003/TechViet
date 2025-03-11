@@ -26,11 +26,13 @@ namespace TechecomViet.Controllers
             var categories = _dataContext.Categories.Where(c => c.Status == 1).ToList();
             var brands = _dataContext.Brands.Where(b => b.Status == 1).ToList();
             var products = _dataContext.Products.ToList();
+            var sliders = _dataContext.Sliders.ToList();
             var model = new HomeViewModel
             {
                 Categories = categories,
                 Brands = brands,
-                Products = products
+                Products = products,
+                Sliders = sliders
             };
 
             return View(model);
@@ -64,6 +66,27 @@ namespace TechecomViet.Controllers
              await _dataContext.SaveChangesAsync();
              return Ok(new { success = true, message = "Thêm sản phẩm yêu thích thành công" });
            
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddOrderStaff(int Id, WishlistModel wishlistmodel)
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            var existingWishList = await _dataContext.Wishlists.FirstOrDefaultAsync(w => w.ProductId == Id && w.UserId == user.Id);
+            if (existingWishList != null)
+            {
+                return BadRequest(new { success = false, message = "Sản phẩm đã có trong danh sách yêu thích" });
+            }
+            var wishlistProduct = new WishlistModel
+            {
+                ProductId = Id,
+                UserId = user.Id
+            };
+            _dataContext.Wishlists.Add(wishlistProduct);
+            await _dataContext.SaveChangesAsync();
+            return Ok(new { success = true, message = "Thêm sản phẩm yêu thích thành công" });
+
 
         }
         public async Task<IActionResult> DeleteWishlist(int Id)
