@@ -4,14 +4,20 @@
     ViewData["title"] = "Danh sách hãng";
 }
 
-<div class="p-5" style="max-width: 1895px;">
+<div class="p-5" style="max-width: 100%;">
     <h3 class="text-xl font-bold mb-4">Danh sách hãng</h3>
-    <a asp-action="Create" asp-controller="Brand">+ Tạo mới</a>
-    <div style="max-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
-        <table style="width: 1795px; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
+    <div style="justify-content:space-between; display: flex">
+        <a asp-action="Create" asp-controller="Brand">+ Tạo mới</a>
+
+        <form method="GET" style="display: flex;">
+            <input style="border: 1px solid #000; border-radius: 20px 0px 0px 20px ; padding: 9px ;outline: none; background-color: #f9f9f9;" type="text" name="name" value="@Context.Request.Query["name"]" placeholder="Nhập tên hãng" />
+            <button style="padding: 10px 20px; border: none; background-color: #007bff; color: white; cursor: pointer; border-radius: 0 25px 25px 0; transition: background-color 0.3s ease;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+   </div>
+    <div style="min-height: 500px; overflow-y: auto; border: 1px solid #ddd;">
+        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
             <thead style="background: #f8f9fa; color: #333;">
                 <tr>
-                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">#</th>
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Tên Hãng</th>
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Chi tiết</th>
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd;">Hình ảnh</th>
@@ -25,7 +31,6 @@
                     @if (item != null)
                     {
                         <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
-                            <td style="padding: 12px; font-weight: bold;">@item.Id</td>
                             <td style="padding: 12px">@item.Name</td>
                             <td style="padding: 12px">@Html.Raw(item.Description ?? "Không có mô tả")</td>
                             <td style="padding: 12px">

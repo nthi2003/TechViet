@@ -8,9 +8,37 @@
     int totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
 }
 
-<div class="p-5" style="width:1895px">
+<div class="p-5" style="width:100%">
     <h3 class="text-xl font-bold mb-4">Danh sách đơn hàng</h3>
     <a asp-action="Create" asp-controller="Order" class="text-blue-500 hover:underline">+ Tạo mới</a>
+    <div style="display: flex;  justify-content: space-between; margin-bottom: 5px">
+        <form method="get">
+            <label for="status">Lọc theo trạng thái:</label>
+            <select name="status" id="status" class="border p-2 rounded" onchange="this.form.submit()">
+                @{
+                    var selectedStatus = Context.Request.Query["status"].ToString();
+                }
+                <option selected="@(selectedStatus == "" ? "selected" : null)">Tất cả</option>
+                <option style="color: red" value="0" selected="@(selectedStatus == "0" ? "selected" : null)">Hủy đơn</option>
+                <option style="color: yellowgreen" value="1" selected="@(selectedStatus == "1" ? "selected" : null)">Chờ xác nhận</option>
+                <option style="color: blue" value="2" selected="@(selectedStatus == "2" ? "selected" : null)">Đã xác nhận</option>
+                <option style="color: gray" value="3" selected="@(selectedStatus == "3" ? "selected" : null)">Đã đóng gói</option>
+                <option style="color: orange" value="4" selected="@(selectedStatus == "4" ? "selected" : null)">Đã vận chuyển</option>
+                <option style="color: green" value="5" selected="@(selectedStatus == "5" ? "selected" : null)">Đã nhận hàng</option>
+                <option style="color: lawngreen" value="6" selected="@(selectedStatus == "6" ? "selected" : null)">Đã thanh toán</option>
+
+            </select>
+        </form>
+        <form method="GET" style="display: flex;">
+            <input style=" border: 1px solid #000; border-radius: 20px 0px 0px 20px ; padding: 9px ;outline: none; background-color: #f9f9f9;" type="text" name="orderCode" value="@Context.Request.Query["orderCode"]" placeholder="Nhập mã đơn hàng..." />
+            <button style="padding: 10px 20px; border: none; background-color: #007bff; color: white; cursor: pointer; border-radius: 0 25px 25px 0; transition: background-color 0.3s ease;" type="submit" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+  </div>
+   
+
+
+
+  
     <div style="max-height: 1200px; overflow-y: auto; border: 1px solid #ddd;">
         <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
             <thead style="background: #f8f9fa; color: #333;">
@@ -23,6 +51,7 @@
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; width: 170px">Tổng đơn</th>
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; width: 170px">Ngày giờ</th>
                     <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; width: 170px" >Trạng thái</th>
+                    <th style="padding: 12px; text-align: left; border-bottom: 1px solid #ddd; width: 20px">Tải</th>
                     
                 </tr>
             </thead>
@@ -56,8 +85,18 @@
                                     <button type="submit" style="border: none; background: none;" title="Cập nhật trạng thái">
                                         <i class="fa-solid fa-check" style="color:green; margin-left:20px"></i>
                                     </button>
+                                  
                                 </form>
                             </td>
+                            <td>
+                                <form asp-action="DownloadOrderPdf" asp-controller="Orders" method="post" style="display: inline;">
+                                    <input type="hidden" name="orderId" value="@item.Id" />
+                                    <button type="submit" style="border: none; background: none; cursor: pointer;">
+                                        <i class="fa-solid fa-download"></i>
+                                    </button>
+                                </form>
+                            </td>
+                           
                         </tr>
                         }
                     }

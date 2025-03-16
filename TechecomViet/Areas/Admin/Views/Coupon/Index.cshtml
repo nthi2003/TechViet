@@ -1,10 +1,18 @@
-﻿@model CouponModel
+﻿@model IEnumerable<CouponModel>
 @{
     ViewData["Title"] = "Danh sách mã giảm giá";
 }
-<div class="p-5" style="width:1895px">
+<div class="p-5" style="width:100%">
     <h3>Danh sách mã giảm giá</h3>
-    <a asp-action="Create" asp-controller="Coupon">Thêm mã giảm giá</a>
+  
+    <div style="justify-content:space-between; display: flex">
+        <a asp-action="Create" asp-controller="Coupon">Thêm mã giảm giá</a>
+
+        <form method="GET" style="display: flex;">
+            <input style="border: 1px solid #000; border-radius: 20px 0px 0px 20px ; padding: 9px ;outline: none; background-color: #f9f9f9;" type="text" name="name" value="@Context.Request.Query["name"]" placeholder="Nhập mã giảm giá" />
+            <button style="padding: 10px 20px; border: none; background-color: #007bff; color: white; cursor: pointer; border-radius: 0 25px 25px 0; transition: background-color 0.3s ease;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
     <div style="max-height: 700px; border: 1px solid #ddd;">
         <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden;">
             <thead style="background: #f8f9fa; color: #333;">
@@ -21,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var coupon in ViewBag.Coupons)
+                @foreach (var coupon in Model)
                 {
                     <tr style="border-bottom: 1px solid #ddd; transition: 0.3s; cursor: pointer;">
                         <td style="padding: 12px; font-weight: bold;">@coupon.Name</td>

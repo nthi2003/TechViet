@@ -16,9 +16,14 @@ namespace TechecomViet.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? name)
         {
-            return View(await _dataContext.Brands.OrderByDescending(b => b.Id).ToListAsync());
+            var brand = _dataContext.Brands.AsQueryable();
+            if(name != null)
+            {
+                brand = brand.Where(b => b.Name.Contains(name));
+            }
+            return View(await brand.OrderByDescending(b => b.Id).ToListAsync());
         }
         [Route("Create")]
         public IActionResult Create()
@@ -29,7 +34,7 @@ namespace TechecomViet.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(BrandModel brand)
          {
-            if (ModelState.IsValid) {
+
                 var existingBrand = await _dataContext.Brands.FirstOrDefaultAsync(b => b.Name == brand.Name);
                 if (existingBrand != null)
                 {
@@ -52,11 +57,6 @@ namespace TechecomViet.Areas.Admin.Controllers
                 await _dataContext.SaveChangesAsync();
                 TempData["success"] = "Thêm hãng thành công";
                 return RedirectToAction("Index");
-            }
-            else
-            {
-                return View(brand);
-            }
 
         }
         [Route("DeleteImage")]
@@ -102,8 +102,6 @@ namespace TechecomViet.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(BrandModel brand)
         {
-            if (ModelState.IsValid)
-            {
                 var existingBrand = await _dataContext.Brands.FindAsync(brand.Id);
                 if (existingBrand == null)
                 {
@@ -135,11 +133,6 @@ namespace TechecomViet.Areas.Admin.Controllers
 
                 TempData["success"] = "Cập nhật thương hiệu thành công.";
                 return RedirectToAction("Index");
-            }
-            else
-            {
-                return View(brand);
-            }
         }
         [Route("Delete")]
         public async Task<IActionResult> Delete(int id)

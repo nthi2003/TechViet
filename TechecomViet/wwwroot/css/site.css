@@ -294,7 +294,7 @@ a {
 }
 .dropdown-menu {
     position: absolute;
-    top: 100%; /* Hi?n th? bên d??i ph?n t? chính */
+    top: 100%; 
     left: 0;
     background-color: white;
     border: 1px solid #ddd;
@@ -304,4 +304,15 @@ a {
 }
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.noUi-connect {
+    background: #2563eb !important;
+}
+.noUi-horizontal .noUi-handle {
+    width: 34px;
+    height: 34px;
+    right: -17px;
+    top: -6px;
+    border-radius: 50%;
 }

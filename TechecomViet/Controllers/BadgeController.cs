@@ -21,8 +21,6 @@ namespace TechecomViet.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-     
-
             await SetCartItemCountAsync();
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = await _dataContext.Users.FindAsync(userId);
@@ -32,7 +30,7 @@ namespace TechecomViet.Controllers
             }
 
             var totalSum = await _dataContext.Orders
-                .Where(o => o.UserId == userId)
+                 .Where(o => o.UserId == userId && (o.Status == 6 || o.Status == 5))
                 .SumAsync(o => o.TotalPrices);
 
             var model = new BadgeViewModel

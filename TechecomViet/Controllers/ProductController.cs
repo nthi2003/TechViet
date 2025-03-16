@@ -67,19 +67,48 @@ namespace TechecomViet.Controllers
         [HttpPost]
         public async Task<IActionResult> Search(string searchTerm)
         {
+            await SetCartItemCountAsync();
             var product = await _dataContext.Products.Where(p => p.Name.Contains(searchTerm)).ToListAsync();
             ViewBag.Keyword = searchTerm;
             return View(product);
         }
-        [HttpGet]
-        public async Task<IActionResult> FindProductCategory(int categoryId)
+        [HttpGet("FindProductCategory")]
+        public async Task<IActionResult> FindProductCategory(int categoryId, int? brandId, int? minPrice, int? maxPrice)
         {
-            var product = await _dataContext.Products
-                  .Where(p => p.CategoryId == categoryId)
-                  .ToListAsync();
-            var category = await _dataContext.Categories.FirstOrDefaultAsync(p => p.Id == categoryId);
-            ViewBag.Categories = category;
-            return View(product);
+            await SetCartItemCountAsync();
+            var brands = await _dataContext.Products
+                .Where(p => p.CategoryId == categoryId)
+                .Select(p => p.Brand)
+                .Distinct()
+                .ToListAsync();
+
+            var category = await _dataContext.Categories
+                .FirstOrDefaultAsync(p => p.Id == categoryId);
+            var query = _dataContext.Products.Where(p => p.CategoryId == categoryId);
+
+            if (brandId.HasValue)
+            {
+                query = query.Where(p => p.BrandId == brandId.Value);
+            }
+            if (minPrice.HasValue && minPrice.Value > 0)
+            {
+                query = query.Where(p => p.Price >= minPrice.Value);
+            }
+            if (maxPrice.HasValue && maxPrice.Value > 0)
+            {
+                query = query.Where(p => p.Price <= maxPrice.Value);
+            }
+
+            var products = await query.ToListAsync();
+
+            ViewBag.Brands = brands;
+            ViewBag.Category = category;
+            ViewBag.SelectedBrandId = brandId;
+            ViewBag.MinPrice = minPrice;
+            ViewBag.MaxPrice = maxPrice;
+
+            return View(products);
         }
+
     }
 }

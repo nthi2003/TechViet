@@ -14,7 +14,7 @@ namespace TechecomViet.Models
         [Required, MinLength(4, ErrorMessage = "Yêu cầu nhập Mô tả hãng")]
         public string Description { get; set; }
         public int? Status { get; set; }
-        public string Image { get; set; } = string.Empty;
+        public string Image { get; set; }
         [NotMapped]
         public IFormFile? ImageUpload { get; set; }
     }

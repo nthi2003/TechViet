@@ -5,15 +5,19 @@ using Microsoft.EntityFrameworkCore;
 using TechecomViet.Models;
 using TechecomViet.Reponsitory;
 using TechecomViet.Services.Vnpay;
+using QuestPDF.Infrastructure; // Thêm namespace này để sử dụng QuestPDF
 
 var builder = WebApplication.CreateBuilder(args);
-//cau hing google
+
+// Cấu hình giấy phép QuestPDF
+QuestPDF.Settings.License = LicenseType.Community; // Thêm dòng này
+
+// Cấu hình Google Authentication
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-
 }).AddCookie().AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
 {
     options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
@@ -47,8 +51,10 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30);
     options.Cookie.IsEssential = true;
 });
-//Connect VNPay API
+
+// Kết nối VNPay API
 builder.Services.AddScoped<IVnPayService, VnPayService>();
+
 var app = builder.Build();
 
 // Cấu hình môi trường và các Middleware

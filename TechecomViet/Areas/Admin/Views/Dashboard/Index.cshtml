@@ -6,7 +6,8 @@
 <div style="margin: 30px; display: flex; gap: 20px">
     <div style="display: flex; background-color: white; border-radius: 12px;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-                padding: 20px; align-items: center; width: 300px; height: 100px;">
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+        <a asp-action="Index" asp-controller="Product">
         <div style="display: flex">
             <div style="margin-top: 4px; height: 40px; width: 40px; border-radius: 50%;
                         background-color: #DBEAFE; display: flex; align-items: center;
@@ -18,27 +19,31 @@
                 <div>Tổng sản phẩm</div>
             </div>
         </div>
+        </a>
     </div>
 
     <div style="display: flex; background-color: white; border-radius: 12px;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-                padding: 20px; align-items: center; width: 300px; height: 100px;">
-        <div style="display: flex">
-            <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+        <a asp-action="Index" asp-controller="Orders">
+            <div style="display: flex">
+                <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
                         background-color: #DBEAFE; display: flex; align-items: center;
                         justify-content: center; color: #2563EB; margin-right: 16px;">
-                <i class="fa-solid fa-boxes-stacked"></i>
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div>
+                    <div>@ViewBag.CountOrder</div>
+                    <div>Tổng đơn hàng</div>
+                </div>
             </div>
-            <div>
-                <div>@ViewBag.CountOrder</div>
-                <div>Tổng đơn hàng</div>
-            </div>
-        </div>
+        </a>
     </div>
 
     <div style="display: flex; background-color: white; border-radius: 12px;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-                padding: 20px; align-items: center; width: 300px; height: 100px;">
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+       <a asp-action="Index" asp-controller="User">
         <div style="display: flex">
             <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
                         background-color: #DBEAFE; display: flex; align-items: center;
@@ -50,6 +55,74 @@
                 <div>Tổng người dùng</div>
             </div>
         </div>
+        </a>
+    </div>
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+        <a asp-action="Index" asp-controller="Category">
+            <div style="display: flex">
+                <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                    <div>@ViewBag.CountCategory</div>
+                    <div>Tổng danh mục</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+        <a asp-action="Index" asp-controller="Brand">
+            <div style="display: flex">
+                <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                    <i class="fa-brands fa-font-awesome"></i>
+                </div>
+                <div>
+                    <div>@ViewBag.CountBrand</div>
+                    <div>Tổng hãng</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+        <a asp-action="Index" asp-controller="Blog">
+            <div style="display: flex">
+                <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                    <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <div>
+                    <div>@ViewBag.CountBlog</div>
+                    <div>Tổng bài viết</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div style="display: flex; background-color: white; border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+                padding: 20px; align-items: center; width: 250px; height: 100px;">
+
+            <div style="display: flex">
+                <div style="margin-top: 4px;height: 40px; width: 40px; border-radius: 50%;
+                        background-color: #DBEAFE; display: flex; align-items: center;
+                        justify-content: center; color: #2563EB; margin-right: 16px;">
+                   $
+                </div>
+                <div>
+                <div>@ViewBag.TotalRevenue.ToString("#,##0 VNĐ")</div>
+                    <div>Danh thu</div>
+                </div>
+            </div>
     </div>
 </div>
 

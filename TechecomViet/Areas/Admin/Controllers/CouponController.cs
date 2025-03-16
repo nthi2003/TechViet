@@ -17,11 +17,14 @@ namespace TechecomViet.Areas.Admin.Controllers
             _dataContext = context;
         }
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? name)
         {
-            var coupon_list = await _dataContext.Coupons.ToListAsync();
-            ViewBag.Coupons = coupon_list;
-            return View();
+            var coupon = _dataContext.Coupons.AsQueryable();
+            if(name != null)
+            {
+                coupon = coupon.Where(c => c.Name.Contains(name));
+            }
+            return View(await coupon.OrderByDescending(c => c.Id).ToListAsync());
         }
         [Route("Create")]
         [HttpGet]

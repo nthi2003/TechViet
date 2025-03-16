@@ -5,40 +5,49 @@
     <nav style="display: flex; align-items: center; margin-bottom: 2rem; font-size: 0.875rem; color: #4b5563;">
         <a href="/" style="text-decoration: none; color: inherit;">Trang chủ</a>
         <span style="margin: 0 8px;">/</span>
-        <a href="/pc" style="text-decoration: none; color: inherit;">@Model.Product.Brand.Name</a>
+        <a href="/pc" style="text-decoration: none; color: inherit;">@Model.Product?.Brand?.Name</a>
         <span style="margin: 0 8px;">/</span>
-        <span>@Model.Product.Name</span>
+        <span>@Model.Product?.Name</span>
     </nav>
-
 
     <div style="display: flex; gap: 2rem;">
         <div style="flex: 1;">
             <div style="border-radius: 8px; overflow: hidden;">
-                <img src="~/products/@Model.Product.Images[0]" alt="@Model.Product.Name" style="width: 100%; height: 600px; object-fit: cover;" />
+                @if (Model.Product?.Images != null && Model.Product.Images.Any())
+                {
+                    <img src="~/products/@Model.Product.Images[0]" alt="@Model.Product.Name" style="width: 100%; height: 600px; object-fit: cover;" />
+                }
+                else
+                {
+                    <img src="~/images/placeholder.jpg" alt="Placeholder" style="width: 100%; height: 600px; object-fit: cover;" />
+                }
             </div>
             <div style="display: flex; gap: 8px; margin-top: 16px; overflow-x: auto; padding-bottom: 8px;">
-                @foreach (var item in Model.Product.Images)
+                @if (Model.Product?.Images != null)
                 {
-                    <button style="flex-shrink: 0; border: none; background: none; padding: 0; cursor: pointer;">
-                        <img src="~/products/@item" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;" />
-                    </button>
+                    @foreach (var item in Model.Product.Images)
+                    {
+                        <button style="flex-shrink: 0; border: none; background: none; padding: 0; cursor: pointer;">
+                            <img src="~/products/@item" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;" />
+                        </button>
+                    }
                 }
             </div>
         </div>
         <div style="flex: 1; margin-top: 24px;">
-            <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">@Model.Product.Name</h1>
+            <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 8px;">@Model.Product?.Name</h1>
             <div>
-                <span>Lượt bán : @Model.Product.SoldOut</span>
+                <span>Lượt bán : @Model.Product?.SoldOut</span>
             </div>
             <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
                 <span style="font-size: 30px; font-weight: 700; color: #1435c3;">
-                    @((Model.Product.Price - (Model.Product.Price * Model.Product.DiscountPercentage) / 100).ToString("#,##0 VNĐ"))
+                    @((Model.Product?.Price - (Model.Product?.Price * Model.Product?.DiscountPercentage) / 100)?.ToString("#,##0 VNĐ"))
                 </span>
                 <span style="font-size: 14px; color: #6b7280; text-decoration: line-through;">
-                    @Model.Product.Price.ToString("#,##0 VNĐ")
+                    @Model.Product?.Price.ToString("#,##0 VNĐ")
                 </span>
                 <span style="font-size: 12px; color: #1435c3; background: #dbeafe; padding: 2px 8px; border-radius: 4px;">
-                    @Model.Product.DiscountPercentage%
+                    @Model.Product?.DiscountPercentage%
                 </span>
             </div>
             <div style="display: flex; gap: 8px; margin-bottom: 24px;">
@@ -48,20 +57,21 @@
 
             <div style="font-size: 14px; max-height: 550px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
                 <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 8px; color: #1435c3;">Mô tả sản phẩm</h3>
-                @Html.Raw(@Model.Product.Description)
+                @Html.Raw(Model.Product?.Description)
             </div>
         </div>
     </div>
+
     @if (Model.CheckReview)
     {
-    <div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
-        <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #1e3a8a;">Đánh giá và nhận xét @Model.Product.Name</h3>
+        <div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+            <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #1e3a8a;">Đánh giá và nhận xét @Model.Product?.Name</h3>
             <form asp-action="CreateReview" asp-controller="Review" method="POST">
-                <input type="hidden" name="productId" value="@Model.Product.Id" />
+                <input type="hidden" name="productId" value="@Model.Product?.Id" />
 
                 <div style="display: flex; align-items: center;">
                     <div>
-                        <img src="~/accounts/@Model.Users.Image" style="width: 40px ; height: 40px ; border-radius: 50%;" />
+                        <img src="~/accounts/@Model.Users?.Image" style="width: 40px; height: 40px; border-radius: 50%;" />
                     </div>
 
                     <div style="margin-left: 10px;">
@@ -87,137 +97,95 @@
             </form>
             <hr />
 
-           @foreach(var item in Model.Reviews){
-                <div style="display: flex">
-                    <div>
-                        <img src="~/accounts/@item.User.Image" style="width: 40px ; height: 40px ; border-radius:50%" />
-                    </div>
-                    <div style="margin-top: 10px">
-                        <div style="display:flex">
-                            <div style=" margin-left: 10px">@item.User.FullName</div>
-                            <div style=" margin-left: 20px">@item.CreatedAt</div>
+            @if (Model.Reviews != null)
+            {
+                @foreach (var item in Model.Reviews)
+                {
+                    <div style="display: flex">
+                        <div>
+                            <img src="~/accounts/@item.User?.Image" style="width: 40px; height: 40px; border-radius: 50%;" />
                         </div>
-                        @if (@item.Rating == 1)
-                        {
-                            <div style="margin-left: 10px">
-                                <span>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                </span>
+                        <div style="margin-top: 10px">
+                            <div style="display:flex">
+                                <div style="margin-left: 10px">@item.User?.FullName</div>
+                                <div style="margin-left: 20px">@item.CreatedAt</div>
                             </div>
-                        }
-                        @if (@item.Rating == 2)
-                        {
-                            <div style="margin-left: 10px">
-                                <span>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                </span>
+                            @if (item.Rating == 1)
+                            {
+                                <div style="margin-left: 10px">
+                                    <span>
+                                        <i style="color: #F6DC43" class="fa-solid fa-star"></i>
+                                        <i style="color: gray" class="fa-solid fa-star"></i>
+                                        <i style="color: gray" class="fa-solid fa-star"></i>
+                                        <i style="color: gray" class="fa-solid fa-star"></i>
+                                        <i style="color: gray" class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                            }
+                            <div style="margin-top: 2px; margin-left: 10px">
+                                <span>@item.Comment</span>
                             </div>
-                        }
-                         @if (@item.Rating == 3)
-                        {
-                            <div style="margin-left: 10px">
-                                <span>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                </span>
-                            </div>
-                        }
-                        @if (@item.Rating == 4)
-                        {
-                            <div style="margin-left: 10px">
-                                <span>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: gray" class="fa-solid fa-star"></i>
-                                </span>
-                            </div>
-                        }
-                        @if (@item.Rating == 5)
-                        {
-                            <div style="margin-left: 10px">
-                                <span>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                    <i style="color: #F6DC43" class="fa-solid fa-star"></i>
-                                </span>
-                            </div>
-                        }
-                      
-                        <div style="margin-top: 2px ;  margin-left: 10px">
-                            <span>@item.Comment</span>
                         </div>
                     </div>
-                </div>
-
-           }
-
-    </div>
+                }
+            }
+        </div>
     }
+
     <div style="margin-top: 48px;">
         <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 16px; color: #1e3a8a;">Sản phẩm liên quan</h3>
         <div style="display: flex; gap: 16px; overflow-x: auto;">
-            @foreach (var relatedProduct in ViewBag.RelatedProducts as IEnumerable<ProductModel>)
+            @if (ViewBag.RelatedProducts != null)
             {
-                <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
-                    <div style="position: relative; display: inline-block;">
-                        <div>
-                            <img src="~/products/@relatedProduct.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-                        </div>
-                        @if (User.Identity?.IsAuthenticated ?? false)
-                        {
-                            <button class="add-btn-wishlist" data-product_id="@relatedProduct.Id"
+                @foreach (var relatedProduct in ViewBag.RelatedProducts)
+                {
+                    <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div style="position: relative; display: inline-block;">
+                            <div>
+                                <img src="~/products/@relatedProduct?.Images?[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
+                            </div>
+
+                            <button class="add-btn-wishlist" data-product_id="@relatedProduct?.Id"
                                     style="position: absolute; top: 10px; right: 10px; background: rgba(255, 255, 255, 0.8);
                                        border: none; border-radius: 50%; padding: 8px; cursor: pointer;
                                        font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
                                 <i class="fa-solid fa-heart" style="color: red;"></i>
                             </button>
-                        }
-
-                    </div>
-                    <div style="padding: 15px;">
-                        <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">@relatedProduct.Brand.Name</div>
-                        <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
-                            <a asp-action="Detail" asp-controller="Product" asp-route-Id="@relatedProduct.Id"
-                               style="text-decoration: none; color: inherit;">
-                                @(relatedProduct.Name.Length > 20 ? relatedProduct.Name.Substring(0, 20) + "..." : relatedProduct.Name)
-                            </a>
                         </div>
-                        <div style="align-items: center; gap: 8px;">
-                            <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
-                                <div>
-                                    @((relatedProduct.Price - (relatedProduct.Price * (relatedProduct.DiscountPercentage) / 100)).ToString("#,##0 VNĐ"))
-                                </div>
+                        <div style="padding: 15px;">
+                            <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">@relatedProduct?.Brand?.Name</div>
+                            <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                                <a asp-action="Detail" asp-controller="Product" asp-route-Id="@relatedProduct?.Id"
+                                   style="text-decoration: none; color: inherit;">
+                                    @(relatedProduct?.Name?.Length > 20 ? relatedProduct.Name.Substring(0, 20) + "..." : relatedProduct?.Name)
+                                </a>
                             </div>
-                            <del style="font-size: 14px; color: #6b7280;">@relatedProduct.Price.ToString("#,##0 VNĐ")</del>
+                            <div style="align-items: center; gap: 8px;">
+                                <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                                    <div>
+                                        @((relatedProduct?.Price - (relatedProduct?.Price * (relatedProduct?.DiscountPercentage) / 100))?.ToString("#,##0 VNĐ"))
+                                    </div>
+                                </div>
+                                <del style="font-size: 14px; color: #6b7280;">@relatedProduct?.Price.ToString("#,##0 VNĐ")</del>
+                            </div>
+                            @if (relatedProduct?.Quantity != 0)
+                            {
+                                <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                        class="add-to-cart" data-product-id="@relatedProduct?.Id">
+                                    Thêm vào giỏ
+                                </button>
+                            }
+                            else
+                            {
+                                <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                            }
                         </div>
-                        @if (relatedProduct.Quantity != 0)
-                        {
-                            <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
-                                    class="add-to-cart" data-product-id="@relatedProduct.Id">
-                                Thêm vào giỏ
-                            </button>
-                        }
-                        else
-                        {
-                            <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
-                        }
                     </div>
-                </div>
+                }
+            }
+            else
+            {
+                <div>Chưa có sản phẩm liên quan</div>
             }
         </div>
     </div>

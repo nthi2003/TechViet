@@ -19,9 +19,14 @@ namespace TechecomViet.Areas.Admin.Controllers
             _dataContext = context;
             _webHostEnviroment = webHostEnvironment;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? name)
         {
-            return View(await _dataContext.Products.OrderByDescending(p => p.Id).Include(c => c.Category).Include(b => b.Brand).ToListAsync());
+            var products = _dataContext.Products.AsQueryable();
+            if (name != null)
+            {
+                products = products.Where(b => b.Name.Contains(name));
+            }
+            return View(await products.OrderByDescending(p => p.Id).Include(c => c.Category).Include(b => b.Brand).ToListAsync());
         }
         [Route("Create")]
         public IActionResult Create()

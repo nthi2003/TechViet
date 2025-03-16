@@ -16,9 +16,14 @@ namespace TechecomViet.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? name)
         {
-            return View(await _dataContext.Categories.OrderByDescending(c => c.Id).ToListAsync());
+            var category = _dataContext.Categories.AsQueryable();
+            if(name != null)
+            {
+                category = category.Where(c => c.Name.Contains(name));
+            }
+            return View(await category.OrderByDescending(c => c.Id).ToListAsync());
         }
         [Route("Create")]
         public IActionResult Create()

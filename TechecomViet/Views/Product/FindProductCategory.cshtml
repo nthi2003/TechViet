@@ -2,63 +2,130 @@
 <nav style="font-size: 14px; color: #4b5563; margin-bottom: 16px; margin: 4px 15px; padding: 20px;">
     <a href="/" style="color: #007bff; text-decoration: none;">Trang chủ</a>
     <span style="margin: 0 8px;">/</span>
-    <span style="font-weight: bold; color: #333;">@ViewBag.Categories.Name</span>
+    <span style="font-weight: bold; color: #333;">@ViewBag.Category.Name</span>
 </nav>
-<div style="display: flex; margin:30px; gap :20px">
-    @if (Model != null && Model.Any())
-    {
-        @foreach (var item in Model)
-        {
-            <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
-                <div style="position: relative; display: inline-block;">
-                    <div>
-                        @if (item.Images != null && item.Images.Any())
-                        {
-                            <img src="~/products/@item.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-                        }
+<div style="margin: 20px 0; padding: 15px; background: #f3f4f6; border-radius: 8px;">
+    <form method="get" asp-action="FindProductCategory" asp-controller="Product" style="display: flex; gap: 10px; align-items: center;">
+        <input type="hidden" name="categoryId" value="@ViewBag.Category?.Id" />
 
-                    </div>
-                </div>
-                <div style="padding: 15px;">
-                    <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">
-                        @item.Brand?.Name
-                    </div>
-                    <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
-                        <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id"
-                           style="text-decoration: none; color: inherit;">
-                            @(item.Name != null && item.Name.Length > 20 ? item.Name.Substring(0, 20) + "..." : item.Name)
-                        </a>
-                    </div>
-                    <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
-                        <div>
-                            @if (item.Price != null && item.DiscountPercentage != null)
-                            {
-                                var discountedPrice = item.Price - (item.Price * item.DiscountPercentage / 100);
-                                @discountedPrice.ToString("#,##0 VNĐ")
-                            }
-                        </div>
-                    </div>
-                    @if (item.Price != null)
-                    {
-                        <del style="font-size: 14px; color: #6b7280;">@item.Price.ToString("#,##0 VNĐ")</del>
-                    }
-                    @if (item.Quantity != 0)
-                    {
-                        <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
-                                class="add-to-cart" data-product-id="@item.Id">
-                            Thêm vào giỏ
-                        </button>
-                    }
-                    else
-                    {
-                        <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
-                    }
-                </div>
+        <!-- Slider container -->
+        <div id="price-slider" style="width: 300px; margin: 0 20px;"></div>
+
+        <!-- Hidden inputs to store min and max values -->
+        <input type="hidden" id="minPrice" name="minPrice" value="@ViewBag.MinPrice" />
+        <input type="hidden" id="maxPrice" name="maxPrice" value="@ViewBag.MaxPrice" />
+
+        <button type="submit" style="background-color: #2563eb; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px;">
+            Lọc
+        </button>
+    </form>
+</div>
+
+<div>
+    <div style="display: flex; margin: 30px; gap: 20px;">
+        @foreach (var brand in ViewBag.Brands)
+        {
+            <div style="background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-decoration: none; border: 1px solid @(ViewBag.SelectedBrandId == brand.Id ? "#2563eb" : "transparent"); border-radius: 10px; transition: all 0.3s ease; overflow: hidden; width: 125px; height: 49px;">
+                <a asp-action="FindProductCategory" asp-controller="Product" asp-route-categoryId="@ViewBag.Category?.Id" asp-route-brandId="@brand.Id"
+                   style="display: block; padding: 10px; text-align: center; text-decoration: none; transition: all 0.3s ease;">
+                    <img style="width: 100px; height: 31px; object-fit: contain; transition: transform 0.3s ease;" src="~/brands/@brand.Image" alt="@brand.Name" />
+                </a>
             </div>
         }
-    }
-    else
-    {
-        <div style="text-align: center; font-size: 16px; color: #6b7280;">Không có sản phẩm nào.</div>
-    }
+
+    </div>
+    <div style="display: flex; margin:30px; gap :20px;">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 220px; overflow: hidden; transition: transform 0.3s ease;">
+                    <div style="position: relative; display: inline-block;">
+                        <div>
+                            @if (item.Images != null && item.Images.Any())
+                            {
+                                <img src="~/products/@item.Images[0]" style="width: 220px; height: 150px; object-fit: cover; display: block;">
+                            }
+
+                        </div>
+                    </div>
+                    <div style="padding: 15px;">
+                        <div style="font-size: 14px; color: #2563eb; font-weight: bold; margin-bottom: 5px;">
+                            @item.Brand?.Name
+                        </div>
+                        <div style="font-size: 16px; color: #1e3a8a; margin-bottom: 10px;">
+                            <a asp-action="Detail" asp-controller="Product" asp-route-Id="@item.Id"
+                               style="text-decoration: none; color: inherit;">
+                                @(item.Name != null && item.Name.Length > 20 ? item.Name.Substring(0, 20) + "..." : item.Name)
+                            </a>
+                        </div>
+                        <div style="font-size: 18px; color: #2563eb; font-weight: bold; margin-bottom: 10px;">
+                            <div>
+                                @if (item.Price != null && item.DiscountPercentage != null)
+                                {
+                                    var discountedPrice = item.Price - (item.Price * item.DiscountPercentage / 100);
+                                    @discountedPrice.ToString("#,##0 VNĐ")
+                                }
+                            </div>
+                        </div>
+                        @if (item.Price != null)
+                        {
+                            <del style="font-size: 14px; color: #6b7280;">@item.Price.ToString("#,##0 VNĐ")</del>
+                        }
+                        @if (item.Quantity != 0)
+                        {
+                            <button style="background-color: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; margin-top: 10px; transition: background-color 0.3s ease;"
+                                    class="add-to-cart" data-product-id="@item.Id">
+                                Thêm vào giỏ
+                            </button>
+                        }
+                        else
+                        {
+                            <div style="font-size: 16px; color: #ef4444; text-align: center; margin-top: 10px;">Hết hàng</div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div style="text-align: center; font-size: 16px; color: #6b7280;">Không có sản phẩm nào.</div>
+        }
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const minPrice = @(ViewBag.MinPrice ?? 0);
+            const maxPrice = @(ViewBag.MaxPrice ?? 1000000);
+            const slider = document.getElementById('price-slider');
+            noUiSlider.create(slider, {
+                start: [minPrice, maxPrice], 
+                connect: true, 
+                range: {
+                    'min': 0, 
+                    'max': 10000000 
+                },
+                step: 1000, 
+                tooltips: [true, true], 
+                format: {
+                    to: function (value) {
+                        return Math.round(value).toLocaleString('vi-VN'); 
+                    },
+                    from: function (value) {
+                        return Number(value.replace(/\./g, '')); 
+                    }
+                }
+            });
+
+            // Cập nhật giá trị vào các input ẩn khi slider thay đổi
+            slider.noUiSlider.on('update', function (values, handle) {
+                const minPriceInput = document.getElementById('minPrice');
+                const maxPriceInput = document.getElementById('maxPrice');
+                minPriceInput.value = values[0].replace(/\./g, ''); // Loại bỏ dấu chấm trước khi gán giá trị
+                maxPriceInput.value = values[1].replace(/\./g, ''); // Loại bỏ dấu chấm trước khi gán giá trị
+            });
+        });
+    </script>
+}

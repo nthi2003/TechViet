@@ -12,7 +12,7 @@ namespace TechecomViet.Areas.Admin.Controllers
 
     [Area("Admin")]
     [Route("Admin/User")]
-    //[Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public class UserController : Controller
     {
         private readonly UserManager<UserModel> _userManager;
@@ -33,27 +33,32 @@ namespace TechecomViet.Areas.Admin.Controllers
 
         }
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? name)
         {
-            var usersWithRoles = await (from u in _dataContext.Users
-                                        join ur in _dataContext.UserRoles on u.Id equals ur.UserId
-                                        join r in _dataContext.Roles on ur.RoleId equals r.Id
-                                        select new
-                                        {
-                                            User = new
-                                            {
-                                                u.Id,
-                                                u.UserName,
-                                                u.Email,
-                                                u.FullName,
-                                                u.PhoneNumber,
-                                                u.Status
-                                            },
-                                            RoleName = r.Name,
-                                            RoleId = r.Id
-                                        })
-                                 .ToListAsync();
+            var users = from u in _dataContext.Users
+                             join ur in _dataContext.UserRoles on u.Id equals ur.UserId
+                             join r in _dataContext.Roles on ur.RoleId equals r.Id
+                             select new
+                             {
+                                 User = new
+                                 {
+                                     u.Id,
+                                     u.UserName,
+                                     u.Email,
+                                     u.FullName,
+                                     u.PhoneNumber,
+                                     u.Status
+                                 },
+                                 RoleName = r.Name,
+                                 RoleId = r.Id
+                             };
 
+
+            if(name != null)
+            {
+                users = users.Where(u => u.User.UserName.Contains(name));
+            }
+            var usersWithRoles = await users.ToListAsync();
             var usersViewModel = usersWithRoles.Select(u => new UserWithRoleViewModel
             {
                 Id = u.User.Id,

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TechecomViet.Reponsitory;
 
 namespace TechecomViet.Areas.Admin.Controllers
@@ -20,10 +21,19 @@ namespace TechecomViet.Areas.Admin.Controllers
             var count_product = _dataContext.Products.Count();
             var count_order = _dataContext.Orders.Count();
             var count_user = _dataContext.Users.Count();
-
+            var count_category = _dataContext.Categories.Count();
+            var count_blog = _dataContext.Blogs.Count();
+            var count_brand = _dataContext.Brands.Count();
+            var totalRevenue = _dataContext.Orders
+                .Where(o => o.Status == 5 || o.Status == 6)
+                .Sum(o => o.TotalPrices);
+            ViewBag.CountCategory = count_category;
+            ViewBag.CountBlog = count_blog;
+            ViewBag.CountBrand = count_brand;
             ViewBag.CountProduct = count_product;
             ViewBag.CountOrder = count_order;
             ViewBag.CountUser = count_user;
+            ViewBag.TotalRevenue = totalRevenue;
 
             return View();
         }
